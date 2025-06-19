@@ -1,6 +1,8 @@
 Title: Aldo Reyes
 logo: Assets/Images/Profile Github Photo1.jpg
- img src="{{ site.logo }}" alt="logo"
+{% if site.logo %}
+  <img src="{{ site.logo }}" alt="logo">
+{% endif %}
 #descrition:
 #sho_download: true
 theme: jekyll-theme-minimal

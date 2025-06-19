@@ -1,5 +1,6 @@
 Title: Aldo Reyes
 logo: Assets/Images/Profile Github Photo1.jpg
+ Head: html <link rel="stylesheet" href="/assets/css/style.css">
 #descrition:
 #sho_download: true
 theme: jekyll-theme-minimal

@@ -1,8 +1,8 @@
 # AldoReyes.github.io
 
 ## Contact
-### [Hotmail] aldoan84@hotmail.com
-### [Gmail] aldoan84@gmial.com
+### Hotmail aldoan84@hotmail.com
+### Gmail aldoan84@gmial.com
 
 ## Documents
 #### [Curriculum](Assets/files/Aldo Reyes CV.pdf)

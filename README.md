@@ -6,7 +6,7 @@
 
 ## Documents
 #### Curriculum   (Assets/files/Aldo Reyes CV.pdf)
- [Curriculum (PDF)](/Assets/files/Aldo%20Reyes%20CV.pdf)
+ [Curriculum (PDF)](/Assets/files/Aldo Reyes CV.pdf)
 
 ### Business Analysis
 ## Projects

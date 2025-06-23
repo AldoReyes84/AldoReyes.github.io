@@ -5,8 +5,8 @@
 ### Gmail aldoan84@gmial.com
 
 ## Documents
-#### Curriculum   (Assets/files/Aldo Reyes CV.pdf)
- [Curriculum (PDF)](/Assets/files/Aldo Reyes CV.pdf)
+#### Curriculum   (Assets/files/Aldo_Reyes_CV.pdf)
+ [Curriculum (PDF)](/Assets/files/Aldo_Reyes_CV.pdf)
 
 ### Business Analysis
 ## Projects

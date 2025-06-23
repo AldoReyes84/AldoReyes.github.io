@@ -7,8 +7,8 @@
 ## Documents
  [Curriculum (PDF)](/Assets/files/Aldo_Reyes_CV.pdf)
 
-### Business Analysis
-## Projects
+## Business Analysis
+### Projects
 
 
 

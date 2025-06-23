@@ -5,6 +5,7 @@
 ### Gmail aldoan84@gmial.com
 
 ## Documents
+
  [Curriculum (PDF)](/Assets/files/Aldo_Reyes_CV.pdf)
 
 ### Business Analysis

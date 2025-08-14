@@ -11,6 +11,5 @@
 ### Projects
 
 ## [SQL Server Data Analysis](https://github.com/AldoReyes84/SQL_Server_AdventureWorks)
-
-## Power BI Data Analysis
-## Python SQL & Pandas Data Analysis
+## [Power BI Data Analysis](https://github.com/AldoReyes84/Power_BI_AdventureWorks2022_Data_Analysis)
+## [Python SQL & Pandas Data Analysis](https://github.com/AldoReyes84/Python_Pandas_Data_Analysis))

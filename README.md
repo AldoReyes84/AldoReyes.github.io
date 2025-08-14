@@ -10,5 +10,5 @@
 ## Business Analysis
 ### Projects
 
-## [AdventureWorks2022 Data Analysis]([https://github.com/AldoReyes84/SQL_Server_AdventureWorks](https://github.com/AldoReyes84/Data-Analisys_For-AdventureWorksDW2022_SQL_PowerBI_Python_Excel)
+## [AdventureWorks2022 Data Analysis](https://github.com/AldoReyes84/SQL_Server_AdventureWorks](https://github.com/AldoReyes84/Data-Analisys_For-AdventureWorksDW2022_SQL_PowerBI_Python_Excel)
 

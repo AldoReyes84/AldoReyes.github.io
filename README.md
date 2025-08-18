@@ -7,7 +7,7 @@
 ## Documents
  [Curriculum (PDF)](/Assets/files/Aldo_Reyes_CV.pdf)
 
-## [About me](https://aldoreyes84.github.io/AldoReyes.github.io/)
+## [About me](https://github.com/AldoReyes84/About-me)
 
 ## Business Analysis
 ### Projects

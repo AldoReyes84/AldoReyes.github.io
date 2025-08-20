@@ -15,8 +15,8 @@
 
 # [About me](https://github.com/AldoReyes84/About-me)
 
-## Business Intelligence Data Analyst
+# Business Intelligence Data Analyst
 
-# Projects
+## Projects
 
  [AdventureWorks2022 Data Analysis](https://github.com/AldoReyes84/Data-Analisys_For-AdventureWorksDW2022_SQL_PowerBI_Python_Excel)

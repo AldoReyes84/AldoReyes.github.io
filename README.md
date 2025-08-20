@@ -19,4 +19,4 @@
 
 ## Projects
 
- [AdventureWorks2022 Data Analysis](https://aldoreyes84.github.io/Data-Analisys_For-AdventureWorksDW2022_SQL_PowerBI_Python_Excel/)
+ [AdventureWorks2022 Data Analysis](https://aldoreyes84.github.io/Data_Analisys_For_AdventureWorksDW2022/)

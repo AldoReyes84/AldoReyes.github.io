@@ -27,7 +27,8 @@
 
 ## Projects
 
- #### [AdventureWorks2022 Data Analysis](https://aldoreyes84.github.io/Data_Analisys_For_AdventureWorksDW2022/)
+#### [AdventureWorks2022 Data Analysis](https://aldoreyes84.github.io/Data_Analisys_For_AdventureWorksDW2022/)
 
 ## Documents
- #### [Curriculum (PDF)](/Assets/files/Aldo_Reyes_CV.pdf)
+
+#### [Curriculum (PDF)](/Assets/files/Aldo_Reyes_CV.pdf)

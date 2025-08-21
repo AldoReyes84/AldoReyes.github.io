@@ -13,7 +13,7 @@
 # Documents
  [Curriculum (PDF)](/Assets/files/Aldo_Reyes_CV.pdf)
 
-# [About me](https://github.com/AldoReyes84/About-me)
+# [About me]([https://aldoreyes84.github.io/About-me/))
 
 # Business Intelligence Data Analyst
 

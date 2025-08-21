@@ -7,12 +7,14 @@
 
 ## Skills
 
-<details>
-  <summary>Click to expand</summary>
-  Your hidden content goes here!
+ <details>
+  <summary><b>Skills</b></summary>
+    Your hidden content goes here!
 
 Dashboard Desing, Power BI | ETL, Cloud, ODC and Local Connections, SQL | Data Modeling, M Language | Data Analysis & Insights Finding, DAX | Data Visualization, Figma | OKR/KPI Tracking | Advance Excel Reporting |
-   </details>
+  </details>
+
+## Tools
 
 ## Work Experience
 

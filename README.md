@@ -7,6 +7,13 @@
 
 ## Skills
 
+<details>
+  <summary>Click to expand</summary>
+  Your hidden content goes here!
+
+Dashboard Desing, Power BI | ETL, Cloud, ODC and Local Connections, SQL | Data Modeling, M Language | Data Analysis & Insights Finding, DAX | Data Visualization, Figma | OKR/KPI Tracking | Advance Excel Reporting |
+   </details>
+
 ## Work Experience
 
 ## [About me](https://aldoreyes84.github.io/About-me/)
@@ -17,4 +24,4 @@
  #### [AdventureWorks2022 Data Analysis](https://aldoreyes84.github.io/Data_Analisys_For_AdventureWorksDW2022/)
 
 ## Documents
- [Curriculum (PDF)](/Assets/files/Aldo_Reyes_CV.pdf)
+ #### [Curriculum (PDF)](/Assets/files/Aldo_Reyes_CV.pdf)

@@ -14,7 +14,7 @@
 
 ## Skills 
 
-##### [ETL](https://github.com/AldoReyes84/ETL) || [Data Analysis](https://aldoreyes84.github.io/Data_Analisys_For_AdventureWorksDW2022/) || Data Modeling || Data Visualization || Insightes || OKR/KPI   
+##### [ETL](https://aldoreyes84.github.io/ETL/) || [Data Analysis](https://aldoreyes84.github.io/Data_Analisys_For_AdventureWorksDW2022/) || Data Modeling || Data Visualization || Insightes || OKR/KPI   
 
 ## Tools
 

@@ -31,6 +31,17 @@
 
 
 
+
+<img width="1722" height="848" alt="image" src="https://github.com/user-attachments/assets/5958bf3c-5568-4a29-90cf-6aff84efde5e" />
+
+<img width="968" height="520" alt="image" src="https://github.com/user-attachments/assets/f9b9b62b-7a75-474e-8541-580f0eba5ffb" />
+
+
+
+
+
+
+
 > **Technical Notes**  
 > - Metrics are calculated using data from the `Product` and `Sales` tables.  
 > - Ensure consistency between `UnitPrice` and `UnitCost` across tables.  

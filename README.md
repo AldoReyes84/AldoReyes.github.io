@@ -5,11 +5,11 @@
 
 ### Skills 
 
-##### [ETL](https://aldoreyes84.github.io/ETL/) || [Data Analysis](https://aldoreyes84.github.io/Data_Analisys_For_AdventureWorksDW2022/) || Data Modeling || Data Visualization || Insightes || OKR/KPI   
+##### [ETL](https://aldoreyes84.github.io/ETL/) || [Data Analysis](https://aldoreyes84.github.io/Data_Analisys_For_AdventureWorksDW2022/) || Data Modeling || [Data Visualization](https://aldoreyes84.github.io/Contoso-Sales-Power-BI-Dashboard/) || Insightes || OKR/KPI   
 
 ### Tools
 
-##### Power BI || Excel || Python 
+##### [Power BI](https://aldoreyes84.github.io/Contoso-Sales-Power-BI-Dashboard/) || Excel || Python 
 
 ### [Work Experience](https://aldoreyes84.github.io/working_experience/)
 
@@ -17,6 +17,8 @@
 
 
 ### Projects
+
+##### [Contoso Sales Power BI Dashboard](https://aldoreyes84.github.io/Contoso-Sales-Power-BI-Dashboard/)
 
 ##### [AdventureWorks2022 Data Analysis](https://aldoreyes84.github.io/Data_Analisys_For_AdventureWorksDW2022/)
 

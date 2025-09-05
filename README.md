@@ -28,7 +28,7 @@
 
 ### Documents
 
-#### [Curriculum (PDF)](/assets/files/Aldo_Reyes_CV.pdf)
+#### [Curriculum (PDF)](assets/files/Aldo Reyes CV.pdf)
 
 ### Contact
   

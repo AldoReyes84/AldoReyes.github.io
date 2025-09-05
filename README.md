@@ -10,7 +10,9 @@
   
 ### Tools
 
-##### <span title="Poject-1">[Power BI]()</span> || <span title="Poject-2">[Excel]()</span> || <span title="Poject-2, 3">[Python]()</span>
+##### <span title="Poject-1">[Power BI]()</span> || <span title="Poject-2, 3">[SQL]()</span> || <span title="Poject-2">[Excel]()</span> || <span title="Poject-2, 3">[Python]()</span> || <span title="Poject-2">[SSIS]()</span>
+
+
 ### [Work Experience](https://aldoreyes84.github.io/working_experience/)
 
 ### [About me](https://aldoreyes84.github.io/About-me/)

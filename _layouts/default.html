@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>{{ site.title }}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="{{ "/assets/css/style.css" | relative_url }}">
+    <!-- Add any other CSS or meta tags you need -->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+      {% if site.logo %}
+        <img src="{{ site.logo }}" alt="logo" class="site-logo">
+      {% endif %}
+      <h1>{{ site.title }}</h1>
+       
+        <footer>
+        <p>This project is maintained by 
+        <a href="https://github.com/AldoReyes84">
+          AldoReyes84
+        </a>
+        </p>
+        <p>
+            <small>Hosted on GitHub Pages — Theme by
+           <a href="https://github.com/orderedlist">
+          orderedlist
+            </a>
+          </small>
+        </p>
+      </footer>
+        </header>
+      <seccion>
+      {{ content }}
+        </seccion>
+    </div>
+  </body>
+</html>

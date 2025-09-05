@@ -5,8 +5,9 @@
 
 ### Skills 
 
-##### [ETL](https://aldoreyes84.github.io/ETL/) || [Data Analysis](https://aldoreyes84.github.io/Data_Analisys_For_AdventureWorksDW2022/) || Data Modeling || [Data Visualization](https://aldoreyes84.github.io/Contoso-Sales-Power-BI-Dashboard/) || Insightes || OKR/KPI   
+##### <span title="Poject-3">[ETL]()</span> || <span title="Poject-2">[Data Analysis]()</span> || Data Modeling || <span title="Poject-1">[Dashboard Design]()</span> || <span title="Poject-1">[Data Visaulization]()</span> || <span title="Poject-1, 2">[Insights]()</span> || OKR/KPI 
 
+  
 ### Tools
 
 ##### [Power BI](https://aldoreyes84.github.io/Contoso-Sales-Power-BI-Dashboard/) || Excel || Python 
@@ -18,11 +19,11 @@
 
 ### Projects
 
-##### [Contoso Sales Power BI Dashboard](https://aldoreyes84.github.io/Contoso-Sales-Power-BI-Dashboard/)
+##### 1. [Contoso Sales Power BI Dashboard](https://aldoreyes84.github.io/Contoso-Sales-Power-BI-Dashboard/)
 
-##### [AdventureWorks2022 Data Analysis](https://aldoreyes84.github.io/Data_Analisys_For_AdventureWorksDW2022/)
+##### 2. [AdventureWorks2022 Data Analysis](https://aldoreyes84.github.io/Data_Analisys_For_AdventureWorksDW2022/)
 
-##### [ETL SSIS Integration Package with Python Faker Files](https://aldoreyes84.github.io/ETL/)
+##### 3. [ETL SSIS Integration Package with Python Faker Files](https://aldoreyes84.github.io/ETL/)
 
 ### Documents
 

@@ -10,8 +10,7 @@
   
 ### Tools
 
-##### [Power BI](https://aldoreyes84.github.io/Contoso-Sales-Power-BI-Dashboard/) || Excel || Python 
-
+##### <span title="Poject-1">[Power BI]()</span> || <span title="Poject-2">[Excel]()</span> || <span title="Poject-2, 3">[Python]()</span>
 ### [Work Experience](https://aldoreyes84.github.io/working_experience/)
 
 ### [About me](https://aldoreyes84.github.io/About-me/)
@@ -19,11 +18,11 @@
 
 ### Projects
 
-##### 1. [Contoso Sales Power BI Dashboard](https://aldoreyes84.github.io/Contoso-Sales-Power-BI-Dashboard/)
+##### 1.- [Contoso Sales Power BI Dashboard](https://aldoreyes84.github.io/Contoso-Sales-Power-BI-Dashboard/)
 
-##### 2. [AdventureWorks2022 Data Analysis](https://aldoreyes84.github.io/Data_Analisys_For_AdventureWorksDW2022/)
+##### 2.- [AdventureWorks2022 Data Analysis](https://aldoreyes84.github.io/Data_Analisys_For_AdventureWorksDW2022/)
 
-##### 3. [ETL SSIS Integration Package with Python Faker Files](https://aldoreyes84.github.io/ETL/)
+##### 3.- [ETL SSIS Integration Package with Python Faker Files](https://aldoreyes84.github.io/ETL/)
 
 ### Documents
 

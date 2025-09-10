@@ -16,6 +16,7 @@ body {
 header {
 	width: 300px;
 	position: fixed;
+	float: right;
 }
 
 section {

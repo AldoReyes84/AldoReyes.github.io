@@ -48,7 +48,6 @@ header {
   background-color: #2b2b2b;
   color: white;
   padding: 1rem;
-  border: 2px dashed red;
   display: flex !important;
 }
 
@@ -58,7 +57,6 @@ header {
   top: 0;
   z-index: 1000;
   background-color: #ffffff;
-  border-bottom: 1px solid #ddd;
   padding: 0px 16px 0 16px;
 }
 
@@ -72,7 +70,6 @@ header {
 
 .site-header-divider {
   height: 1.5rem;
-  border-inline-start: 2px solid black;
   margin-inline-start: .5rem;
   display: inline-block;
 }
@@ -83,7 +80,6 @@ header {
 .site-header-nav {
   background-color: #ffffff;
   padding: 1rem 2rem;
-  border-bottom: 1px solid #ddd;
 }
 
 .nav-list {
@@ -134,7 +130,6 @@ header {
   width: 97%;
   background: #fff;
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-  border: 1px solid #ccc;
   z-index: 1000;
   padding: 1rem;
 }
@@ -256,7 +251,6 @@ section {
   background-color: white;
   color: white;
   padding: 24px;
-  border: 2px dashed orange;
 }
 
 main {
@@ -268,12 +262,10 @@ main {
   background-color: white;
   box-shadow: 0 0 10px rgba(0,0,0,0.05);
   margin: 0;
-  border: 2px dashed green;
 }
 
 .main-content {
   position: relative;
-  border: 1px dashed pink;
   left: 0;
   background: #fff;
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
@@ -289,7 +281,6 @@ main {
 }
 
 .panel-content-main[hidden] {
-  border: 2px dashed purple;
   display: block; /* para que la transición funcione */
   opacity: 0;
   pointer-events: none;
@@ -298,7 +289,6 @@ main {
 }
 
 .panel-content-main:not([hidden]) {
-  border: 2px dashed green;
   color: #666;
   position: relative;
   z-index: 100;
@@ -321,11 +311,9 @@ aside {
   height: 100%;
   background-color: #ffffff;
   padding: 1rem;
-  border-right: 1px solid #ddd;
   position: sticky;
   top: 0;
   height: fit-content;
-  border: 2px dashed blue;
 }
 
 
@@ -335,7 +323,6 @@ footer {
   text-align: center;
   padding: 1rem;
   font-size: 0.9rem;
-  border: 2px dashed purple;
 }
 
 .layout-body-footer {

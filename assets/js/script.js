@@ -112,11 +112,11 @@ document.addEventListener("DOMContentLoaded", function () {
         headerPanelContent.innerHTML = "<p>Content not available for this section.</p>";
         headerPanelContainer.hidden = false;
       }
-    });
-  });
+    
+  
 
-  // ❌ Close header panel when clicking outside
-  document.addEventListener('click', (event) => {
+      // ❌ Close header panel when clicking outside
+    document.addEventListener('click', (event) => {
     const isClickInsidePanel = headerPanelContainer.contains(event.target);
     const isClickOnNavButton = [...navButtons].some(btn => btn.contains(event.target));
 
@@ -125,5 +125,5 @@ document.addEventListener("DOMContentLoaded", function () {
       headerPanelContent.innerHTML = '';
       navButtons.forEach(btn => btn.setAttribute("aria-expanded", "false"));
     }
-  });
+    });
 });

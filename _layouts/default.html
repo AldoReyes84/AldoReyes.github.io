@@ -8,6 +8,222 @@
     <!-- Add any other CSS or meta tags you need -->
   </head>
   <body>
+    <!-- Header with Navigation Menu -->
+    <header class="sticky-header">
+        <div class="holder">
+            <div class="logo">
+                <img src="assets/homeflat.png" alt="Home">
+            </div>
+            <div class="site-header-divider"></div>
+            
+            <nav class="site-header-nav">
+                <ul class="nav-list">
+    
+                    <li class="nav-item dropdown">
+                        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="panel-skills" data-target="panel-skills">
+                            Skills
+                            <svg class="arrow-indicator" width="12" height="12" viewBox="0 0 24 24">
+                                <path d="M7 10l5 5 5-5z" fill="currentColor"/>
+                            </svg>
+                        </button>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="panel-tools" data-target="panel-tools">
+                            Tools
+                            <svg class="arrow-indicator" width="12" height="12" viewBox="0 0 24 24">
+                                <path d="M7 10l5 5 5-5z" fill="currentColor"/>
+                            </svg>
+                        </button>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="panel-work-experience" data-target="panel-work-experience">
+                            Work Experience
+                            <svg class="arrow-indicator" width="12" height="12" viewBox="0 0 24 24">
+                                <path d="M7 10l5 5 5-5z" fill="currentColor"/>
+                            </svg>
+                        </button>
+                    </li>
+
+                    <li class="nav-toggle">
+                        <a data-md="markdownfiles/about-me.md">About Me</a>
+                    </li>
+
+
+                    <li class="nav-item dropdown">
+                        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="panel-projects" data-target="panel-projects">
+                            Projects
+                            <svg class="arrow-indicator" width="12" height="12" viewBox="0 0 24 24">
+                                <path d="M7 10l5 5 5-5z" fill="currentColor"/>
+                            </svg>
+                        </button>
+                            <!--<ul class="dropdown-menu" id="menu-projects" hidden>
+                                <li><a href="#">Retail Dashboard</a></li>
+                                <li><a href="#">SSIS Templates</a></li>
+                                <li><a href="#">Data Analysis</a></li>
+                                <li><a href="#">Portfolio Website</a></li>
+                            </ul> -->
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="panel-documents" data-target="panel-documents">
+                            Documents
+                            <svg class="arrow-indicator" width="12" height="12" viewBox="0 0 24 24">
+                                <path d="M7 10l5 5 5-5z" fill="currentColor"/>
+                            </svg>
+                        </button>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="panel-contact" data-target="panel-contact">
+                            Contact
+                            <svg class="arrow-indicator" width="12" height="12" viewBox="0 0 24 24">
+                                <path d="M7 10l5 5 5-5z" fill="currentColor"/>
+                            </svg>
+                        </button>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+  </header>
+
+  <!-- Dropdown Panel with variable content -->
+
+    <div class="header-panels-container" id="header-panels-container" hidden>
+        
+        <div class="header-panel-content" id="header-panel-content">
+
+            <div class="panel-templates" hidden>
+                <template id="skills"> 
+                    <div class = "panel-header-grid">
+                        <a class="button">Technical Skills</a>
+                        <a>"You can find these technical skills showcased in this portfolio project"</a>
+                    </div>
+                    <div class="interactive-table">
+                        <table>
+                            <tr>
+                                <th></th>
+                                <th>ETL</th>
+                                <th>Data Analysis</th>
+                                <th>Data Modeling</th>
+                                <th>Dashboard Design</th>
+                                <th>Data Visualization</th>
+                                <th>Insights</th>
+                                <th>OKR/KPIs</th>
+                                <th>Web Development</th>
+                            </tr>
+                            <tr>
+                                <td>Main Tool</td>
+                                <td>SSIS</td>   
+                                <td>Excel</td>
+                                <td>Power Query</td>
+                                <td>Power BI</td>
+                                <td>Figma</td>
+                                <td>""</td>
+                                <td>Business Analysis</td>
+                                <td>GitHub</td>
+                            </tr>
+                            <tr>
+                                <td>Showcase in</td>
+                                <td data-md="markdownfiles/project-ssis-package.md">ETL Package Project</td>   
+                                <td data-md="markdownfiles/project-data-analysis.md">AdWks Data Analysis</td>
+                                <td></td>
+                                <td data-md="markdownfiles/project-contoso-dashboard.md">Contoso Dashboard</td>
+                                <td data-md="markdownfiles/project-contoso-dashboard.md">Contoso Dashboard</td>
+                                <td data-md="markdownfiles/project-data-analysis.md">AdWks Data Analysis</td>
+                                <td data-md="markdownfiles/working-experience.md"> Working Experience at Intel</td>
+                                <td data-md="markdownfiles/mainpage.md">This portfolio</td>
+                            </tr>
+                        </table>
+                    </div>
+                </template>
+
+                <template id="tools"> 
+                    <div class = "panel-header-grid">
+                        <a class="button">Tools</a>
+                        <a>"These are the tools I use to create data solutions"</a>
+                    </div>
+                    <div class="interactive-table">
+                        <table>
+                            <tr>
+                                <th></th>
+                                <th>Power BI</th>
+                                <th>SQL</th>
+                                <th>Excel</th>
+                                <th>Python</th>
+                                <th>SSIS</th>
+                                <th>Visual Studio Code</th>
+                                <th>GitHub</th>
+                                <th>Figma</th>
+                            </tr>
+                            <tr>
+                                <td>Showcase in</td>
+                                <td>Contoso Dashboard</td>   
+                                <td>AdWks Data Analysis</td>
+                                <td>AdWks Data Analysis</td>
+                                <td>AdWks Data Analysis</td>
+                                <td>ETL Package Project</td>
+                                <td>This Portfolio</td>
+                                <td>This Portfolio</td>
+                                <td>Contoso Dashboard</td>
+                        </table>
+                    </div>
+                </template>
+
+                <template id="work-experience"> 
+                    <div class = "panel-header-grid">
+                        <a class="button">Business Intelligence Analyst</a>
+                        <a>"6 years of experience in International Companies"</a>
+                        <button class="dropdown-toggle" data-md="markdownfiles/work-experience.md">
+                            Review Working Experience                        
+                        </button>
+                    </div>
+                    <div class="interactive-table">  
+                        <table>
+                            <tr>
+                                <th>"Intel Project Analyst "</th>
+                            </tr>
+                            <tr>
+                                <th>"Conagra Brands Sales Analyst "</th>
+                            </tr>
+                        </table>
+                    </div>
+                </template>
+
+                <template id="projects"> 
+                    <div class = "panel-header-grid">
+                        <a class="button">Projects</a>
+                        <a>"Explore some of my key projects"</a>
+                    </div>
+                    <div class="interactive-table">  
+                        <table>
+                            <tr>
+                                <th>"Contoso Dashboard "</th>
+                                <th>"AdWks Data Analysis "</th>
+                                <th>"ETL Package Project "</th>
+                            </tr>
+                        </table>
+                    </div>
+                </template>
+
+                <template id="documents"> 
+                    <div class = "panel-header-grid">
+                        <a class="button">Documents</a>
+                        <a>"Find relevant documents and resources"</a>
+                    </div>
+                </template>
+
+                <template id="contact"> 
+                    <div class = "panel-header-grid">
+                        <a class="button">Contact</a>
+                        <a>"Get in touch with me"</a>
+                    </div>
+                </template>
+            
+            </div>
+        </div>
+    </div>
     <div class="wrapper">
      <header>
       <h1> 

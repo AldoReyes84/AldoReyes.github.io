@@ -53,11 +53,11 @@ header {
 
 
 .sticky-header {
-  position: sticky;
+  position: relative;
   top: 0;
   z-index: 1000;
-  background-color: #ffffff;
   padding: 0px 16px 0 16px;
+  border-bottom: #666 1px solid;
 }
 
 .holder {
@@ -268,7 +268,7 @@ main {
   position: relative;
   left: 0;
   background: #fff;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  /*box-shadow: 0 4px 12px rgba(0,0,0,0.1);*/
   padding: 1rem;
   min-width: 300px;
   z-index: 100;
@@ -302,8 +302,7 @@ main {
   background: lightblue;
   padding: 1rem;
   border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
-  color: #333;
+  /*box-shadow: 0 0 10px rgba(0,0,0,0.1);*/
 }
 
 aside {

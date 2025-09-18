@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const templates = document.querySelector('.panel-templates');
 
   // 🧾 Validate required elements
-  if ( !panelContent || !headerPanelContainer || !headerPanelContent || !templates) {
+  if ( !headerPanelContainer || !headerPanelContent || !templates) {
     console.error("❌ Required elements not found.");
     return;
   }

@@ -3,7 +3,6 @@ body {
   margin: 0;
   padding: 0;
   background-color: #f3f3f3;
-  color: #333;
 }
 
 body {
@@ -299,7 +298,6 @@ main {
 
 #markdown-container {
   flex: 1;
-  background: lightblue;
   padding: 1rem;
   border-radius: 8px;
   /*box-shadow: 0 0 10px rgba(0,0,0,0.1);*/

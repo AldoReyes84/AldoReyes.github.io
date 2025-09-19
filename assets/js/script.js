@@ -13,10 +13,6 @@ document.addEventListener("DOMContentLoaded", function () {
   }
   
  // Handle nav button clicks
-  navButtons.forEach(button => {
-    button.addEventListener('click', function (event) {
-      event.stopPropagation();
-
     document.querySelectorAll('.header-toggle').forEach(button => {
     button.addEventListener('click', function (event) {
     event.stopPropagation();

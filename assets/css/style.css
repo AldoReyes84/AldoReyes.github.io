@@ -224,6 +224,34 @@ table tr {
   transform: rotate(180deg);
 }
 
+.arrow-icon {
+  transition: transform 0.2s ease;
+  margin-right: 0.5em;
+}
+
+.sub-list {
+  margin-left: 1.5em;
+}
+
+.sub-list.hidden {
+  display: none;
+}
+
+.toggle-arrow {
+  display: inline-block;
+  transition: transform 0.2s ease;
+  margin-right: 0.5em;
+}
+
+.toggle-arrow[aria-expanded="true"] {
+  transform: rotate(90deg); /* Flecha hacia abajo */
+}
+
+.sub-list.hidden {
+  display: none;
+}
+
+
 td[data-md] {
   cursor: pointer;
   user-select: none;

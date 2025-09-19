@@ -247,8 +247,36 @@ td[data-md]:hover {
 section {
   flex: 0 0 20%;
   background-color: white;
-  color: white;
+  color: Gray
   padding: 24px;
+}
+
+.nav-tree {
+  list-style: none;
+  padding-left: 0;
+  border: 1px dashed pink;
+}
+
+.nav-item {
+  cursor: pointer;
+  margin-bottom: 0.5em;
+  color: #333 ;
+}
+
+.nav-toggle {
+  background: none;
+  border: none;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  font: inherit;
+  padding: 0;
+}
+
+
+.arrow-icon {
+  transition: transform 0.2s ease;
+  margin-right: 0.5em;
 }
 
 main {

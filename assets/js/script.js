@@ -1,7 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
 
-  const navButtons = document.querySelectorAll('.tree-toggle');
-  const navButtons = document.querySelectorAll('.header-toggle');
+  const navButtons = document.querySelectorAll('.nav-toggle');
   const headerPanelContainer = document.getElementById("header-panels-container");
   const headerPanelContent = document.getElementById("header-panel-content");
   const templates = document.querySelector('.panel-templates');

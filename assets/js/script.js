@@ -1,6 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
 
-  const navButtons = document.querySelectorAll('.nav-toggle');
   const headerPanelContainer = document.getElementById("header-panels-container");
   const headerPanelContent = document.getElementById("header-panel-content");
   const templates = document.querySelector('.panel-templates');
@@ -69,12 +68,12 @@ document.addEventListener("DOMContentLoaded", function () {
     // ❌ Close header panel when clicking outside
     document.addEventListener('click', (event) => {
     const isClickInsidePanel = headerPanelContainer.contains(event.target);
-    const isClickOnNavButton = [...navButtons].some(btn => btn.contains(event.target));
+    const isClickOnNavButton = [...document.querySelectorAll('.header-toggle')].some(btn => btn.contains(event.target));
 
     if (!isClickInsidePanel && !isClickOnNavButton) {
       headerPanelContainer.hidden = true;
       headerPanelContent.innerHTML = '';
-      navButtons.forEach(btn => {
+      document.querySelectorAll('.header-toggle').forEach(btn => {
         btn.classList.remove("active");
         btn.setAttribute("aria-expanded", "false");
       });

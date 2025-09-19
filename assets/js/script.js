@@ -59,9 +59,9 @@ document.addEventListener("DOMContentLoaded", function () {
         headerPanelContainer.hidden = false;
       }
     });
-    });
+  });
 
-    // ❌ Close header panel when clicking outside
+  // ❌ Close header panel when clicking outside
     document.addEventListener('click', (event) => {
     const isClickInsidePanel = headerPanelContainer.contains(event.target);
     const isClickOnNavButton = [...document.querySelectorAll('.header-toggle')].some(btn => btn.contains(event.target));
@@ -75,7 +75,7 @@ document.addEventListener("DOMContentLoaded", function () {
       });
       activeButton = null;
     }
-    });
+  });
 
     // Rowdown arrow navigation when clic
     document.querySelectorAll('.toggle-arrow').forEach(arrow => {
@@ -88,7 +88,7 @@ document.addEventListener("DOMContentLoaded", function () {
         subList.classList.toggle('hidden');
       }
     });
-    });
+  });
 
       // Rowdown section navigation when clic
     document.querySelectorAll('.tree-toggle').forEach(toggle => {
@@ -101,8 +101,6 @@ document.addEventListener("DOMContentLoaded", function () {
         subList.classList.toggle('hidden');
       }
     });
-    });
-
-   });
   });
-})
+
+});

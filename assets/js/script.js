@@ -126,4 +126,27 @@ document.addEventListener("DOMContentLoaded", function () {
       navButtons.forEach(btn => btn.setAttribute("aria-expanded", "false"));
     }
     });
+
+  // Rowdown section navigation when clic
+     document.querySelectorAll('.toggle-arrow').forEach(arrow => {
+  arrow.addEventListener('click', () => {
+    const isExpanded = arrow.getAttribute('aria-expanded') === 'true';
+    const subList = arrow.parentElement.querySelector('.sub-list');
+
+    arrow.setAttribute('aria-expanded', String(!isExpanded));
+    subList.classList.toggle('hidden');
+  });
+});
+    document.querySelectorAll('.nav-toggle').forEach(toggle => {
+  toggle.addEventListener('click', () => {
+    const isExpanded = toggle.getAttribute('aria-expanded') === 'true';
+    const subList = toggle.parentElement.querySelector('.sub-list');
+
+    toggle.setAttribute('aria-expanded', String(!isExpanded));
+    subList.classList.toggle('hidden');
+  });
+});
+
+
+  
 });

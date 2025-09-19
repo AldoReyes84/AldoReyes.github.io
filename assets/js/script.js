@@ -4,6 +4,15 @@ document.addEventListener("DOMContentLoaded", function () {
   const headerPanelContainer = document.getElementById("header-panels-container");
   const headerPanelContent = document.getElementById("header-panel-content");
   const templates = document.querySelector('.panel-templates');
+  const rawTarget = button.getAttribute('data-target');
+
+if (!rawTarget) {
+  console.warn("⚠️ Este botón no tiene data-target:", button);
+  return;
+}
+
+const templateId = rawTarget.replace("panel-", "");
+
   let activeButton = null;
 
   // 🧾 Validate required elements

@@ -41,7 +41,7 @@ document.addEventListener("DOMContentLoaded", function () {
         headerPanelContainer.hidden = false;
       }
     });
-  });
+  
   
 
   // ❌ Close header panel when clicking outside
@@ -123,8 +123,4 @@ document.addEventListener("DOMContentLoaded", function () {
     toggle.setAttribute('aria-expanded', String(!isExpanded));
     subList.classList.toggle('hidden');
   });
-});
-
-
-  
 });

@@ -4,14 +4,6 @@ document.addEventListener("DOMContentLoaded", function () {
   const headerPanelContainer = document.getElementById("header-panels-container");
   const headerPanelContent = document.getElementById("header-panel-content");
   const templates = document.querySelector('.panel-templates');
-  const rawTarget = button.getAttribute('data-target');
-
-if (!rawTarget) {
-  console.warn("⚠️ Este botón no tiene data-target:", button);
-  return;
-}
-
-const templateId = rawTarget.replace("panel-", "");
 
   let activeButton = null;
 
@@ -21,11 +13,16 @@ const templateId = rawTarget.replace("panel-", "");
     return;
   }
 
-  // Handle nav button clicks
+// Handle nav button clicks
   navButtons.forEach(button => {
     button.addEventListener('click', function (event) {
       event.stopPropagation();
+      
       const rawTarget = button.getAttribute('data-target');
+       if (!rawTarget) {
+        console.warn("⚠️ Este botón no tiene data-target:", button);
+        return;
+      }
       const templateId = rawTarget.replace("panel-", "");
       const template = templates.querySelector(`#${templateId}`);
       const isActive = button.classList.contains("active");

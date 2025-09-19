@@ -90,7 +90,8 @@ header {
 }
 
 .nav-item button,
-.nav-toggle {
+.head-toggle,
+.tree-toggle {
   text-decoration: none;
   color: #333;
   font-weight: 500;
@@ -100,13 +101,15 @@ header {
 }
 
 .nav-item button,
-.nav-toggle {
+.head-toggle,
+.tree-toggle {
   position: relative;
   padding-bottom: 4px;
 }
 
 .nav-item button::after,
-.nav-toggle::after {
+.head-toggle,
+.tree-toggle::after {
   content: "";
   position: absolute; /* ← important for placement */
   left: 0;
@@ -118,7 +121,8 @@ header {
 }
 
 .nav-item button:hover::after,
-.nav-toggle:hover::after {
+.head-toggle,
+.tree-toggle:hover::after {
   width: 100%;
 }
 
@@ -215,7 +219,8 @@ table tr {
   transition: transform 0.2s ease;
 }
 
-.nav-toggle[aria-expanded="true"] .arrow-indicator {
+..head-toggle,
+.tree-toggle[aria-expanded="true"] .arrow-indicator {
   transform: rotate(180deg);
 }
 
@@ -263,7 +268,8 @@ section {
   color: #333 ;
 }
 
-.nav-toggle {
+.head-toggle,
+.tree-toggle {
   background: none;
   border: none;
   display: flex;

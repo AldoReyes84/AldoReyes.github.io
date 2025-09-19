@@ -1,6 +1,7 @@
 document.addEventListener("DOMContentLoaded", function () {
 
-  const navButtons = document.querySelectorAll('.nav-toggle');
+  const navButtons = document.querySelectorAll('.tree-toggle');
+  const navButtons = document.querySelectorAll('.header-toggle');
   const headerPanelContainer = document.getElementById("header-panels-container");
   const headerPanelContent = document.getElementById("header-panel-content");
   const templates = document.querySelector('.panel-templates');
@@ -12,16 +13,21 @@ document.addEventListener("DOMContentLoaded", function () {
     console.error("❌ Required elements not found.");
     return;
   }
-
+  
 // Handle nav button clicks
   navButtons.forEach(button => {
     button.addEventListener('click', function (event) {
       event.stopPropagation();
+
+    document.querySelectorAll('.header-toggle').forEach(button => {
+    button.addEventListener('click', function (event) {
+    event.stopPropagation();
       
       const rawTarget = button.getAttribute('data-target');
        if (!rawTarget) {
         console.warn("⚠️ Este botón no tiene data-target:", button);
         return;
+         
       }
       const templateId = rawTarget.replace("panel-", "");
       const template = templates.querySelector(`#${templateId}`);
@@ -45,7 +51,7 @@ document.addEventListener("DOMContentLoaded", function () {
         headerPanelContainer.hidden = false;
 
         // Reset all buttons
-        navButtons.forEach(btn => {
+          document.querySelectorAll('.header-toggle').forEach(btn => {
           btn.classList.remove("active");
           btn.setAttribute("aria-expanded", "false");
         });
@@ -77,7 +83,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 
-  // Rowdown section navigation when clic
+  // Rowdown arrow navigation when clic
   document.querySelectorAll('.toggle-arrow').forEach(arrow => {
     arrow.addEventListener('click', () => {
       const isExpanded = arrow.getAttribute('aria-expanded') === 'true';
@@ -90,7 +96,8 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 
-  document.querySelectorAll('.nav-toggle').forEach(toggle => {
+      // Rowdown section navigation when clic
+  document.querySelectorAll('.tree-toggle').forEach(toggle => {
     toggle.addEventListener('click', () => {
       const isExpanded = toggle.getAttribute('aria-expanded') === 'true';
       const subList = toggle.parentElement.querySelector('.sub-list');

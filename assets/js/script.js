@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", function () {
     return;
   }
   
-// Handle nav button clicks
+ // Handle nav button clicks
   navButtons.forEach(button => {
     button.addEventListener('click', function (event) {
       event.stopPropagation();
@@ -64,10 +64,10 @@ document.addEventListener("DOMContentLoaded", function () {
         headerPanelContainer.hidden = false;
       }
     });
-  });
+    });
 
-  // ❌ Close header panel when clicking outside
-  document.addEventListener('click', (event) => {
+    // ❌ Close header panel when clicking outside
+    document.addEventListener('click', (event) => {
     const isClickInsidePanel = headerPanelContainer.contains(event.target);
     const isClickOnNavButton = [...navButtons].some(btn => btn.contains(event.target));
 
@@ -80,10 +80,10 @@ document.addEventListener("DOMContentLoaded", function () {
       });
       activeButton = null;
     }
-  });
+    });
 
-  // Rowdown arrow navigation when clic
-  document.querySelectorAll('.toggle-arrow').forEach(arrow => {
+    // Rowdown arrow navigation when clic
+    document.querySelectorAll('.toggle-arrow').forEach(arrow => {
     arrow.addEventListener('click', () => {
       const isExpanded = arrow.getAttribute('aria-expanded') === 'true';
       const subList = arrow.parentElement.querySelector('.sub-list');
@@ -93,10 +93,10 @@ document.addEventListener("DOMContentLoaded", function () {
         subList.classList.toggle('hidden');
       }
     });
-  });
+    });
 
       // Rowdown section navigation when clic
-  document.querySelectorAll('.tree-toggle').forEach(toggle => {
+    document.querySelectorAll('.tree-toggle').forEach(toggle => {
     toggle.addEventListener('click', () => {
       const isExpanded = toggle.getAttribute('aria-expanded') === 'true';
       const subList = toggle.parentElement.querySelector('.sub-list');
@@ -106,6 +106,8 @@ document.addEventListener("DOMContentLoaded", function () {
         subList.classList.toggle('hidden');
       }
     });
-  });
+    });
 
-});
+   });
+  });
+})

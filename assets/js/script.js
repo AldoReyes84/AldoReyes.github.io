@@ -10,29 +10,7 @@ document.addEventListener("DOMContentLoaded", function () {
     console.error("❌ Required elements not found.");
     return;
   }
-
-   // 🧭 Navigation logic: open header panel or load Markdown
-  let activeButton = null;
-
-  navButtons.forEach(button => {
-    button.addEventListener('click', (e) => {
-      e.preventDefault();
-
-      const mdFile = button.querySelector('[data-md]')?.dataset.md;
-      const rawTarget = button.dataset.target;
-
-      // 🧩 If data-target is present, show header panel
-      if (!rawTarget) {
-        console.warn("⚠️ This button has no data-target or data-md:", button);
-        return;
-      }
-
-      const templateId = rawTarget.replace("panel-", "");
-      const template = templates.querySelector(`#${templateId}`);
-      const isActive = button.classList.contains("active");
-      const isSameButton = activeButton === button;
-
-      
+    
       // 🔄 Collapse panel if same button is clicked again
       if (isActive && isSameButton) {
         headerPanelContainer.hidden = true;

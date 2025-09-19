@@ -219,7 +219,7 @@ table tr {
   transition: transform 0.2s ease;
 }
 
-..head-toggle,
+.head-toggle,
 .tree-toggle[aria-expanded="true"] .arrow-indicator {
   transform: rotate(180deg);
 }
@@ -280,7 +280,7 @@ td[data-md]:hover {
 section {
   flex: 0 0 20%;
   background-color: white;
-  color: Gray
+  color: Gray;
   padding: 24px;
 }
 

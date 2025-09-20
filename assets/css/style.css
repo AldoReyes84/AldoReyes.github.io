@@ -258,6 +258,7 @@ table tr {
 
 td {
   height: 40px;
+  vertical-align: bottom;
 }
 
 td a {

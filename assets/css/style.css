@@ -189,10 +189,12 @@ a[aria-label="LinkedIn"] svg {
 }
 
 .icon {
-  width: 1em;
-  height: 1em;
+  width: 24px;
+  height: 24px;
   vertical-align: middle;
+  fill: #0078D4;
 }
+
 
 
 .interactive-table {

@@ -93,6 +93,7 @@ header {
 h5,
 .head-toggle,
 .tree-toggle {
+  width: 100%;
   text-decoration: none;
   color: #333;
   font-weight: 500;

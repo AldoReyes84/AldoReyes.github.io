@@ -257,7 +257,7 @@ table tr {
 }
 
 
-td[data-md] {
+td a {
   cursor: pointer;
   user-select: none;
   padding: 8px;
@@ -266,7 +266,7 @@ td[data-md] {
   padding-bottom: 4px;
 }
 
-td[data-md]:hover {
+td a:hover {
   background-color: #f0f4ff;
   font-weight: bold;
 }

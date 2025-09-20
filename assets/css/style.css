@@ -170,7 +170,6 @@ h5:hover::after,
 }
 
 
-
 table tr td:first-child {
   font-weight: bold;
   background-color: #f9f9f9;
@@ -181,6 +180,18 @@ table tr {
   vertical-align: middle;
   background-color: #f8f8f8;
   font-size: 14px;
+}
+
+a[aria-label="LinkedIn"] svg {
+  width: 24px;
+  height: 24px;
+  fill: #0077B5;
+}
+
+.icon {
+  width: 1em;
+  height: 1em;
+  vertical-align: middle;
 }
 
 

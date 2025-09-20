@@ -259,11 +259,10 @@ table tr {
 
 td a {
   cursor: pointer;
-  user-select: none;
-  padding: 8px;
   transition: background-color 0.2s ease;
   border-bottom: 2px solid #0078d4;
   padding-bottom: 4px;
+  color: black;
 }
 
 td a:hover {

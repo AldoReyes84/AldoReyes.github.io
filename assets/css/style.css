@@ -256,6 +256,9 @@ table tr {
   display: none;
 }
 
+td {
+  height: 40px;
+}
 
 td a {
   display : block;

@@ -404,9 +404,15 @@ footer {
 	margin: 20px
 }
 
-.header-toggle h5,
+.header-toggle h5{
+  margin: 0.5em;
+  font-size: 0.875rem;
+  cursor: pointer;
+  color: #333 ;
+  font-weight: 500;
+}
 .nav-tree h5 {
-  margin: 0;
+  margin-bottom: 0.5em;
   font-size: 0.875rem;
 }
 

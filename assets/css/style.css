@@ -90,7 +90,7 @@ header {
 }
 
 .nav-item button,
-.nav-item tag,
+.nav-item a,
 .head-toggle,
 .tree-toggle {
   text-decoration: none;
@@ -102,7 +102,7 @@ header {
 }
 
 .nav-item button,
-.nav-item tag,
+.nav-item a,
 .head-toggle,
 .tree-toggle {
   position: relative;
@@ -110,8 +110,8 @@ header {
 }
 
 .nav-item button::after,
-.nav-item tag,
-.head-toggle,
+.nav-item a::after,
+.head-toggle::after,
 .tree-toggle::after {
   content: "";
   position: absolute; /* ← important for placement */
@@ -124,8 +124,8 @@ header {
 }
 
 .nav-item button:hover::after,
-.nav-item tag,
-.head-toggle,
+.nav-item a:hover::after,
+.head-toggle::after,
 .tree-toggle:hover::after {
   width: 100%;
 }

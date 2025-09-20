@@ -255,6 +255,11 @@ a[aria-label="LinkedIn"] svg {
   display: none;
 }
 
+.sub-list li {
+  margin: 0.3em 0;
+}
+
+
 .toggle-arrow {
   display: inline-block;
   transition: transform 0.2s ease;

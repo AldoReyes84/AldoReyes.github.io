@@ -102,7 +102,7 @@ header {
 }
 
 .nav-item button,
-.nav-item a,
+.nav-item h4,
 .head-toggle,
 .tree-toggle {
   position: relative;
@@ -110,7 +110,7 @@ header {
 }
 
 .nav-item button::after,
-.nav-item a::after,
+.nav-item h4::after,
 .head-toggle::after,
 .tree-toggle::after {
   content: "";
@@ -124,7 +124,7 @@ header {
 }
 
 .nav-item button:hover::after,
-.nav-item a:hover::after,
+.nav-item h4:hover::after,
 .head-toggle::after,
 .tree-toggle:hover::after {
   width: 100%;

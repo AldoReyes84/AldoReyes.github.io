@@ -63,7 +63,7 @@ header {
   display: flex;
   flex-direction: row;
   align-items: center;
-    justify-content: space-between;
+  width: 100%;
 }
 
 .site-header-divider {
@@ -144,6 +144,7 @@ h5:hover::after,
 .header-panel-content {
   display: flex;
   flex-direction: row;
+  width: 100%;
 }
 
 .panel-header-grid {
@@ -293,6 +294,31 @@ td a:hover {
   font-weight: bold;
 }
 
+.share-side-header {
+  margin-left : auto;
+}
+
+.share-menu {
+  display: flex;
+  gap: 1em;
+  list-style: none;
+  padding: 0;
+  margin-left: auto;
+}
+
+.share-menu a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+}
+
+.share-menu svg {
+  width: 20px;
+  height: 20px;
+  margin-right: 0.5em;
+}
 
 .layout-body-content {
   display: flex;

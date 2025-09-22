@@ -11,10 +11,10 @@
         <!-- Header with Navigation Menu -->
         <header class="sticky-header">
             <div class="holder">
-             <div class="logo">
-                 <img src="./assets/images/homeflat.png" alt="Home icon">
-            </div>
-            <div class="site-header-divider"></div>
+                <div class="logo">
+                     <img src="./assets/images/homeflat.png" alt="Home icon">
+                </div>
+                <div class="site-header-divider"></div>
             
                 <nav class="site-header-nav">
                     <ul class="nav-list">
@@ -85,6 +85,28 @@
                         </li>
                     </ul>
                 </nav>
+                <div class = "share-side-header">
+        
+                    <nav class=" share-button" id="share-button" aria-label="Share Menu" aria-expanded="false">
+                
+                
+                        <li class ="nav-item dropdown">
+
+                    
+
+                            <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="share-menu" data-target="share-menu">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" aria-label="Compartir">
+                                    <path d="M14 3h7v7h-2V6.41l-9.29 9.3-1.42-1.42L17.59 5H14V3z"/>
+                                    <path d="M5 5h4V3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2v-4h-2v4H5V5z"/>
+                                </svg>
+                                    Share
+                                <svg class="arrow-indicator" width="12" height="12" viewBox="0 0 24 24">
+                                    <path d="M7 10l5 5 5-5z" fill="currentColor"/>
+                                </svg>
+                            </button>
+                        </li>           
+                    </nav>
+                </div>
             </div>
         </header>
 
@@ -273,9 +295,39 @@
                                 </tr>
                             </table>
                         </div>
+                    </template>
+                    <template id="share-menu"> 
+                                     
+                        <ul class="share-menu">
+                            <li>
+                                <a href="mailto:?subject=Portafolio de Aldo&body=Visita mi portafolio: https://aldoreyes.github.io" aria-label="Compartir por correo">
+                                    <!-- Ícono SVG de correo -->
+                                    Email
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://api.whatsapp.com/send?text=Visita%20mi%20portafolio:%20https://aldoreyes.github.io" target="_blank" aria-label="Compartir por WhatsApp">
+                                    <!-- Ícono SVG de WhatsApp -->
+                                    WhatsApp
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.linkedin.com/sharing/share-offsite/?url=https://aldoreyes.github.io" target="_blank" aria-label="Compartir en LinkedIn">
+                                    <!-- Ícono SVG de LinkedIn -->
+                                    LinkedIn
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://github.com/AldoReyes84" target="_blank" aria-label="Ver perfil en GitHub">
+                                    <!-- Ícono SVG de GitHub -->
+                                    GitHub
+                                </a>
+                            </li>
+                        </ul>
                     </template>           
                 </div>
             </div>
+
         </div>
 
         <!-- Main Content Area with Sidebar -->

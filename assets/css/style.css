@@ -477,7 +477,9 @@ footer {
 
 .header-toggle a{
   margin: 0.5em;
+  margin-bottom: 0.5em;
   font-size: 0.875rem;
+  font-weight: normal;
   cursor: pointer;
   color: #333 ;
   font-weight: 500;

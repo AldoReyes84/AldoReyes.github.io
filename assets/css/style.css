@@ -192,6 +192,7 @@ a[aria-label="LinkedIn"] svg {
 .icon {
   width: 20px;
   height: 20px;
+  margin-right: 0.5em;
   vertical-align: middle;
   fill: #0078D4;
 }

@@ -90,7 +90,7 @@ header {
 }
 
 .nav-item button,
-h5,
+.header-toggle a,
 .head-toggle,
 .tree-toggle {
   text-decoration: none;
@@ -102,7 +102,7 @@ h5,
 }
 
 .nav-item button,
-h5,
+.header-toggle a,
 .head-toggle,
 .tree-toggle {
   position: relative;
@@ -110,7 +110,7 @@ h5,
 }
 
 .nav-item button::after,
-h5::after,
+.header-toggle a::after,
 .head-toggle::after,
 .tree-toggle::after {
   content: "";

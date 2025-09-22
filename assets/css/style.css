@@ -324,6 +324,20 @@ td a:hover {
   font-weight: 500;
 }
 
+.contact-menu a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+}
+
+.contact-menu svg {
+  width: 20px;
+  height: 20px;
+  margin-right: 0.5em;
+}
+
 .share-menu svg {
   width: 20px;
   height: 20px;

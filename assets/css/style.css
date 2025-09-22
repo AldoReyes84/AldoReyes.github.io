@@ -93,7 +93,6 @@ header {
 h5,
 .head-toggle,
 .tree-toggle {
-  width: 100%;
   text-decoration: none;
   color: #333;
   font-weight: 500;
@@ -124,12 +123,12 @@ h5::after,
   transition: width 0.3s ease;
 }
 
-.nav-item button:hover::after,
+/*.nav-item button:hover::after,
 h5:hover::after,
 .head-toggle::after,
 .tree-toggle:hover::after {
   width: 100%;
-}
+}*/
 
 .header-panels-container {
   position: absolute;

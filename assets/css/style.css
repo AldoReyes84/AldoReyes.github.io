@@ -348,6 +348,11 @@ section {
   color: #333 ;
 }
 
+.nav-item::marker {
+  content: none;
+}
+
+
 .head-toggle,
 .tree-toggle {
   background: none;

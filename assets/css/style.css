@@ -636,6 +636,9 @@ h1 {
       display: none;
     }
 
+    .site-header-nav {
+      display: none;
+    }
 
 }
 

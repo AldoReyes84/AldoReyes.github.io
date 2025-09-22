@@ -124,7 +124,7 @@ header {
 }
 
 .nav-item button:hover::after,
-h5:hover::after,
+.header-toggle a:hover::after,
 .head-toggle::after,
 .tree-toggle:hover::after {
   width: 100%;
@@ -169,7 +169,6 @@ h5:hover::after,
   font-size: 0.95rem;
 }
 
-
 table tr td:first-child {
   font-weight: bold;
   background-color: #f9f9f9;
@@ -195,8 +194,6 @@ a[aria-label="LinkedIn"] svg {
   vertical-align: middle;
   fill: #0078D4;
 }
-
-
 
 .interactive-table {
   width: 100%;
@@ -259,7 +256,6 @@ a[aria-label="LinkedIn"] svg {
 .sub-list li {
   margin: 0.5em 0;
 }
-
 
 .toggle-arrow {
   display: inline-block;
@@ -375,7 +371,6 @@ section {
   content: none;
 }
 
-
 .head-toggle,
 .tree-toggle {
   background: none;
@@ -386,7 +381,6 @@ section {
   font: inherit;
   padding: 0;
 }
-
 
 .arrow-icon {
   transition: transform 0.2s ease;

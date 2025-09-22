@@ -627,6 +627,16 @@ h1 {
     pre,code {
         word-wrap: normal
     }
+    
+    section {
+      display: none;
+    }
+
+    aside {
+      display: none;
+    }
+
+
 }
 
 

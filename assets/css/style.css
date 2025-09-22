@@ -90,7 +90,7 @@ header {
 }
 
 .nav-item button,
-.header-toggle a,
+.nav-item a,
 .head-toggle,
 .tree-toggle {
   text-decoration: none;
@@ -102,7 +102,7 @@ header {
 }
 
 .nav-item button,
-.header-toggle a,
+.nav-item a,
 .head-toggle,
 .tree-toggle {
   position: relative;
@@ -110,7 +110,7 @@ header {
 }
 
 .nav-item button::after,
-.header-toggle a::after,
+.nav-item a::after,
 .head-toggle::after,
 .tree-toggle::after {
   content: "";
@@ -124,7 +124,7 @@ header {
 }
 
 .nav-item button:hover::after,
-.header-toggle a:hover::after,
+.nav-item a:hover::after,
 .head-toggle::after,
 .tree-toggle:hover::after {
   width: 100%;
@@ -475,7 +475,7 @@ footer {
 	margin: 20px
 }
 
-.header-toggle a{
+.nav-item a{
   margin: 0.5em;
   margin-bottom: 0.5em;
   font-size: 0.875rem;

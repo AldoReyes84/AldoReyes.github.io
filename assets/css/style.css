@@ -358,6 +358,18 @@ td a:hover {
   margin-right: 0.5em;
 }
 
+.mobile-menu-hamburger {
+    background-color: white;
+    outline-color: black;
+    position: fixed;
+    max-width: 100% !important;
+    max-height: 100vh !important;
+    width: 320px !important;
+    margin: 0 !important;
+    top: 0 !important;
+    bottom: 0 !important;
+}
+
 .layout-body-content {
   display: flex;
   width: 100%;

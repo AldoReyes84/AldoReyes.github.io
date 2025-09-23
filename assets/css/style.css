@@ -130,6 +130,26 @@ header {
   width: 100%;
 }
 
+/*Mobile Menu*/
+
+.mobile-menu-hamburger {
+  display: none;
+}
+
+@media (max-width: 768px) {
+.mobile-menu-hamburger {
+  display: block;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem;
+  margin-left: auto;
+}
+}
+
+
+/*Header Dropdown Panels*/
+
 .header-panels-container {
   position: absolute;
   right: 0;

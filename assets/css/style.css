@@ -391,12 +391,6 @@ td a:hover {
   margin: 0;
 }
 
-.cloned-nav-tree li {
-  padding: 1em;
-  border-bottom: 1px solid #ddd;
-}
-
-
 .layout-body-content {
   display: flex;
   width: 100%;

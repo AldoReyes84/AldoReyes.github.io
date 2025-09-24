@@ -144,7 +144,6 @@ document.addEventListener("DOMContentLoaded", function () {
   const clon = navTree.cloneNode(true);
   clon.classList.add('cloned-nav-tree');
   modalContent.appendChild(clon);
-}
-
+  }
 
 });

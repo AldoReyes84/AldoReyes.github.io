@@ -327,6 +327,13 @@ td a:hover {
   margin-left: auto;
 }
 
+.documents-menu {
+  display: flex;
+  gap: 1em;
+  list-style: none;
+  padding: 0;
+}
+
 .contact-menu {
   display: flex;
   gap: 1em;

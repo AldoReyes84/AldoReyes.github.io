@@ -85,8 +85,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
       arrow.setAttribute('aria-expanded', String(!isExpanded));
       if (subList) {
-        subList.classList.toggle('hidden');
-      }
+        subList.hidden = !subList.hidden;
+     }
+
     });
   });
 
@@ -97,9 +98,10 @@ document.addEventListener("DOMContentLoaded", function () {
       const subList = toggle.parentElement.querySelector('.sub-list');
 
       toggle.setAttribute('aria-expanded', String(!isExpanded));
-      if (subList) {
-        subList.classList.toggle('hidden');
-      }
+    if (subList) {
+      subList.hidden = !subList.hidden;
+     }
+
     });
   });
 

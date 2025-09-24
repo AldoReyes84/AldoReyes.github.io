@@ -268,9 +268,9 @@ a[aria-label="LinkedIn"] svg {
   margin-left: 1.5em;
 }
 
-.sub-list.hidden {
+/*.sub-list.hidden {
   display: none;
-}
+}*/
 
 .sub-list li {
   margin: 0.5em 0;

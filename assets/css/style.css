@@ -40,10 +40,10 @@ ul {
 }
 
 th {
-    text-align: left;
+    text-align: center;
     font-size: .875rem;
     padding: 0.5rem;
-    background-color: #f9f9f9;
+    background-color: lightgray;
 }
 
 /* header */
@@ -195,7 +195,7 @@ header {
 
 table tr td:first-child {
   font-weight: bold;
-  background-color: #f9f9f9;
+  background-color: lightgray;
 }
 
 table tr {

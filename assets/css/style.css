@@ -377,7 +377,7 @@ td a:hover {
     margin: 0 !important;
     top: 44px !important;
     bottom: 0 !important;
-    z-index: 100 !important;
+    z-index: 500 !important;
 }
 
 .layout-body-content {

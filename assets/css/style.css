@@ -368,7 +368,7 @@ td a:hover {
 }
 
 .modal-content-menu {
-    background-color: white;
+    background-color: lightblue;
     outline-color: black;
     position: fixed;
     max-width: 100% !important;

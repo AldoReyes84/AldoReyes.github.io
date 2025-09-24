@@ -109,15 +109,15 @@ document.addEventListener("DOMContentLoaded", function () {
 
   if (navToggle && modalMenu) {
     navToggle.addEventListener('click', () => {
-    const isExpanded = navToggle.getAttribute('aria-expanded') === 'true';
+      const isExpanded = navToggle.getAttribute('aria-expanded') === 'true';
 
-    navToggle.setAttribute('aria-expanded', String(!isExpanded));
-    modalMenu.hidden = isExpanded;
+      navToggle.setAttribute('aria-expanded', String(!isExpanded));
+      modalMenu.hidden = isExpanded;
 
-    // 🧩 Clone nav-tree only when opening the modal
-    if (!isExpanded) {
-      cloneNavTreeIntoModal();
-    }
+      // 🧩 Clone nav-tree only when opening the modal
+      if (!isExpanded) {
+        cloneNavTreeIntoModal();
+      }
   });
   } else {
     console.warn("⚠️ nav-toggle or modal-content-menu not found.");
@@ -151,8 +151,25 @@ document.addEventListener("DOMContentLoaded", function () {
     const clone = navTree.cloneNode(true);
     clone.classList.add('cloned-nav-tree');
     modalContent.appendChild(clone);
+
+    // 🔄 Reactivate tree-toggle buttons inside the clone
+    activateTreeToggles(clone);
   }
 
+  // 🌿 Activate tree-toggle buttons to show/hide sub-lists
+  function activateTreeToggles(container) {
+    const toggles = container.querySelectorAll('.tree-toggle');
 
+    toggles.forEach(toggle => {
+      const subList = toggle.nextElementSibling;
 
+      if (!subList || !subList.classList.contains('sub-list')) return;
+
+      toggle.addEventListener('click', () => {
+        const isExpanded = toggle.getAttribute('aria-expanded') === 'true';
+        toggle.setAttribute('aria-expanded', String(!isExpanded));
+        subList.hidden = isExpanded;
+      });
+    });
+  }
 });

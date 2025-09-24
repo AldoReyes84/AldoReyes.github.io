@@ -103,4 +103,28 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 
+  // 🍔 Toggle dropdown menu from hamburger button
+  const navToggle = document.querySelector('.nav-toggle');
+  const modalMenu = document.getElementById('modal-content-menu');
+
+  if (navToggle && modalMenu) {
+    navToggle.addEventListener('click', () => {
+    const isExpanded = navToggle.getAttribute('aria-expanded') === 'true';
+
+    navToggle.setAttribute('aria-expanded', String(!isExpanded));
+    modalMenu.hidden = isExpanded;
+  });
+  } else {
+    console.warn("⚠️ nav-toggle or modal-content-menu not found.");
+  }
+
+  document.addEventListener('click', (event) => {
+    const isClickInsideMenu = modalMenu.contains(event.target);
+    const isClickOnToggle = navToggle.contains(event.target);
+
+    if (!isClickInsideMenu && !isClickOnToggle) {
+      modalMenu.hidden = true;
+      navToggle.setAttribute('aria-expanded', 'false');
+    }
+  });
 });

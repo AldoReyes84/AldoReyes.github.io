@@ -127,4 +127,24 @@ document.addEventListener("DOMContentLoaded", function () {
       navToggle.setAttribute('aria-expanded', 'false');
     }
   });
+  // Clone nav-tree into modal when modal is shown
+  function clonarNavTreeEnModal() {
+  const navTree = document.querySelector('.nav-tree');
+  const modalContent = document.querySelector('#modal-content-menu .modal-content');
+
+  if (!navTree || !modalContent) return;
+
+  // Eliminate previous clone if exists
+  const clonPrevio = modalContent.querySelector('.cloned-nav-tree');
+  if (clonPrevio) {
+    modalContent.removeChild(clonPrevio);
+  }
+
+  // Clon and append
+  const clon = navTree.cloneNode(true);
+  clon.classList.add('cloned-nav-tree');
+  modalContent.appendChild(clon);
+}
+
+
 });

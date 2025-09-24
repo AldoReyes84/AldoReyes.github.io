@@ -380,6 +380,18 @@ td a:hover {
     z-index: 500 !important;
 }
 
+.cloned-nav-tree {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.cloned-nav-tree li {
+  padding: 1em;
+  border-bottom: 1px solid #ddd;
+}
+
+
 .layout-body-content {
   display: flex;
   width: 100%;
@@ -390,6 +402,9 @@ td a:hover {
   background-color: #fff;
   z-index: 1;
 }
+
+
+
 
 section {
   flex: 0 0 20%;

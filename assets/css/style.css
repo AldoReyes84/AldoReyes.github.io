@@ -332,6 +332,7 @@ td a:hover {
   gap: 1em;
   list-style: none;
   padding: 0;
+  width: 200px;
 }
 
 .contact-menu {

@@ -113,11 +113,17 @@ document.addEventListener("DOMContentLoaded", function () {
 
     navToggle.setAttribute('aria-expanded', String(!isExpanded));
     modalMenu.hidden = isExpanded;
+
+    // 🧩 Clone nav-tree only when opening the modal
+    if (!isExpanded) {
+      cloneNavTreeIntoModal();
+    }
   });
   } else {
     console.warn("⚠️ nav-toggle or modal-content-menu not found.");
   }
 
+  // 🧼 Close modal when clicking outside
   document.addEventListener('click', (event) => {
     const isClickInsideMenu = modalMenu.contains(event.target);
     const isClickOnToggle = navToggle.contains(event.target);
@@ -127,23 +133,26 @@ document.addEventListener("DOMContentLoaded", function () {
       navToggle.setAttribute('aria-expanded', 'false');
     }
   });
-  // Clone nav-tree into modal when modal is shown
-  function clonarNavTreeEnModal() {
-  const navTree = document.querySelector('.nav-tree');
-  const modalContent = document.querySelector('#modal-content-menu .modal-content');
 
-  if (!navTree || !modalContent) return;
+  // 🧠 Clone nav-tree into modal content
+  function cloneNavTreeIntoModal() {
+    const navTree = document.querySelector('.nav-tree');
+    const modalContent = document.querySelector('#modal-content-menu .modal-content');
 
-  // Eliminate previous clone if exists
-  const clonPrevio = modalContent.querySelector('.cloned-nav-tree');
-  if (clonPrevio) {
-    modalContent.removeChild(clonPrevio);
+    if (!navTree || !modalContent) return;
+
+    // Remove previous clone if exists
+    const previousClone = modalContent.querySelector('.cloned-nav-tree');
+    if (previousClone) {
+      modalContent.removeChild(previousClone);
+    }
+
+    // Clone and append
+    const clone = navTree.cloneNode(true);
+    clone.classList.add('cloned-nav-tree');
+    modalContent.appendChild(clone);
   }
 
-  // Clon and append
-  const clon = navTree.cloneNode(true);
-  clon.classList.add('cloned-nav-tree');
-  modalContent.appendChild(clon);
-  }
+
 
 });

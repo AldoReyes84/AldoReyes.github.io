@@ -419,6 +419,9 @@ section {
   background-color: white;
   color: Gray;
   padding: 24px;
+  position: sticky;
+  top: 0;
+  align-self: start;
 }
 
 .nav-tree {
@@ -510,6 +513,7 @@ aside {
   padding: 1rem;
   position: sticky;
   top: 0;
+  align-self: start;
   height: fit-content;
 }
 

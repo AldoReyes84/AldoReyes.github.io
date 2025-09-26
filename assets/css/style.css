@@ -61,7 +61,7 @@ header {
   top: 0;
   z-index: 1000;
   padding: 0px 16px 0 16px;
-  border-bottom: #666 1px solid;
+  border-bottom: 666 1px solid;
 }
 
 .holder {
@@ -82,7 +82,7 @@ header {
 
 
 .site-header-nav {
-  background-color: #ffffff;
+  background-color: ffffff;
   padding: 1rem 2rem;
 }
 
@@ -100,7 +100,7 @@ header {
 .head-toggle,
 .tree-toggle {
   text-decoration: none;
-  color: #333;
+  color: 333;
   font-weight: 500;
   background: none;
   border: none;
@@ -125,7 +125,7 @@ header {
   bottom: 0;
   width: 0%;
   height: 2px;
-  background-color: #0078d4;
+  background-color: 0078d4;
   transition: width 0.3s ease;
 }
 
@@ -159,7 +159,7 @@ header {
   position: absolute;
   right: 0;
   width: 97%;
-  background: #fff;
+  background: fff;
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
   z-index: 1000;
   padding: 1rem;
@@ -184,13 +184,13 @@ header {
 .panel-header-grid a:first-of-type {
   font-weight: bold;
   font-size: 1.2rem;
-  color: #0078d4;
+  color: 0078d4;
   text-decoration: none;
 }
 
 .panel-header-grid a:not(:first-of-type) {
   font-style: italic;
-  color: #666;
+  color: 666;
   font-size: 0.95rem;
 }
 
@@ -202,14 +202,14 @@ table tr td:first-child {
 table tr {
   text-align: center;
   vertical-align: middle;
-  background-color: #f8f8f8;
+  background-color: f8f8f8;
   font-size: 14px;
 }
 
 a[aria-label="LinkedIn"] svg {
   width: 20px;
   height: 20px;
-  fill: #0077B5;
+  fill: 0077B5;
 }
 
 .icon {
@@ -217,7 +217,7 @@ a[aria-label="LinkedIn"] svg {
   height: 20px;
   margin-right: 0.5em;
   vertical-align: middle;
-  fill: #0078D4;
+  fill: 0078D4;
 }
 
 .interactive-table {
@@ -235,13 +235,13 @@ a[aria-label="LinkedIn"] svg {
 .panel-header h4 {
   margin: 0;
   font-size: 1.1rem;
-  color: #333;
+  color: 333;
 }
 
 .panel-templates p {
   margin: 0;
   font-size: 0.9rem;
-  color: #666;
+  color: 666;
 }
 
 .panel-menu {
@@ -306,7 +306,7 @@ td a {
   width: 100%;
   cursor: pointer;
   transition: background-color 0.2s ease;
-  border-bottom: 2px solid #0078d4;
+  border-bottom: 2px solid 0078d4;
   color: black;
 }
 
@@ -573,7 +573,7 @@ footer {
   font-weight: 500;
 }
 
-#nav-tree-about-me{
+#nav-tree-portfolio{
   margin-bottom: 0.5em;
   font-size: 0.875rem;
   background-color: #f2f2f2;

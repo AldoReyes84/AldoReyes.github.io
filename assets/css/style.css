@@ -49,7 +49,7 @@ th {
 /* header */
 
 header {
-  : white;
+  color: white;
   padding: 1rem;
   display: flex !important;
 }
@@ -95,11 +95,10 @@ header {
 }
 
 .nav-item button,
-.nav-item a,
 .head-toggle,
 .tree-toggle {
   text-decoration: none;
-  : 333;
+  color: 333;
   font-weight: 500;
   background: none;
   border: none;
@@ -107,7 +106,6 @@ header {
 }
 
 .nav-item button,
-.nav-item a,
 .head-toggle,
 .tree-toggle {
   position: relative;
@@ -115,7 +113,6 @@ header {
 }
 
 .nav-item button::after,
-.nav-item a::after,
 .head-toggle::after,
 .tree-toggle::after {
   content: "";
@@ -129,7 +126,6 @@ header {
 }
 
 .nav-item button:hover::after,
-.nav-item a:hover::after,
 .head-toggle::after,
 .tree-toggle:hover::after {
   width: 100%;
@@ -137,8 +133,6 @@ header {
 
 button a {
   all: unset;
-  font: inherit;
-  color: inherit;
 }
 
 
@@ -569,14 +563,14 @@ footer {
 	margin: 20px
 }
 
-.nav-item a{
+/*.nav-item a{
   margin: 0.5em;
   margin-bottom: 0.5em;
   font-size: 0.875rem;
   font-weight: normal;
   cursor: pointer;
   color: #333 ;
-  font-weight: 500;
+  font-weight: 500;*/
 }
 
 #nav-tree-portfolio{

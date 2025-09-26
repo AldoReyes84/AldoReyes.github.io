@@ -1,6 +1,22 @@
-Title: Aldo Reyes
+Title: Aldo Reyes BI Portfolio
 logo: assets/images/Logo Github Photo.png
-#descrition:
-#sho_download: true
+description: "Modular, scalable documentation for BI projects"
+baseurl: "" # or "/portfolio" if hosted in a subpath
+url: "https://aldoreyes84.github.io"
+
 theme: jekyll-theme-minimal
 
+# Navigation labels
+nav:
+  home: "Home"
+  experience: "Working Experience"
+  about: "About Me"
+  dashboards: "Power BI Dashboards"
+  contact: "Contact"
+  share: "Share"
+
+# Social links
+social:
+  github: "https://github.com/AldoReyes84"
+  linkedin: "https://linkedin.com/in/aldoreyes84"
+  email: "mailto:aldoreyes.bi@gmail.com"

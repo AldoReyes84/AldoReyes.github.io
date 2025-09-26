@@ -1,0 +1,13 @@
+ <!-- Aside -->
+            <aside class="article-nav">
+                <h2>In this article</h2>
+                <ul class="article-nav-list">
+                    {% assign headers = content | split: '<h2' %}
+                    {% for h in headers offset:1 %}
+                    {% assign raw = h | split: '</h2>' | first %}
+                    {% assign text = raw | split: '>' | last | strip_html %}
+                    {% assign id = text | slugify %}
+                    <li><a href="#{{ id }}">{{ text }}</a></li>
+                    {% endfor %}
+                </ul>
+            </aside>

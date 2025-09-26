@@ -385,9 +385,16 @@
             <!--Section-->
             <section>
                <ul class="nav-tree">
-                </li><h5 href="#">Portfolio</h5></li>
+                <li class="nav-item" id="nav-tree-portfolio">
+                    <button class="tree-toggle">
+                        <svg width="12" height="12" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="12" height="12" fill="none"/>
+                        </svg>
+                        Portfolio
+                    </button>
+                </li>
                 <li class="nav-item">
-                    <button class="tree-toggle" aria-expanded="false">
+                    <button class="tree-toggle" aria-expanded="false" id="nav-tree-skills">
                         <svg class="arrow-icon" viewBox="0 0 24 24" width="12" height="12">
                             <path d="M8 5v14l11-7z" fill="currentColor" />
                         </svg>
@@ -396,7 +403,7 @@
                         <ul class="sub-list" hidden>
                             <li><a><em>You can find these technical skills showcase in this portfolio projects</em></a></li>
                                 <li class="nav-item has-children">
-                                    <button class="tree-toggle" aria-expanded="false">
+                                    <button class="tree-toggle" aria-expanded="false" id="sub-list-nav-tree-etl">
                                         <svg class="arrow-icon" viewBox="0 0 24 24" width="12" height="12">
                                             <path d="M8 5v14l11-7z" fill="currentColor" />
                                         </svg>
@@ -407,7 +414,7 @@
                                     </ul>
                                 </li>
                              <li class="nav-item has-children">
-                                <button class="tree-toggle" aria-expanded="false">
+                                <button class="tree-toggle" aria-expanded="false" id="sub-list-nav-tree-data-analyst">
                                     <svg class="arrow-icon" viewBox="0 0 24 24" width="12" height="12">
                                         <path d="M8 5v14l11-7z" fill="currentColor" />
                                     </svg>
@@ -419,7 +426,7 @@
                                     </ul>
                             </li>
                             <li class="nav-item has-children">
-                                <button class="tree-toggle" aria-expanded="false">
+                                <button class="tree-toggle" aria-expanded="false" id="sub-list-nav-tree-data-modeling">
                                     <svg class="arrow-icon" viewBox="0 0 24 24" width="12" height="12">
                                         <path d="M8 5v14l11-7z" fill="currentColor" />
                                     </svg>
@@ -430,7 +437,7 @@
                                     </ul>
                             </li>
                             <li class="nav-item has-children">
-                                <button class="tree-toggle" aria-expanded="false">
+                                <button class="tree-toggle" aria-expanded="false" id="sub-list-nav-tree-dashboard-design">
                                     <svg class="arrow-icon" viewBox="0 0 24 24" width="12" height="12">
                                         <path d="M8 5v14l11-7z" fill="currentColor" />
                                     </svg>
@@ -441,7 +448,7 @@
                                     </ul>
                             </li>
                             <li class="nav-item has-children">
-                                <button class="tree-toggle" aria-expanded="false">
+                                <button class="tree-toggle" aria-expanded="false" id="sub-list-nav-tree-data-visualization">
                                     <svg class="arrow-icon" viewBox="0 0 24 24" width="12" height="12">
                                         <path d="M8 5v14l11-7z" fill="currentColor" />
                                     </svg>
@@ -452,7 +459,7 @@
                                     </ul>
                             </li>
                             <li class="nav-item has-children">
-                                <button class="tree-toggle" aria-expanded="false">
+                                <button class="tree-toggle" aria-expanded="false" id="sub-list-nav-tree-insights">
                                     <svg class="arrow-icon" viewBox="0 0 24 24" width="12" height="12">
                                         <path d="M8 5v14l11-7z" fill="currentColor" />
                                     </svg>
@@ -464,7 +471,7 @@
                                     </ul>
                             </li>
                             <li class="nav-item has-children">
-                                <button class="tree-toggle" aria-expanded="false">
+                                <button class="tree-toggle" aria-expanded="false" id="sub-list-nav-tree-okr-kpis">
                                     <svg class="arrow-icon" viewBox="0 0 24 24" width="12" height="12">
                                         <path d="M8 5v14l11-7z" fill="currentColor" />
                                     </svg>
@@ -475,7 +482,7 @@
                                     </ul>
                             </li>
                             <li class="nav-item has-children">
-                                <button class="tree-toggle" aria-expanded="false">
+                                <button class="tree-toggle" aria-expanded="false" id="sub-list-nav-tree-web-development">
                                     <svg class="arrow-icon" viewBox="0 0 24 24" width="12" height="12">
                                         <path d="M8 5v14l11-7z" fill="currentColor" />
                                     </svg>
@@ -487,8 +494,8 @@
                             </li>
                         </ul>
                 </li>                     
-                <li class="nav-item">
-                    <button class="tree-toggle" aria-expanded="false">
+                <li class="nav-item" id="nav-tree-tools">
+                    <button class="tree-toggle" aria-expanded="false" >
                         <svg class="arrow-icon" viewBox="0 0 24 24" width="12" height="12">
                             <path d="M8 5v14l11-7z" fill="currentColor" />
                         </svg>
@@ -592,7 +599,7 @@
                         </ul>
                 </li>
                      
-                <li class="nav-item">
+                <li class="nav-item" id="nav-tree-working-experience">
                     <button class="tree-toggle" aria-expanded="false">
                         <svg class="arrow-icon" viewBox="0 0 24 24" width="12" height="12">
                             <path d="M8 5v14l11-7z" fill="currentColor" />
@@ -604,8 +611,16 @@
                         <li><a href="#">Conagra Sales Analyst</a></li>
                     </ul>
                 </li>
-                <li class="nav-item">
-                    <button class="tree-toggle" aria-expanded="false">
+                <li class="nav-item" id="nav-tree-about-me">
+                    <button class="tree-toggle">
+                        <svg width="12" height="12" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="12" height="12" fill="none"/>
+                        </svg>
+                        About Me
+                    </button>
+                </li>
+                <li class="nav-item" id="nav-tree-projects">
+                    <button class="tree-toggle" aria-expanded="false" >
                         <svg class="arrow-icon" viewBox="0 0 24 24" width="12" height="12">
                             <path d="M8 5v14l11-7z" fill="currentColor" />
                         </svg>
@@ -701,8 +716,11 @@
              </div>
             </main>
             <!-- Aside -->
-            <aside>
-                
+            <aside class="article-nav">
+                <h2>In this article</h2>
+                <ul class="article-nav-list">
+                   
+                </ul>
             </aside>
         </div>
   

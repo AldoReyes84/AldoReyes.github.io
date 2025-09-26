@@ -1,4 +1,3 @@
-
 em {
   font-style: italic;
   color: #267CB9;
@@ -135,6 +134,13 @@ header {
 .tree-toggle:hover::after {
   width: 100%;
 }
+
+button a {
+  all: unset;
+  font: inherit;
+  color: inherit;
+}
+
 
 /*Mobile Menu*/
 

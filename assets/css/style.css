@@ -1,3 +1,4 @@
+
 em {
   font-style: italic;
   color: #267CB9;
@@ -517,7 +518,25 @@ aside {
   height: fit-content;
 }
 
+.article-nav-list{
+  margin-left: 1em;
+}
 
+
+.article-nav-list li {
+  margin: 0.5em;
+}
+
+.article-nav-list a {
+  color: gray;
+  margin-bottom: 0.5em;
+}
+
+.article-nav-list a.active {
+  font-weight: bold;
+  color: #0078d4;
+  border-left: 3px solid #0078d4;
+}
 
 footer {
   background-color: #eaeaea;
@@ -553,7 +572,8 @@ footer {
   color: #333 ;
   font-weight: 500;
 }
-.nav-tree h5{
+
+#nav-tree-about-me{
   margin-bottom: 0.5em;
   font-size: 0.875rem;
   background-color: #f2f2f2;

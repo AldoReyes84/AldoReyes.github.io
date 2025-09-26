@@ -8,125 +8,9 @@
     <!-- Add any other CSS or meta tags you need -->
      </head>
 <body>
-        <!-- Header with Navigation Menu -->
-        <header class="sticky-header">
-            <div class="holder">
-                <div class="logo">
-                     <img src="./assets/images/homeflat.png" alt="Home icon">
-                </div>
-                <div class="site-header-divider"></div>
-                
-                <div class="mobile-menu-hamburger"> 
-                <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="modal-content-menu">
-                    <span class="hamburger-icon">
-                        <svg width="24" height="24" viewBox="0 0 24 24">
-                            <path d="M3 6h18M3 12h18M3 18h18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-                        </svg>
-                    </span>
-                    <span class="visually-hidden"></span>
-                </button>
-                </div>
-                
-                <nav class="site-header-nav">
-                    <ul class="nav-list">
-    
-                        <li class="nav-item dropdown">
-                            <button class="header-toggle" type="button" aria-expanded="false" aria-controls="panel-skills" data-target="panel-skills">
-                                Skills
-                                <svg class="arrow-indicator" width="12" height="12" viewBox="0 0 24 24">
-                                    <path d="M7 10l5 5 5-5z" fill="currentColor"/>
-                                </svg>
-                            </button>
-                        </li>
-
-                        <li class="nav-item dropdown">
-                            <button class="header-toggle" type="button" aria-expanded="false" aria-controls="panel-tools" data-target="panel-tools">
-                                Tools
-                                <svg class="arrow-indicator" width="12" height="12" viewBox="0 0 24 24">
-                                    <path d="M7 10l5 5 5-5z" fill="currentColor"/>
-                                </svg>
-                            </button>
-                        </li>
-
-                        <li class="nav-item dropdown">
-                            <button class="header-toggle" type="button" aria-expanded="false" aria-controls="panel-work-experience" data-target="panel-work-experience">
-                                Work Experience
-                                <svg class="arrow-indicator" width="12" height="12" viewBox="0 0 24 24">
-                                    <path d="M7 10l5 5 5-5z" fill="currentColor"/>
-                                </svg>
-                            </button>
-                        </li>
-
-                        <li class="nav-item dropdown">
-                            <button class="tree-toggle">
-                                 <svg width="12" height="12" xmlns="http://www.w3.org/2000/svg">
-                                    <rect width="12" height="12" fill="none"/>
-                                </svg>
-                                <a id="about-me-link" href="https://aldoreyes84.github.io/About-me/">About me</a>
-                            </button>
-                        </li>
-
-
-                        <li class="nav-item dropdown">
-                            <button class="header-toggle" type="button" aria-expanded="false" aria-controls="panel-projects" data-target="panel-projects">
-                                Projects
-                                <svg class="arrow-indicator" width="12" height="12" viewBox="0 0 24 24">
-                                    <path d="M7 10l5 5 5-5z" fill="currentColor"/>
-                                </svg>
-                            </button>
-                                <!--<ul class="dropdown-menu" id="menu-projects" hidden>
-                                    <li><a href="#">Retail Dashboard</a></li>
-                                    <li><a href="#">SSIS Templates</a></li>
-                                    <li><a href="#">Data Analysis</a></li>
-                                    <li><a href="#">Portfolio Website</a></li>
-                                </ul> -->
-                        </li>
-
-                        <li class="nav-item dropdown">
-                            <button class="header-toggle" type="button" aria-expanded="false" aria-controls="panel-documents" data-target="panel-documents">
-                                Documents
-                                <svg class="arrow-indicator" width="12" height="12" viewBox="0 0 24 24">
-                                    <path d="M7 10l5 5 5-5z" fill="currentColor"/>
-                                </svg>
-                            </button>
-                        </li>
-
-                        <li class="nav-item dropdown">
-                            <button class="header-toggle" type="button" aria-expanded="false" aria-controls="panel-contact" data-target="panel-contact">
-                                Contact
-                                <svg class="arrow-indicator" width="12" height="12" viewBox="0 0 24 24">
-                                    <path d="M7 10l5 5 5-5z" fill="currentColor"/>
-                                </svg>
-                            </button>
-                        </li>
-                    </ul>
-                </nav>
-                <div class = "share-side-header">
+        <!--Header-->
         
-                    <nav class=" share-button" id="share-button" aria-label="Share Menu" aria-expanded="false">
-                
-                
-                        <li class ="nav-item dropdown">
-
-                    
-
-                            <button class="header-toggle" type="button" aria-expanded="false" aria-controls="share-menu" data-target="share-menu">
-                                <span class="icon">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" aria-label="Compartir">
-                                    <path d="M14 3h7v7h-2V6.41l-9.29 9.3-1.42-1.42L17.59 5H14V3z"/>
-                                    <path d="M5 5h4V3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2v-4h-2v4H5V5z"/>
-                                </svg>
-                                </span>
-                                    Share
-                                <svg class="arrow-indicator" width="12" height="12" viewBox="0 0 24 24">
-                                    <path d="M7 10l5 5 5-5z" fill="currentColor"/>
-                                </svg>
-                            </button>
-                        </li>           
-                    </nav>
-                </div>
-            </div>
-        </header>
+        {% include header.html %}
 
          <!-- Dropdown Panel with variable content -->
 
@@ -384,9 +268,8 @@
 
 
         <!-- Main Content Area with Sidebar -->
+     <div class="layout-body-content">
 
-
-        <div class="layout-body-content">
             <!--Section-->
             <section>
                <ul class="nav-tree">

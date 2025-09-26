@@ -1,0 +1,244 @@
+<!-- Dropdown Panel with variable content -->
+
+        <div class="header-panels-container" id="header-panels-container" hidden>
+        
+            <div class="header-panel-content" id="header-panel-content">
+
+                <div class="panel-templates" hidden>
+                    <template id="skills"> 
+                        <div class = "panel-header-grid">
+                            <a class="button">Technical Skills</a>
+                            <a>"You can find these technical skills showcased in this portfolio project"</a>
+                        </div>
+                        <div class="interactive-table">
+                            <table>
+                                <tr>
+                                    <th></th>
+                                    <th>ETL</th>
+                                    <th>Data Analysis</th>
+                                    <th>Data Modeling</th>
+                                    <th>Dashboard Design</th>
+                                    <th>Data Visualization</th>
+                                    <th>Insights</th>
+                                    <th>OKR/KPIs</th>
+                                    <th>Web Development</th>
+                                </tr>
+                                <tr>
+                                    <td>Main Tool</td>
+                                    <td>SSIS</td>   
+                                    <td>Excel</td>
+                                    <td>Power Query</td>
+                                    <td>Power BI</td>
+                                    <td>Figma</td>
+                                    <td></td>
+                                    <td>Business Analysis</td>
+                                    <td>GitHub</td>
+                                </tr>
+                                <tr>
+                                    <td>Showcase in</td>
+                                    <td><a href="project-ssis-package.html">ETL Package Project</a></td>  
+                                    <td><a href="AdventureWorks-data-analysis.html">AdWks Data Analysis</a></td>
+                                    <td></td>
+                                    <td><a href="contoso-sales-html">Contoso Dashboard</a></td>
+                                    <td><a href="contoso-sales-html">Contoso Dashboard</a></td>
+                                    <td><a href="AdventureWorks-data-analysis.html">AdWks Data Analysis</a></td>
+                                    <td><a href="working-experience.html">Working Experience at Intel</a></td>
+                                    <td><a href="Portfolio homepage">This portfolio</a></td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td></td>
+                                    <td><a href="contoso-sales-html">Contoso Dashboard</a></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td><a href="contoso-sales-html">Contoso Dashboard</a></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                            </table>
+                        </div>
+                    </template>
+
+                    <template id="tools"> 
+                        <div class = "panel-header-grid">
+                            <a class="button">Tools</a>
+                            <a>"These are the tools I use to create data solutions"</a>
+                        </div>
+                        <div class="interactive-table">
+                            <table>
+                                <tr>
+                                    <th></th>
+                                    <th>Power BI</th>
+                                    <th>SQL</th>
+                                    <th>Excel</th>
+                                    <th>Python</th>
+                                    <th>SSIS</th>
+                                    <th>Visual Studio Code</th>
+                                    <th>GitHub</th>
+                                    <th>Figma</th>
+                                </tr>
+                                <tr>
+                                    <td>Showcase in</td>
+                                    <td>Contoso Dashboard</td>   
+                                    <td>AdWks Data Analysis</td>
+                                    <td>AdWks Data Analysis</td>
+                                    <td>AdWks Data Analysis</td>
+                                    <td>ETL Package Project</td>
+                                    <td>This Portfolio</td>
+                                    <td>This Portfolio</td>
+                                    <td>Contoso Dashboard</td>
+                            </table>
+                        </div>
+                    </template>
+
+                    <template id="work-experience"> 
+                        <div class = "panel-header-grid">
+                            <a class="button">Business Intelligence Analyst</a>
+                            <a>"6 years of experience in International Companies"</a>
+                            <button class="dropdown-toggle" data-md="markdownfiles/work-experience.md">
+                                Review Working Experience                        
+                            </button>
+                        </div>
+                        <div class="interactive-table">  
+                            <table>
+                                <tr>
+                                    <th>"Intel Project Analyst "</th>
+                                </tr>
+                                <tr>
+                                    <th>"Conagra Brands Sales Analyst "</th>
+                                </tr>
+                            </table>
+                        </div>
+                    </template>
+
+                    <template id="projects"> 
+                        <div class = "panel-header-grid">
+                            <a class="button">Projects</a>
+                            <a>"Explore some of my key projects"</a>
+                        </div>
+                        <div class="interactive-table">  
+                            <table>
+                                 <tr>
+                                    <th>"Contoso Dashboard "</th>
+                                    <th>"AdWks Data Analysis "</th>
+                                    <th>"ETL Package Project "</th>
+                                </tr>
+                            </table>
+                        </div>
+                    </template>
+
+                    <template id="documents"> 
+                        <div class = "header-panel-content">
+                            <a></a>
+                            <a>"Find relevant documents and resources"</a>
+                        </div>
+                        <div class="documents-menu">
+                            <ul class="documents-list">
+                                <li>
+                                    <a href="./assets/files/Aldo%20Reyes%20CV.pdf">
+                                        <span class="icon">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="24" viewBox="0 0 24 24" fill="none">
+                                                <rect x="3" y="3" width="26" height="18" rx="2" ry="2" fill="#E53E3E"/>
+                                                <text x="6" y="16" font-family="Arial, sans-serif" font-size="10" fill="white">PDF</text>
+                                            </svg>
+                                        </span>
+                                        Curriculum
+                                    </a>
+                                </li>
+                            </ul>
+                    </template>
+
+                    <template id="contact"> 
+                        <div class="header-panel-content"> 
+                            <a></a>
+                            <a><i>"Feel free to get in touch by any mean listed in this section"</i></a> 
+                            <ul class="contact-menu">
+                                    <li>
+                                        <a href="tel:+525569318062">
+                                             <span class="icon">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                                                    <path d="M7 2C5.9 2 5 2.9 5 4v16c0 1.1.9 2 2 2h10c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2H7zm5 19c-.6 0-1-.4-1-1s.4-1 1-1 1 .4 1 1-.4 1-1 1zm5-3H7V5h10v13z"/>
+                                                </svg>
+                                            </span>
+                                            Cel Phone: +52 55 6931 8062 
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="mailto:aldoan84@gmail.com" aria-label="Enviar correo a Gmail">
+                                            <span class="icon">
+                                                <img src="assets/icons/gmail.png" alt="Gmail icon" width="24" height="17">
+                                            </span>
+                                            aldoan84@gmail.com
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="mailto:aldoan84@hotmail.com" target="_blank">
+                                            <span class="icon">
+                                                <img src="assets/icons/outlook.png" alt="LinkedIn Profile" width="24" height="22">
+                                            </span>
+                                            aldoan84@hotmial.com
+                                       </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.linkedin.com/in/aldoreyesbianalyst?" target="_blank">
+                                            <span class="icon">
+                                                <img src="assets/icons/linkedin.png" alt="LinkedIn Profile" width="22" height="22">
+                                            </span>
+                                            LinkedIn Profile
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://github.com/AldoReyes84" target="_blank" aria-label="Ver perfil en GitHub">
+                                            <span class="icon">
+                                                <img src="assets/icons/github.svg" alt="LinkedIn Profile" width="22" height="22">
+                                            </span>
+                                            Github/AldoReyes84
+                                        </a>
+                                    </li>
+                             </ul>
+                        </div>
+                    </template>
+                    <template id="share-menu"> 
+                                     
+                        <ul class="share-menu">
+                            <li>
+                                <a href="mailto:?subject=Portafolio de Aldo&body=Visita mi portafolio: https://aldoreyes.github.io" aria-label="Compartir por correo">
+                                    <span class="icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                            <path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 2v.01L12 13 4 6.01V6h16zM4 18V8l8 5 8-5v10H4z"/>
+                                        </svg>
+                                    </span>
+                                    Email
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://api.whatsapp.com/send?text=Visita%20mi%20portafolio:%20https://aldoreyes.github.io" target="_blank" aria-label="Compartir por WhatsApp">
+                                    <span class="icon">
+                                    <img src="assets/icons/whatsapp.webp" alt="LinkedIn Profile" width="22" height="22">
+                                    </span>
+                                    WhatsApp
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.linkedin.com/sharing/share-offsite/?url=https://aldoreyes.github.io" target="_blank" aria-label="Compartir en LinkedIn">
+                                    <span class="icon">
+                                        <img src="assets/icons/linkedin.png" alt="LinkedIn Profile" width="22" height="22">
+                                    </span>
+                                    LinkedIn
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://github.com/AldoReyes84" target="_blank" aria-label="Ver perfil en GitHub">
+                                    <span class="icon">
+                                        <img src="assets/icons/github.svg" alt="LinkedIn Profile" width="22" height="22">
+                                    </span>
+                                    GitHub
+                                </a>
+                            </li>
+                        </ul>
+                    </template>           
+                </div>
+            </div>
+
+        </div>

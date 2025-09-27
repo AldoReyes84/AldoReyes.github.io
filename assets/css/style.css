@@ -135,6 +135,16 @@ button a {
   all: unset;
 }
 
+/* Utility class to remove default link styling */
+.unstyled-link {
+  all: unset;
+  display: inline-block;
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+}
+
+
 
 /*Mobile Menu*/
 

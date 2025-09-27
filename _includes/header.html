@@ -1,84 +1,83 @@
- <header class="sticky-header">
+ <header class="sticky-header" role="banner" aria-label="Main site header">
             <div class="holder">
-                <div class="logo">
-                     <img src="./assets/images/homeflat.png" alt="Home icon">
-                </div>
+             <div class="logo">
+                 <img src="./assets/images/homeflat.png" alt="Home icon" width="40" height="40" aria-label="Go to homepage">
+             </div>
                 <div class="site-header-divider"></div>
                 
                 <div class="mobile-menu-hamburger"> 
-                <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="modal-content-menu">
+                <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="modal-content-menu" aria-label="Open main menu" tabindex="0">
                     <span class="hamburger-icon">
-                        <svg width="24" height="24" viewBox="0 0 24 24">
+                        <svg width="24" height="24" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
                             <path d="M3 6h18M3 12h18M3 18h18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
                         </svg>
                     </span>
-                    <span class="visually-hidden"></span>
+                    <span class="visually-hidden">Open navigation menu</span>
                 </button>
                 </div>
                 
-                <nav class="site-header-nav">
-                    <ul class="nav-list">
+                <nav class="site-header-nav" aria-label="Main navigation">
+                    <ul class="nav-list" role="menubar">
     
-                        <li class="nav-item dropdown">
-                            <button class="header-toggle" type="button" aria-expanded="false" aria-controls="panel-skills" data-target="panel-skills">
+                        <li class="nav-item dropdown" role="none">
+                            <button class="header-toggle" type="button" aria-expanded="false" aria-controls="panel-skills" data-target="panel-skills" aria-label="Open Skills panel" role="menuitem" tabindex="0">
                                 Skills
-                                <svg class="arrow-indicator" width="12" height="12" viewBox="0 0 24 24">
+                                <svg class="arrow-indicator" width="12" height="12" viewBox="0 0 24 24" aria-hidden="true">
                                     <path d="M7 10l5 5 5-5z" fill="currentColor"/>
                                 </svg>
                             </button>
                         </li>
 
-                        <li class="nav-item dropdown">
-                            <button class="header-toggle" type="button" aria-expanded="false" aria-controls="panel-tools" data-target="panel-tools">
+                        <li class="nav-item dropdown" role="none">
+                            <button class="header-toggle" type="button" aria-expanded="false" aria-controls="panel-tools" data-target="panel-tools" aria-label="Open Tools panel" role="menuitem" tabindex="0">
                                 Tools
-                                <svg class="arrow-indicator" width="12" height="12" viewBox="0 0 24 24">
+                                <svg class="arrow-indicator" width="12" height="12" viewBox="0 0 24 24" aria-hidden="true">
                                     <path d="M7 10l5 5 5-5z" fill="currentColor"/>
                                 </svg>
                             </button>
                         </li>
 
-                        <li class="nav-item dropdown">
-                            <button class="header-toggle" type="button" aria-expanded="false" aria-controls="panel-work-experience" data-target="panel-work-experience">
+                        <li class="nav-item dropdown" role="none">
+                            <button class="header-toggle" type="button" aria-expanded="false" aria-controls="panel-work-experience" data-target="panel-work-experience" aria-label="Open Work Experience panel" role="menuitem" tabindex="0">
                                 Work Experience
-                                <svg class="arrow-indicator" width="12" height="12" viewBox="0 0 24 24">
+                                <svg class="arrow-indicator" width="12" height="12" viewBox="0 0 24 24" aria-hidden="true">
                                     <path d="M7 10l5 5 5-5z" fill="currentColor"/>
                                 </svg>
                             </button>
                         </li>
 
-                        <li class="nav-item dropdown">
-                            <button class="tree-toggle">
-                                 <svg width="12" height="12" xmlns="http://www.w3.org/2000/svg">
+                        <li class="nav-item dropdown" role="none">
+                            <button class="tree-toggle" aria-label="Go to About me section" role="menuitem" tabindex="0">
+                                 <svg width="12" height="12" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
                                     <rect width="12" height="12" fill="none"/>
                                 </svg>
-                                <a id="about-me-link" href="{{ site.sections.aboutme.url }}">About me</a>
+                                <a id="about-me-link" href="{{ site.sections.aboutme.url }}" aria-label="About me">About me</a>
                             </button>
                         </li>
 
 
-                        <li class="nav-item dropdown">
-                            <button class="header-toggle" type="button" aria-expanded="false" aria-controls="panel-projects" data-target="panel-projects">
+                        <li class="nav-item dropdown" role="none">
+                            <button class="header-toggle" type="button" aria-expanded="false" aria-controls="panel-projects" data-target="panel-projects" aria-label="Open Projects panel" role="menuitem" tabindex="0">
                                 Projects
-                                <svg class="arrow-indicator" width="12" height="12" viewBox="0 0 24 24">
+                                <svg class="arrow-indicator" width="12" height="12" viewBox="0 0 24 24" aria-hidden="true">
                                     <path d="M7 10l5 5 5-5z" fill="currentColor"/>
                                 </svg>
                             </button>
-                              
                         </li>
 
-                        <li class="nav-item dropdown">
-                            <button class="header-toggle" type="button" aria-expanded="false" aria-controls="panel-documents" data-target="panel-documents">
+                        <li class="nav-item dropdown" role="none">
+                            <button class="header-toggle" type="button" aria-expanded="false" aria-controls="panel-documents" data-target="panel-documents" aria-label="Open Documents panel" role="menuitem" tabindex="0">
                                 Documents
-                                <svg class="arrow-indicator" width="12" height="12" viewBox="0 0 24 24">
+                                <svg class="arrow-indicator" width="12" height="12" viewBox="0 0 24 24" aria-hidden="true">
                                     <path d="M7 10l5 5 5-5z" fill="currentColor"/>
                                 </svg>
                             </button>
                         </li>
 
-                        <li class="nav-item dropdown">
-                            <button class="header-toggle" type="button" aria-expanded="false" aria-controls="panel-contact" data-target="panel-contact">
+                        <li class="nav-item dropdown" role="none">
+                            <button class="header-toggle" type="button" aria-expanded="false" aria-controls="panel-contact" data-target="panel-contact" aria-label="Open Contact panel" role="menuitem" tabindex="0">
                                 Contact
-                                <svg class="arrow-indicator" width="12" height="12" viewBox="0 0 24 24">
+                                <svg class="arrow-indicator" width="12" height="12" viewBox="0 0 24 24" aria-hidden="true">
                                     <path d="M7 10l5 5 5-5z" fill="currentColor"/>
                                 </svg>
                             </button>
@@ -86,27 +85,23 @@
                     </ul>
                 </nav>
                 <div class = "share-side-header">
-        
-                    <nav class=" share-button" id="share-button" aria-label="Share Menu" aria-expanded="false">
-                
-                
-                        <li class ="nav-item dropdown">
-
-                    
-
-                            <button class="header-toggle" type="button" aria-expanded="false" aria-controls="share-menu" data-target="share-menu">
-                                <span class="icon">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" aria-label="Compartir">
-                                    <path d="M14 3h7v7h-2V6.41l-9.29 9.3-1.42-1.42L17.59 5H14V3z"/>
-                                    <path d="M5 5h4V3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2v-4h-2v4H5V5z"/>
-                                </svg>
-                                </span>
+                    <nav class="share-button" id="share-button" aria-label="Share menu" aria-expanded="false" role="navigation">
+                        <ul>
+                            <li class ="nav-item dropdown" role="none">
+                                <button class="header-toggle" type="button" aria-expanded="false" aria-controls="share-menu" data-target="share-menu" aria-label="Open Share menu" role="menuitem" tabindex="0">
+                                    <span class="icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" aria-label="Share">
+                                            <path d="M14 3h7v7h-2V6.41l-9.29 9.3-1.42-1.42L17.59 5H14V3z"/>
+                                            <path d="M5 5h4V3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2v-4h-2v4H5V5z"/>
+                                        </svg>
+                                    </span>
                                     Share
-                                <svg class="arrow-indicator" width="12" height="12" viewBox="0 0 24 24">
-                                    <path d="M7 10l5 5 5-5z" fill="currentColor"/>
-                                </svg>
-                            </button>
-                        </li>           
+                                    <svg class="arrow-indicator" width="12" height="12" viewBox="0 0 24 24" aria-hidden="true">
+                                        <path d="M7 10l5 5 5-5z" fill="currentColor"/>
+                                    </svg>
+                                </button>
+                            </li>
+                        </ul>
                     </nav>
                 </div>
             </div>

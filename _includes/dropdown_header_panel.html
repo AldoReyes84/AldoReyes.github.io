@@ -1,27 +1,28 @@
 <!-- Dropdown Panel with variable content -->
 
-        <div class="header-panels-container" id="header-panels-container" hidden>
+    <div class="header-panels-container" id="header-panels-container" hidden aria-label="Dropdown header panels" role="region">
         
-            <div class="header-panel-content" id="header-panel-content">
+            <div class="header-panel-content" id="header-panel-content" role="region" aria-live="polite">
 
-                <div class="panel-templates" hidden>
+                <div class="panel-templates" hidden aria-hidden="true">
                     <template id="skills"> 
                         <div class = "panel-header-grid">
-                            <a class="button">Technical Skills</a>
-                            <a>"You can find these technical skills showcased in this portfolio project"</a>
+                            <a class="button" tabindex="0" aria-label="View technical skills">Technical Skills</a>
+                            <a tabindex="-1" aria-hidden="true">"You can find these technical skills showcased in this portfolio project"</a>
                         </div>
-                        <div class="interactive-table">
-                            <table>
+                        <div class="interactive-table" role="region" aria-label="Technical skills table">
+                            <table aria-describedby="skills-table-desc">
+                                <caption id="skills-table-desc" class="sr-only">Table of technical skills and main tools</caption>
                                 <tr>
-                                    <th></th>
-                                    <th>ETL</th>
-                                    <th>Data Analysis</th>
-                                    <th>Data Modeling</th>
-                                    <th>Dashboard Design</th>
-                                    <th>Data Visualization</th>
-                                    <th>Insights</th>
-                                    <th>OKR/KPIs</th>
-                                    <th>Web Development</th>
+                                    <th scope="col"></th>
+                                    <th scope="col">ETL</th>
+                                    <th scope="col">Data Analysis</th>
+                                    <th scope="col">Data Modeling</th>
+                                    <th scope="col">Dashboard Design</th>
+                                    <th scope="col">Data Visualization</th>
+                                    <th scope="col">Insights</th>
+                                    <th scope="col">OKR/KPIs</th>
+                                    <th scope="col">Web Development</th>
                                 </tr>
                                 <tr>
                                     <td>Main Tool</td>
@@ -36,19 +37,19 @@
                                 </tr>
                                 <tr>
                                     <td>Showcase in</td>
-                                    <td><a href="{{ site.sections.ssis.url }}">ETL Package Project</a></td>  
-                                    <td><a href="{{ site.sections.adventureworks.url }}">AdWks Data Analysis</a></td>
+                                    <td><a href="{{ site.sections.ssis.url }}" aria-label="View project ETL Package Project">ETL Package Project</a></td>  
+                                    <td><a href="{{ site.sections.adventureworks.url }}" aria-label="View project AdWks Data Analysis">AdWks Data Analysis</a></td>
                                     <td></td>
-                                    <td><a href="{{ site.sections.contoso.url }}">Contoso Dashboard</a></td>
+                                    <td><a href="{{ site.sections.contoso.url }}" aria-label="View project Contoso Dashboard">Contoso Dashboard</a></td>
                                     <td><a href="{{ site.sections.contoso.url }}">Contoso Dashboard</a></td>
                                     <td><a href="{{ site.sections.adventureworks.url }}">AdWks Data Analysis</a></td>
                                     <td><a href="{{ site.sections.experience.url }}">Working Experience at Intel</a></td>
-                                    <td><a href="Portfolio homepage">This portfolio</a></td>
+                                    <td><a href="Portfolio homepage" aria-label="View this portfolio">This portfolio</a></td>
                                 </tr>
                                 <tr>
                                     <td></td>
                                     <td></td>
-                                    <td><a href="{{ site.sections.contoso.url }}">Contoso Dashboard</a></td>
+                                    <td><a href="{{ site.sections.contoso.url }}" aria-label="View project Contoso Dashboard">Contoso Dashboard</a></td>
                                     <td></td>
                                     <td></td>
                                     <td></td>
@@ -62,29 +63,30 @@
 
                     <template id="tools"> 
                         <div class = "panel-header-grid">
-                            <a class="button">Tools</a>
-                            <a>"These are the tools I use to create data solutions"</a>
+                            <a class="button" tabindex="0" aria-label="View tools">Tools</a>
+                            <a tabindex="-1" aria-hidden="true">"These are the tools I use to create data solutions"</a>
                         </div>
-                        <div class="interactive-table">
-                            <table>
+                        <div class="interactive-table" role="region" aria-label="Tools table">
+                            <table aria-describedby="tools-table-desc">
+                                <caption id="tools-table-desc" class="sr-only">Table of tools and related projects</caption>
                                 <tr>
-                                    <th></th>
-                                    <th>Power BI</th>
-                                    <th>SQL</th>
-                                    <th>Excel</th>
-                                    <th>Python</th>
-                                    <th>SSIS</th>
-                                    <th>Visual Studio Code</th>
-                                    <th>GitHub</th>
-                                    <th>Figma</th>
+                                    <th scope="col"></th>
+                                    <th scope="col">Power BI</th>
+                                    <th scope="col">SQL</th>
+                                    <th scope="col">Excel</th>
+                                    <th scope="col">Python</th>
+                                    <th scope="col">SSIS</th>
+                                    <th scope="col">Visual Studio Code</th>
+                                    <th scope="col">GitHub</th>
+                                    <th scope="col">Figma</th>
                                 </tr>
                                 <tr>
                                     <td>Showcase in</td>
-                                    <td><a href="{{ site.sections.contoso.url }}">Contoso Dashboard</a></td>   
-                                    <td><a href="{{ site.sections.adventureworks.url }}">AdWks Data Analysis</a></td>
-                                    <td><a href="{{ site.sections.adventureworks.url }}">AdWks Data Analysis</a></td>
-                                    <td><a href="{{ site.sections.adventureworks.url }}">AdWks Data Analysis</a></td>
-                                    <td><a href="{{ site.sections.ssis.url }}">ETL Package Project</a></td>
+                                    <td><a href="{{ site.sections.contoso.url }}" aria-label="View project Contoso Dashboard">Contoso Dashboard</a></td>   
+                                    <td><a href="{{ site.sections.adventureworks.url }}" aria-label="View project AdWks Data Analysis">AdWks Data Analysis</a></td>
+                                    <td><a href="{{ site.sections.adventureworks.url }}" aria-label="View project AdWks Data Analysis">AdWks Data Analysis</a></td>
+                                    <td><a href="{{ site.sections.adventureworks.url }}" aria-label="View project AdWks Data Analysis">AdWks Data Analysis</a></td>
+                                    <td><a href="{{ site.sections.ssis.url }}" aria-label="View project ETL Package Project">ETL Package Project</a></td>
                                     <td>This Portfolio</td>
                                     <td>This Portfolio</td>
                                     <td><a href="{{ site.sections.contoso.url }}">Contoso Dashboard</a></td>
@@ -94,19 +96,20 @@
 
                     <template id="work-experience"> 
                         <div class = "panel-header-grid">
-                            <a class="button">Business Intelligence Analyst</a>
-                            <a>"6 years of experience in International Companies"</a>
-                            <button class="dropdown-toggle" data-md="markdownfiles/work-experience.md">
+                            <a class="button" tabindex="0" aria-label="View work experience">Business Intelligence Analyst</a>
+                            <a tabindex="-1" aria-hidden="true">"6 years of experience in International Companies"</a>
+                            <button class="dropdown-toggle" data-md="markdownfiles/work-experience.md" aria-label="Review work experience" tabindex="0">
                                 Review Working Experience                        
                             </button>
                         </div>
-                        <div class="interactive-table">  
-                            <table>
+                        <div class="interactive-table" role="region" aria-label="Work experience table">  
+                            <table aria-describedby="workexp-table-desc">
+                                <caption id="workexp-table-desc" class="sr-only">Table of work experience</caption>
                                 <tr>
-                                    <th><a href="{{ site.sections.experience.url }}">"Intel Project Analyst"</a></th>
+                                    <th scope="row"><a href="{{ site.sections.experience.url }}" aria-label="View experience Intel Project Analyst">"Intel Project Analyst"</a></th>
                                 </tr>
                                 <tr>
-                                    <th><a href="{{ site.sections.experience.url }}">"Conagra Brands Sales Analyst"</a></th>
+                                    <th scope="row"><a href="{{ site.sections.experience.url }}" aria-label="View experience Conagra Brands Sales Analyst">"Conagra Brands Sales Analyst"</a></th>
                                 </tr>
                             </table>
                         </div>
@@ -114,15 +117,16 @@
 
                     <template id="projects"> 
                         <div class = "panel-header-grid">
-                            <a class="button">Projects</a>
-                            <a>"Explore some of my key projects"</a>
+                            <a class="button" tabindex="0" aria-label="View projects">Projects</a>
+                            <a tabindex="-1" aria-hidden="true">"Explore some of my key projects"</a>
                         </div>
-                        <div class="interactive-table">  
-                            <table>
+                        <div class="interactive-table" role="region" aria-label="Projects table">  
+                            <table aria-describedby="projects-table-desc">
+                                <caption id="projects-table-desc" class="sr-only">Table of featured projects</caption>
                                  <tr>
-                                    <td><a href="{{ site.sections.contoso.url }}">Contoso Dashboard</a></td>
-                                    <td><a href="{{ site.sections.adventureworks.url }}">AdWks Data Analysis</a></td>
-                                    <th><a href="{{ site.sections.ssis.url }}">ETL Package Project</a></th>
+                                    <td><a href="{{ site.sections.contoso.url }}" aria-label="View project Contoso Dashboard">Contoso Dashboard</a></td>
+                                    <td><a href="{{ site.sections.adventureworks.url }}" aria-label="View project AdWks Data Analysis">AdWks Data Analysis</a></td>
+                                    <th scope="row"><a href="{{ site.sections.ssis.url }}" aria-label="View project ETL Package Project">ETL Package Project</a></th>
                                 </tr>
                             </table>
                         </div>
@@ -130,15 +134,15 @@
 
                     <template id="documents"> 
                         <div class = "header-panel-content">
-                            <a></a>
-                            <a>"Find relevant documents and resources"</a>
+                            <a tabindex="-1" aria-hidden="true"></a>
+                            <a tabindex="-1" aria-hidden="true">"Find relevant documents and resources"</a>
                         </div>
-                        <div class="documents-menu">
+                        <div class="documents-menu" role="region" aria-label="Relevant documents">
                             <ul class="documents-list">
                                 <li>
-                                    <a href="./assets/files/Aldo%20Reyes%20CV.pdf">
+                                    <a href="./assets/files/Aldo%20Reyes%20CV.pdf" aria-label="Download Curriculum PDF">
                                         <span class="icon">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="24" viewBox="0 0 24 24" fill="none">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true" focusable="false">
                                                 <rect x="3" y="3" width="26" height="18" rx="2" ry="2" fill="#E53E3E"/>
                                                 <text x="6" y="16" font-family="Arial, sans-serif" font-size="10" fill="white">PDF</text>
                                             </svg>
@@ -150,14 +154,14 @@
                     </template>
 
                     <template id="contact"> 
-                        <div class="header-panel-content"> 
-                            <a></a>
-                            <a><i>"Feel free to get in touch by any mean listed in this section"</i></a> 
+                        <div class="header-panel-content" role="region" aria-label="Contact information"> 
+                            <a tabindex="-1" aria-hidden="true"></a>
+                            <a tabindex="-1" aria-hidden="true"><i>"Feel free to get in touch by any mean listed in this section"</i></a> 
                             <ul class="contact-menu">
                                     <li>
-                                        <a href="tel:+525569318062">
+                                        <a href="tel:+525569318062" aria-label="Call number +52 55 6931 8062">
                                              <span class="icon">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
                                                     <path d="M7 2C5.9 2 5 2.9 5 4v16c0 1.1.9 2 2 2h10c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2H7zm5 19c-.6 0-1-.4-1-1s.4-1 1-1 1 .4 1 1-.4 1-1 1zm5-3H7V5h10v13z"/>
                                                 </svg>
                                             </span>
@@ -165,7 +169,7 @@
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="mailto:aldoan84@gmail.com" aria-label="Enviar correo a Gmail">
+                                        <a href="mailto:aldoan84@gmail.com" aria-label="Enviar correo a aldoan84@gmail.com">
                                             <span class="icon">
                                                 <img src="assets/icons/gmail.png" alt="Gmail icon" width="24" height="17">
                                             </span>
@@ -173,25 +177,25 @@
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="mailto:aldoan84@hotmail.com" target="_blank">
+                                        <a href="mailto:aldoan84@hotmail.com" target="_blank" aria-label="Send email to aldoan84@hotmail.com">
                                             <span class="icon">
-                                                <img src="assets/icons/outlook.png" alt="LinkedIn Profile" width="24" height="22">
+                                                <img src="assets/icons/outlook.png" alt="Outlook icon" width="24" height="22">
                                             </span>
-                                            aldoan84@hotmial.com
+                                            aldoan84@hotmail.com
                                        </a>
                                     </li>
                                     <li>
-                                        <a href="https://www.linkedin.com/in/aldoreyesbianalyst?" target="_blank">
+                                        <a href="https://www.linkedin.com/in/aldoreyesbianalyst?" target="_blank" aria-label="View LinkedIn profile">
                                             <span class="icon">
-                                                <img src="assets/icons/linkedin.png" alt="LinkedIn Profile" width="22" height="22">
+                                                <img src="assets/icons/linkedin.png" alt="LinkedIn icon" width="22" height="22">
                                             </span>
                                             LinkedIn Profile
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="https://github.com/AldoReyes84" target="_blank" aria-label="Ver perfil en GitHub">
+                                        <a href="https://github.com/AldoReyes84" target="_blank" aria-label="View GitHub profile">
                                             <span class="icon">
-                                                <img src="assets/icons/github.svg" alt="LinkedIn Profile" width="22" height="22">
+                                                <img src="assets/icons/github.svg" alt="GitHub icon" width="22" height="22">
                                             </span>
                                             Github/AldoReyes84
                                         </a>
@@ -200,10 +204,9 @@
                         </div>
                     </template>
                     <template id="share-menu"> 
-                                     
-                        <ul class="share-menu">
+                        <ul class="share-menu" aria-label="Sharing options">
                             <li>
-                                <a href="mailto:?subject=Portafolio de Aldo&body=Visita mi portafolio: https://aldoreyes.github.io" aria-label="Compartir por correo">
+                                <a href="mailto:?subject=Aldo's Portfolio&body=Visit my portfolio: https://aldoreyes.github.io" aria-label="Share by email">
                                     <span class="icon">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                                             <path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 2v.01L12 13 4 6.01V6h16zM4 18V8l8 5 8-5v10H4z"/>
@@ -215,23 +218,23 @@
                             <li>
                                 <a href="https://api.whatsapp.com/send?text=Visita%20mi%20portafolio:%20https://aldoreyes.github.io" target="_blank" aria-label="Compartir por WhatsApp">
                                     <span class="icon">
-                                    <img src="assets/icons/whatsapp.webp" alt="LinkedIn Profile" width="22" height="22">
+                                    <img src="assets/icons/whatsapp.webp" alt="WhatsApp icon" width="22" height="22">
                                     </span>
                                     WhatsApp
                                 </a>
                             </li>
                             <li>
-                                <a href="https://www.linkedin.com/sharing/share-offsite/?url=https://aldoreyes.github.io" target="_blank" aria-label="Compartir en LinkedIn">
+                                <a href="https://www.linkedin.com/sharing/share-offsite/?url=https://aldoreyes.github.io" target="_blank" aria-label="Share on LinkedIn">
                                     <span class="icon">
-                                        <img src="assets/icons/linkedin.png" alt="LinkedIn Profile" width="22" height="22">
+                                        <img src="assets/icons/linkedin.png" alt="LinkedIn icon" width="22" height="22">
                                     </span>
                                     LinkedIn
                                 </a>
                             </li>
                             <li>
-                                <a href="https://github.com/AldoReyes84" target="_blank" aria-label="Ver perfil en GitHub">
+                                <a href="https://github.com/AldoReyes84" target="_blank" aria-label="View GitHub profile">
                                     <span class="icon">
-                                        <img src="assets/icons/github.svg" alt="LinkedIn Profile" width="22" height="22">
+                                        <img src="assets/icons/github.svg" alt="GitHub icon" width="22" height="22">
                                     </span>
                                     GitHub
                                 </a>

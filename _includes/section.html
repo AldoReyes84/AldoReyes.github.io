@@ -1,265 +1,267 @@
 <!--Section-->
-            <section>
-               <ul class="nav-tree">
-                <li class="nav-item" id="nav-tree-portfolio">
-                    <button class="tree-toggle">
+            <section role="navigation" aria-label="Navegación del portafolio">
+
+               <ul class="nav-tree" role="tree" tabindex="0" aria-label="Árbol de navegación principal">
+
+                <li class="nav-item" id="nav-tree-portfolio" role="treeitem" aria-level="1">
+                    <button class="tree-toggle" aria-label="hide/show sección Portafolio" aria-expanded="false" tabindex="0">
                         <svg width="12" height="12" xmlns="http://www.w3.org/2000/svg">
                             <rect width="12" height="12" fill="none"/>
                         </svg>
                         Portfolio
                     </button>
                 </li>
-                <li class="nav-item">
-                    <button class="tree-toggle" aria-expanded="false" id="nav-tree-skills">
+                <li class="nav-item" id="nav-tree-skills" role="treeitem" aria-level="1">
+                    <button class="tree-toggle" aria-expanded="false" id="nav-tree-skills" aria-label="hide/show sección Skills" tabindex="0">
                         <svg class="arrow-icon" viewBox="0 0 24 24" width="12" height="12">
                             <path d="M8 5v14l11-7z" fill="currentColor" />
                         </svg>
                         <span class="nav-label">Skills</span>
                     </button>
-                        <ul class="sub-list" hidden>
-                            <li><a><em>You can find these technical skills showcase in this portfolio projects</em></a></li>
-                                <li class="nav-item has-children">
-                                    <button class="tree-toggle" aria-expanded="false" id="sub-list-nav-tree-etl">
+                        <ul class="sub-list" hidden aria-label="Lista de habilidades">
+                            <li><a tabindex="-1"><em>You can find these technical skills showcase in this portfolio projects</em></a></li>
+                                <li class="nav-item has-children" role="treeitem" aria-level="2">
+                                    <button class="tree-toggle" aria-expanded="false" id="sub-list-nav-tree-etl" aria-label="hide/show ETL" tabindex="0">
                                         <svg class="arrow-icon" viewBox="0 0 24 24" width="12" height="12">
                                             <path d="M8 5v14l11-7z" fill="currentColor" />
                                         </svg>
                                         <span class="nav-label">ETL</span>
                                     </button>
-                                    <ul class="sub-list" hidden>
-                                    <li><a href="{{ site.sections.siss.url }}">ETL SISS Integration Package with Python</a></li>
+                                    <ul class="sub-list" hidden aria-label="Proyectos ETL">
+                                    <li><a href="{{ site.sections.siss.url }}" aria-label="Projects_ETL SISS Integration Package with Python">ETL SISS Integration Package with Python</a></li>
                                     </ul>
                                 </li>
-                             <li class="nav-item has-children">
-                                <button class="tree-toggle" aria-expanded="false" id="sub-list-nav-tree-data-analyst">
+                            <li class="nav-item has-children" role="treeitem" aria-level="2">
+                                <button class="tree-toggle" aria-expanded="false" id="sub-list-nav-tree-data-analyst" aria-label="hide/show Data Analysis" tabindex="0">
                                     <svg class="arrow-icon" viewBox="0 0 24 24" width="12" height="12">
                                         <path d="M8 5v14l11-7z" fill="currentColor" />
                                     </svg>
                                     <span class="nav-label">Data Analysis</span>
                                 </button>
-                                <ul class="sub-list" hidden>
-                                    <li><a href="{{ site.sections.adventureworks.url }}">AdventureWorks2022 Data Analysis</a></li> 
-                                    <li><a href="{{ site.sections.contoso.url }}">Contoso Sales Power BI Dashboard</a></li> 
+                                <ul class="sub-list" hidden aria-label="Projects_Data Analysis">
+                                    <li><a href="{{ site.sections.adventureworks.url }}" aria-label="Projects_AdventureWorks2022 Data Analysis">AdventureWorks2022 Data Analysis</a></li> 
+                                    <li><a href="{{ site.sections.contoso.url }}" aria-label="Projects_Contoso Sales Power BI Dashboard">Contoso Sales Power BI Dashboard</a></li> 
                                     </ul>
                             </li>
-                            <li class="nav-item has-children">
-                                <button class="tree-toggle" aria-expanded="false" id="sub-list-nav-tree-data-modeling">
+                            <li class="nav-item has-children" role="treeitem" aria-level="2">
+                                <button class="tree-toggle" aria-expanded="false" id="sub-list-nav-tree-data-modeling" aria-label="hide/show Data Modeling" tabindex="0">
                                     <svg class="arrow-icon" viewBox="0 0 24 24" width="12" height="12">
                                         <path d="M8 5v14l11-7z" fill="currentColor" />
                                     </svg>
                                     <span class="nav-label">Data Modeling</span>
                                 </button>
-                                <ul class="sub-list" hidden>
-                                    <li><a href="{{ site.sections.contoso.url }}">Contoso Sales Power BI Dashboard</a></li> 
+                                <ul class="sub-list" hidden aria-label="Projects_Data Modeling">
+                                    <li><a href="{{ site.sections.contoso.url }}" aria-label="Projects_Contoso Sales Power BI Dashboard">Contoso Sales Power BI Dashboard</a></li> 
                                     </ul>
                             </li>
-                            <li class="nav-item has-children">
-                                <button class="tree-toggle" aria-expanded="false" id="sub-list-nav-tree-dashboard-design">
+                            <li class="nav-item has-children" role="treeitem" aria-level="2">
+                                <button class="tree-toggle" aria-expanded="false" id="sub-list-nav-tree-dashboard-design" aria-label="hide/show Dashboard Design" tabindex="0">
                                     <svg class="arrow-icon" viewBox="0 0 24 24" width="12" height="12">
                                         <path d="M8 5v14l11-7z" fill="currentColor" />
                                     </svg>
                                     <span class="nav-label">Dashboard Design</span>
                                 </button>
-                                <ul class="sub-list" hidden>
-                                    <li><a href="{{ site.sections.contoso.url }}">Contoso Sales Power BI Dashboard</a></li>  
+                                <ul class="sub-list" hidden aria-label="Projects_Dashboard Design">
+                                    <li><a href="{{ site.sections.contoso.url }}" aria-label="Projects_Contoso Sales Power BI Dashboard">Contoso Sales Power BI Dashboard</a></li>  
                                     </ul>
                             </li>
-                            <li class="nav-item has-children">
-                                <button class="tree-toggle" aria-expanded="false" id="sub-list-nav-tree-data-visualization">
+                            <li class="nav-item has-children" role="treeitem" aria-level="2">
+                                <button class="tree-toggle" aria-expanded="false" id="sub-list-nav-tree-data-visualization" aria-label="hide/show Data Visualization" tabindex="0">
                                     <svg class="arrow-icon" viewBox="0 0 24 24" width="12" height="12">
                                         <path d="M8 5v14l11-7z" fill="currentColor" />
                                     </svg>
                                     <span class="nav-label">Data Visualization</span>
                                 </button>
-                                <ul class="sub-list" hidden>
-                                    <li><a href="{{ site.sections.contoso.url }}">Contoso Sales Power BI Dashboard</a></li> 
+                                <ul class="sub-list" hidden aria-label="Projects_Data Visualization">
+                                    <li><a href="{{ site.sections.contoso.url }}" aria-label="Projects_Contoso Sales Power BI Dashboard">Contoso Sales Power BI Dashboard</a></li> 
                                     </ul>
                             </li>
-                            <li class="nav-item has-children">
-                                <button class="tree-toggle" aria-expanded="false" id="sub-list-nav-tree-insights">
+                            <li class="nav-item has-children" role="treeitem" aria-level="2">
+                                <button class="tree-toggle" aria-expanded="false" id="sub-list-nav-tree-insights" aria-label="hide/show Insights" tabindex="0">
                                     <svg class="arrow-icon" viewBox="0 0 24 24" width="12" height="12">
                                         <path d="M8 5v14l11-7z" fill="currentColor" />
                                     </svg>
                                     <span class="nav-label">Insights</span>
                                 </button>
-                                <ul class="sub-list" hidden>
-                                    <li><a href="{{ site.sections.contoso.url }}">Contoso Sales Power BI Dashboard</a></li> 
-                                    <li><a href="{{ site.sections.adventureworks.url }}">AdventureWorks2022 Data Analysis</a></li> 
+                                <ul class="sub-list" hidden aria-label="Projects_Insights">
+                                    <li><a href="{{ site.sections.contoso.url }}" aria-label="Projects_Contoso Sales Power BI Dashboard">Contoso Sales Power BI Dashboard</a></li> 
+                                    <li><a href="{{ site.sections.adventureworks.url }}" aria-label="Projects_AdventureWorks2022 Data Analysis">AdventureWorks2022 Data Analysis</a></li> 
                                     </ul>
                             </li>
-                            <li class="nav-item has-children">
-                                <button class="tree-toggle" aria-expanded="false" id="sub-list-nav-tree-okr-kpis">
+                            <li class="nav-item has-children" role="treeitem" aria-level="2">
+                                <button class="tree-toggle" aria-expanded="false" id="sub-list-nav-tree-okr-kpis" aria-label="hide/show OKR/KPIs" tabindex="0">
                                     <svg class="arrow-icon" viewBox="0 0 24 24" width="12" height="12">
                                         <path d="M8 5v14l11-7z" fill="currentColor" />
                                     </svg>
                                     <span class="nav-label">OKR/KPIs</span>
                                 </button>
-                                <ul class="sub-list" hidden>
-                                    <li><a href="{{ site.sections.experience.url }}">Project Analyst at Intel</a></li> 
+                                <ul class="sub-list" hidden aria-label="Projects_OKR/KPIs">
+                                    <li><a href="{{ site.sections.experience.url }}" aria-label="Ver experiencia Project Analyst at Intel">Project Analyst at Intel</a></li> 
                                     </ul>
                             </li>
-                            <li class="nav-item has-children">
-                                <button class="tree-toggle" aria-expanded="false" id="sub-list-nav-tree-web-development">
+                            <li class="nav-item has-children" role="treeitem" aria-level="2">
+                                <button class="tree-toggle" aria-expanded="false" id="sub-list-nav-tree-web-development" aria-label="hide/show Web Development" tabindex="0">
                                     <svg class="arrow-icon" viewBox="0 0 24 24" width="12" height="12">
                                         <path d="M8 5v14l11-7z" fill="currentColor" />
                                     </svg>
                                     <span class="nav-label">Web Development</span>
                                 </button>
-                                <ul class="sub-list" hidden>
-                                    <li><a href="#">This Portfolio</a></li> 
+                                <ul class="sub-list" hidden aria-label="Projects_Web Development">
+                                    <li><a href="#" aria-label="Ver este portafolio">This Portfolio</a></li> 
                                     </ul>
                             </li>
                         </ul>
                 </li>                     
-                <li class="nav-item" id="nav-tree-tools">
-                    <button class="tree-toggle" aria-expanded="false" >
+                <li class="nav-item" id="nav-tree-tools" role="treeitem" aria-level="1">
+                    <button class="tree-toggle" aria-expanded="false" aria-label="hide/show Tools" tabindex="0">
                         <svg class="arrow-icon" viewBox="0 0 24 24" width="12" height="12">
                             <path d="M8 5v14l11-7z" fill="currentColor" />
                         </svg>
                         <span class="nav-label">Tools</span>
                     </button>
-                    <ul class="sub-list" hidden>
-                        <li class="nav-item has-children">
-                            <li><a><em>You can find these tools display through this portfolio projects</em></a></li>
-                                <button class="tree-toggle" aria-expanded="false">
+                    <ul class="sub-list" hidden aria-label="Lista de herramientas">
+                        <li class="nav-item has-children" role="treeitem" aria-level="2">
+                            <li><a tabindex="-1"><em>You can find these tools display through this portfolio projects</em></a></li>
+                                <button class="tree-toggle" aria-expanded="false" aria-label="hide/show Power BI" tabindex="0">
                                     <svg class="arrow-icon" viewBox="0 0 24 24" width="12" height="12">
                                         <path d="M8 5v14l11-7z" fill="currentColor" />
                                     </svg>
                                     <span class="nav-label">Power BI</span>
                                 </button>
-                                <ul class="sub-list" hidden>
-                                    <li><a href="{{ site.sections.contoso.url }}">Contoso Sales Power BI Dashboard</a></li> 
-                                    <li><a href="{{ site.sections.adventureworks.url }}">AdventureWorks2022 Data Analysis</a></li> 
+                                <ul class="sub-list" hidden aria-label="Proyectos Power BI">
+                                    <li><a href="{{ site.sections.contoso.url }}" aria-label="Projects_Contoso Sales Power BI Dashboard">Contoso Sales Power BI Dashboard</a></li> 
+                                    <li><a href="{{ site.sections.adventureworks.url }}" aria-label="Projects_AdventureWorks2022 Data Analysis">AdventureWorks2022 Data Analysis</a></li> 
                                     </ul>
                             </li>
-                           <li class="nav-item has-children">
-                                <button class="tree-toggle" aria-expanded="false">
+                      <li class="nav-item has-children" role="treeitem" aria-level="2">
+                          <button class="tree-toggle" aria-expanded="false" aria-label="hide/show SQL" tabindex="0">
                                     <svg class="arrow-icon" viewBox="0 0 24 24" width="12" height="12">
                                         <path d="M8 5v14l11-7z" fill="currentColor" />
                                     </svg>
                                     <span class="nav-label">SQL</span>
                                 </button>
-                                <ul class="sub-list" hidden>
-                                    <li><a href="{{ site.sections.siss.url }}">ETL SISS Integration Package with Python</a></li> 
-                                    <li><a href="{{ site.sections.adventureworks.url }}">AdventureWorks2022 Data Analysis</a></li> 
+                                <ul class="sub-list" hidden aria-label="Proyectos SQL">
+                                    <li><a href="{{ site.sections.siss.url }}" aria-label="Projects_ETL SISS Integration Package with Python">ETL SISS Integration Package with Python</a></li> 
+                                    <li><a href="{{ site.sections.adventureworks.url }}" aria-label="Projects_AdventureWorks2022 Data Analysis">AdventureWorks2022 Data Analysis</a></li> 
                                     </ul>
                             </li>
-                            <li class="nav-item has-children">
-                                <button class="tree-toggle" aria-expanded="false">
+                            <li class="nav-item has-children" role="treeitem" aria-level="2">
+                                <button class="tree-toggle" aria-expanded="false" aria-label="hide/show Excel" tabindex="0">
                                     <svg class="arrow-icon" viewBox="0 0 24 24" width="12" height="12">
                                         <path d="M8 5v14l11-7z" fill="currentColor" />
                                     </svg>
                                     <span class="nav-label">Excel</span>
                                 </button>
-                                <ul class="sub-list" hidden>
-                                    <li><a href="{{ site.sections.contoso.url }}">Contoso Sales Power BI Dashboard</a></li>
-                                    <li><a href="{{ site.sections.adventureworks.url }}">AdventureWorks2022 Data Analysis</a></li> 
+                                <ul class="sub-list" hidden aria-label="Proyectos Excel">
+                                    <li><a href="{{ site.sections.contoso.url }}" aria-label="Projects_Contoso Sales Power BI Dashboard">Contoso Sales Power BI Dashboard</a></li>
+                                    <li><a href="{{ site.sections.adventureworks.url }}" aria-label="Projects_AdventureWorks2022 Data Analysis">AdventureWorks2022 Data Analysis</a></li> 
                                     </ul>
                             </li>
-                            <li class="nav-item has-children">
-                                <button class="tree-toggle" aria-expanded="false">
+                            <li class="nav-item has-children" role="treeitem" aria-level="2">
+                                <button class="tree-toggle" aria-expanded="false" aria-label="hide/show Python" tabindex="0">
                                     <svg class="arrow-icon" viewBox="0 0 24 24" width="12" height="12">
                                         <path d="M8 5v14l11-7z" fill="currentColor" />
                                     </svg>
                                     <span class="nav-label">Python</span>
                                 </button>
-                                <ul class="sub-list" hidden>
-                                    <li><a href="{{ site.sections.adventureworks.url }}">AdventureWorks2022 Data Analysis</a></li>
-                                    <li><a href="{{ site.sections.siss.url }}">ETL SISS Integration Package with Python</a></li>  
+                                <ul class="sub-list" hidden aria-label="Proyectos Python">
+                                    <li><a href="{{ site.sections.adventureworks.url }}" aria-label="Projects_AdventureWorks2022 Data Analysis">AdventureWorks2022 Data Analysis</a></li>
+                                    <li><a href="{{ site.sections.siss.url }}" aria-label="Projects_ETL SISS Integration Package with Python">ETL SISS Integration Package with Python</a></li>  
                                     </ul>
                             </li>
-                            <li class="nav-item has-children">
-                                <button class="tree-toggle" aria-expanded="false">
+                            <li class="nav-item has-children" role="treeitem" aria-level="2">
+                                <button class="tree-toggle" aria-expanded="false" aria-label="hide/show SSIS" tabindex="0">
                                     <svg class="arrow-icon" viewBox="0 0 24 24" width="12" height="12">
                                         <path d="M8 5v14l11-7z" fill="currentColor" />
                                     </svg>
                                     <span class="nav-label">SSIS</span>
                                 </button>
-                                <ul class="sub-list" hidden>
-                                    <li><a href="{{ site.sections.siss.url }}">ETL SISS Integration Package with Python</a></li> 
+                                <ul class="sub-list" hidden aria-label="Proyectos SSIS">
+                                    <li><a href="{{ site.sections.siss.url }}" aria-label="Projects_ETL SISS Integration Package with Python">ETL SISS Integration Package with Python</a></li> 
                                     </ul>
                             </li>
-                            <li class="nav-item has-children">
-                                <button class="tree-toggle" aria-expanded="false">
+                            <li class="nav-item has-children" role="treeitem" aria-level="2">
+                                <button class="tree-toggle" aria-expanded="false" aria-label="hide/show Visual Studio Code" tabindex="0">
                                     <svg class="arrow-icon" viewBox="0 0 24 24" width="12" height="12">
                                         <path d="M8 5v14l11-7z" fill="currentColor" />
                                     </svg>
                                     <span class="nav-label">Visual Studio Code</span>
                                 </button>
-                                <ul class="sub-list" hidden>
-                                    <li><a href="#">This Portfolio</a></li> 
-                                    <li><a href="{{ site.sections.adventureworks.url }}">AdventureWorks2022 Data Analysis</a></li> 
+                                <ul class="sub-list" hidden aria-label="Proyectos Visual Studio Code">
+                                    <li><a href="#" aria-label="Ver este portafolio">This Portfolio</a></li> 
+                                    <li><a href="{{ site.sections.adventureworks.url }}" aria-label="Projects_AdventureWorks2022 Data Analysis">AdventureWorks2022 Data Analysis</a></li> 
                                     </ul>
                             </li>
-                            <li class="nav-item has-children">
-                                <button class="tree-toggle" aria-expanded="false">
+                            <li class="nav-item has-children" role="treeitem" aria-level="2">
+                                <button class="tree-toggle" aria-expanded="false" aria-label="hide/show GitHub" tabindex="0">
                                     <svg class="arrow-icon" viewBox="0 0 24 24" width="12" height="12">
                                         <path d="M8 5v14l11-7z" fill="currentColor" />
                                     </svg>
                                     <span class="nav-label">GitHub</span>
                                 </button>
-                                <ul class="sub-list" hidden>
-                                    <li><a href="#">This Portfolio</a></li> 
+                                <ul class="sub-list" hidden aria-label="Proyectos GitHub">
+                                    <li><a href="#" aria-label="Ver este portafolio">This Portfolio</a></li> 
                                     </ul>
                             </li>
-                            <li class="nav-item has-children">
-                                <button class="tree-toggle" aria-expanded="false">
+                            <li class="nav-item has-children" role="treeitem" aria-level="2">
+                                <button class="tree-toggle" aria-expanded="false" aria-label="hide/show Figma" tabindex="0">
                                     <svg class="arrow-icon" viewBox="0 0 24 24" width="12" height="12">
                                         <path d="M8 5v14l11-7z" fill="currentColor" />
                                     </svg>
                                     <span class="nav-label">Figma</span>
                                 </button>
-                                <ul class="sub-list" hidden>
-                                    <li><a href="{{ site.sections.contoso.url }}">Contoso Sales Power BI Dashboard</a></li> 
+                                <ul class="sub-list" hidden aria-label="Proyectos Figma">
+                                    <li><a href="{{ site.sections.contoso.url }}" aria-label="Projects_Contoso Sales Power BI Dashboard">Contoso Sales Power BI Dashboard</a></li> 
                                     </ul>
                             </li>
                         </ul>
                 </li>
                      
-                <li class="nav-item" id="nav-tree-working-experience">
-                    <button class="tree-toggle" aria-expanded="false">
+                <li class="nav-item" id="nav-tree-working-experience" role="treeitem" aria-level="1">
+                    <button class="tree-toggle" aria-expanded="false" aria-label="hide/show Working Experience" tabindex="0">
                         <svg class="arrow-icon" viewBox="0 0 24 24" width="12" height="12">
                             <path d="M8 5v14l11-7z" fill="currentColor" />
                         </svg>
                         <span class="nav-label">Working Experience</span>
                     </button>
-                    <ul class="sub-list" hidden>
-                        <li><a href="{{ site.sections.experience.url }}">Intel Project Analyst</a></li>
-                        <li><a href="{{ site.sections.experience.url }}">Conagra Sales Analyst</a></li>
+                    <ul class="sub-list" hidden aria-label="Lista de experiencias laborales">
+                        <li><a href="{{ site.sections.experience.url }}" aria-label="Ver experiencia Intel Project Analyst">Intel Project Analyst</a></li>
+                        <li><a href="{{ site.sections.experience.url }}" aria-label="Ver experiencia Conagra Sales Analyst">Conagra Sales Analyst</a></li>
                     </ul>
                 </li>
-                <li class="nav-item" id="nav-tree-about-me">
-                    <button class="tree-toggle">
+                <li class="nav-item" id="nav-tree-about-me" role="treeitem" aria-level="1">
+                    <button class="tree-toggle" aria-label="Ir a About me" tabindex="0">
                         <svg width="12" height="12" xmlns="http://www.w3.org/2000/svg">
                             <rect width="12" height="12" fill="none"/>
                         </svg>
-                        <a id="about-me-link" href="{{ site.sections.aboutme.url }}">About me</a>
+                        <a id="about-me-link" href="{{ site.sections.aboutme.url }}" aria-label="Ir a About me">About me</a>
                     </button>
                 </li>
-                <li class="nav-item" id="nav-tree-projects">
-                    <button class="tree-toggle" aria-expanded="false" >
+                <li class="nav-item" id="nav-tree-projects" role="treeitem" aria-level="1">
+                    <button class="tree-toggle" aria-expanded="false" aria-label="hide/show Projects" tabindex="0">
                         <svg class="arrow-icon" viewBox="0 0 24 24" width="12" height="12">
                             <path d="M8 5v14l11-7z" fill="currentColor" />
                         </svg>
                         <span class="nav-label">Projects</span>
                     </button>
-                    <ul class="sub-list" hidden>
-                        <li><a href="{{ site.sections.contoso.url }}">Contoso Sales Power BI Dashboard</a></li>
-                        <li><a href="{{ site.sections.adventureworks.url }}">AdventureWorks2022 Data Analysis</a></li>
-                        <li><a href="{{ site.sections.siss.url }}">ETL SISS Integration Package with Python</a></li>
+                    <ul class="sub-list" hidden aria-label="Lista de proyectos">
+                        <li><a href="{{ site.sections.contoso.url }}" aria-label="Projects_Contoso Sales Power BI Dashboard">Contoso Sales Power BI Dashboard</a></li>
+                        <li><a href="{{ site.sections.adventureworks.url }}" aria-label="Projects_AdventureWorks2022 Data Analysis">AdventureWorks2022 Data Analysis</a></li>
+                        <li><a href="{{ site.sections.siss.url }}" aria-label="Projects_ETL SISS Integration Package with Python">ETL SISS Integration Package with Python</a></li>
                     </ul>
                 </li>
-                <li class="nav-item">
-                    <button class="tree-toggle" aria-expanded="false">
+                <li class="nav-item" id="nav-tree-documents" role="treeitem" aria-level="1">
+                    <button class="tree-toggle" aria-expanded="false" aria-label="hide/show Documents" tabindex="0">
                         <svg class="arrow-icon" viewBox="0 0 24 24" width="12" height="12">
                             <path d="M8 5v14l11-7z" fill="currentColor" />
                         </svg>
                         <span class="nav-label">Documents</span>
                     </button>
-                    <ul class="sub-list" hidden>
+                    <ul class="sub-list" hidden aria-label="Lista de documentos">
                         <li>
-                            <a href="./assets/files/Aldo%20Reyes%20CV.pdf">
+                            <a href="./assets/files/Aldo%20Reyes%20CV.pdf" aria-label="Descargar Curriculum en PDF">
                                 <span class="icon">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="24" viewBox="0 0 24 24" fill="none">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true" focusable="false">
                                         <rect x="3" y="3" width="26" height="18" rx="2" ry="2" fill="#E53E3E"/>
                                         <text x="6" y="16" font-family="Arial, sans-serif" font-size="10" fill="white">PDF</text>
                                     </svg>
@@ -269,18 +271,18 @@
                         </li>
                     </ul>
                 </li>
-                <li class="nav-item">
-                    <button class="tree-toggle" aria-expanded="false">
+                <li class="nav-item" id="nav-tree-contact" role="treeitem" aria-level="1">
+                    <button class="tree-toggle" aria-expanded="false" aria-label="hide/show Contact" tabindex="0">
                         <svg class="arrow-icon" viewBox="0 0 24 24" width="12" height="12">
                             <path d="M8 5v14l11-7z" fill="currentColor" />
                         </svg>
                         <span class="nav-label">Contact</span>
                     </button>
-                    <ul class="sub-list" hidden>
+                    <ul class="sub-list" hidden aria-label="Lista de contactos">
                         <li>
-                            <a href="tel:+525569318062">
+                            <a href="tel:+525569318062" aria-label="Llamar al número +52 55 6931 8062">
                                 <span class="icon">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
                                         <path d="M7 2C5.9 2 5 2.9 5 4v16c0 1.1.9 2 2 2h10c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2H7zm5 19c-.6 0-1-.4-1-1s.4-1 1-1 1 .4 1 1-.4 1-1 1zm5-3H7V5h10v13z"/>
                                     </svg>
                                 </span>
@@ -288,24 +290,25 @@
                             </a>
                         </li>
                         <li>
-                            <a href="mailto:aldoan84@gmail.com" aria-label="Enviar correo a Gmail">
+                            <a href="mailto:aldoan84@gmail.com" aria-label="Enviar correo a aldoan84@gmail.com">
                                 <span class="icon">
-                                    <img src="assets/icons/gmail.png" alt="Gmail icon" width="24" height="17">
+                                    <img src="assets/icons/gmail.png" alt="Ícono de Gmail" width="24" height="17">
                                 </span>
                                 aldoan84@gmail.com
                             </a>
                         </li>
                         <li>
-                             <a href="mailto:aldoan84@hotmail.com" target="_blank">
+                            <a href="mailto:aldoan84@hotmail.com" target="_blank" aria-label="Enviar correo a aldoan84@hotmail.com">
                                 <span class="icon">
-                                    <img src="assets/icons/outlook.png" alt="LinkedIn Profile" width="24" height="22">
+                                    <img src="assets/icons/outlook.png" alt="Ícono de Outlook" width="24" height="22">
                                 </span>
-                                aldoan84@hotmial.com
+                                aldoan84@hotmail.com
                             </a>
+                        </li>
                         <li>
-                            <a href="https://www.linkedin.com/in/aldoreyesbianalyst?" target="_blank">
+                            <a href="https://www.linkedin.com/in/aldoreyesbianalyst?" target="_blank" aria-label="Ver perfil en LinkedIn">
                                 <span class="icon">
-                                    <img src="assets/icons/linkedin.png" alt="LinkedIn Profile" width="22" height="22">
+                                    <img src="assets/icons/linkedin.png" alt="Ícono de LinkedIn" width="22" height="22">
                                 </span>
                                 LinkedIn Profile
                             </a>
@@ -313,7 +316,7 @@
                         <li>
                             <a href="https://github.com/AldoReyes84" target="_blank" aria-label="Ver perfil en GitHub">
                                 <span class="icon">
-                                    <img src="assets/icons/github.svg" alt="LinkedIn Profile" width="22" height="22">
+                                    <img src="assets/icons/github.svg" alt="Ícono de GitHub" width="22" height="22">
                                 </span>
                                 Github/AldoReyes84
                             </a>

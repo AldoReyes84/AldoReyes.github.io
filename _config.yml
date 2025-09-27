@@ -1,7 +1,6 @@
 Title: Aldo Reyes BI Portfolio
 logo: assets/images/Logo Github Photo.png
 description: "Modular, scalable documentation for BI projects"
-baseurl: "" # or "/portfolio" if hosted in a subpath
 url: "https://aldoreyes84.github.io"
 
 theme: jekyll-theme-minimal

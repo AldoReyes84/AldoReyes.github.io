@@ -1,0 +1,78 @@
+# 🛠️ Setup Instructions
+
+This guide explains how to clone, configure, and run the AldoReyes84.github.io portfolio locally.
+
+---
+
+## 📦 Requirements
+
+To preview or contribute to this project, make sure you have:
+
+- Git
+- Jekyll (Ruby-based static site generator)
+- Node.js (optional, for asset bundling or NPM packages)
+- A modern browser (Chrome, Edge, Firefox)
+
+---
+
+## 📥 Clone the repository
+
+```bash
+git clone https://github.com/AldoReyes84/AldoReyes.github.io.git
+cd AldoReyes.github.io
+
+
+
+🧱 Folder Structure Overview
+├── _includes/          # Reusable HTML fragments (header, nav, panels)
+├── _layouts/           # Base layout templates
+├── assets/             # CSS, JS, images, icons
+├── docs/               # Documentation files
+├── index.md            # Main landing page
+├── _config.yml         # Global configuration variables
+
+
+
+⚙️ Configuration
+Edit _config.yml to customize:
+- title, description, url, baseurl
+- Theme colors and font family
+- Navigation labels and social links
+These variables are injected into layouts and includes using Liquid syntax:
+{{ site.title }}
+{{ site.nav.home }}
+{{ site.theme_color }}
+
+
+
+🚀 Run locally with Jekyll
+If you're using Bundler:
+bundle install
+bundle exec jekyll serve
+
+
+Then open http://localhost:4000 in your browser.
+
+🧪 Development Tips
+- Use the dev branch for layout and visual testing
+- Modularize components in _includes/
+- Track changes in docs/changelog.md
+- Use semantic HTML and accessibility attributes (aria-label, role, tabindex)
+
+📤 Deployment
+To publish the site:
+- Enable GitHub Pages in repository settings
+- Set source to main branch and root folder
+- Push changes to main to trigger deployment
+
+🧩 Related Repositories
+This portfolio links to multiple thematic sections:
+- Contoso Sales Dashboard
+- AdventureWorks2022 Analysis
+- SSIS Integration with Python Faker
+Each section shares the same layout and navigation logic.
+
+🧠 Notes
+- All dropdown panels and navigation elements are modular
+- Layout is responsive and optimized for desktop and mobile
+- Future enhancements include bilingual support and internal search

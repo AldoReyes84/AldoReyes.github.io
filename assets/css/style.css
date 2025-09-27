@@ -28,7 +28,7 @@ body {
 }
 
 main, section, aside, footer, header {
-  background-: #fdfdfd;
+  background: #fdfdfd;
 }
 
 ul {
@@ -43,7 +43,7 @@ th {
     text-align: center;
     font-size: .875rem;
     padding: 0.5rem;
-    background-: lightgray;
+    background: lightgray;
 }
 
 /* header */
@@ -81,7 +81,7 @@ header {
 
 
 .site-header-nav {
-  background-: ffffff;
+  background: ffffff;
   padding: 1rem 2rem;
 }
 
@@ -580,8 +580,8 @@ footer {
   font-weight: normal;
   cursor: pointer;
   color: #333 ;
-  font-weight: 500;*/
-}
+  font-weight: 500;
+}*/
 
 #nav-tree-portfolio{
   margin-bottom: 0.5em;

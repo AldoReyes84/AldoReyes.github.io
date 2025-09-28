@@ -101,9 +101,13 @@
                         </div>
                         <div class="interactive-table" role="region" aria-label="Work experience table">  
                             <table aria-describedby="workexp-table-desc">
-                                    <tr scope="row"><a href="{{ site.sections.experience.url }}" aria-label="View experience Intel Project Analyst">"Intel Project Analyst"</a></tr>
+                                <tr scope="row">
+                                    <th><a href="{{ site.sections.experience.url }}" aria-label="View experience Intel Project Analyst">"Intel Project Analyst"</a></th>
+                                </tr>
 
-                                    <tr scope="row"><a href="{{ site.sections.experience.url }}" aria-label="View experience Conagra Brands Sales Analyst">"Conagra Brands Sales Analyst"</a></tr>                            
+                                <tr scope="row">
+                                    <th><a href="{{ site.sections.experience.url }}" aria-label="View experience Conagra Brands Sales Analyst">"Conagra Brands Sales Analyst"</a></th>
+                                </tr>                            
                             </table>
                         </div>
                     </template>
@@ -117,8 +121,8 @@
                             <table aria-describedby="projects-table-desc">
                                 <caption id="projects-table-desc" class="sr-only">Table of featured projects</caption>
                                  <tr>
-                                    <td><a href="{{ site.sections.contoso.url }}" aria-label="View project Contoso Dashboard">Contoso Dashboard</a></td>
-                                    <td><a href="{{ site.sections.adventureworks.url }}" aria-label="View project AdWks Data Analysis">AdWks Data Analysis</a></td>
+                                    <th scope="row"><a href="{{ site.sections.contoso.url }}" aria-label="View project Contoso Dashboard">Contoso Dashboard</a></th>
+                                    <th scope="row"><a href="{{ site.sections.adventureworks.url }}" aria-label="View project AdWks Data Analysis">AdWks Data Analysis</a></th>
                                     <th scope="row"><a href="{{ site.sections.ssis.url }}" aria-label="View project ETL Package Project">ETL Package Project</a></th>
                                 </tr>
                             </table>

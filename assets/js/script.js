@@ -1,6 +1,7 @@
 
 document.addEventListener("DOMContentLoaded", function () {
  // console.log("✅ DOM completamente cargado");
+  let activeButton = null;
 
   // 🔍 Base elements validation
   const headerPanelContainer = document.getElementById("header-panels-container");

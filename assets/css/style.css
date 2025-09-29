@@ -417,14 +417,16 @@ td a:hover {
 }
 
 .modal-content-menu {
-    background-color: white;
+    background-color: #f3f3f3;
     outline-color: black;
     position: fixed;
     max-width: 100% !important;
-    max-height: 100vh !important;
+    max-height: 950vh !important;
+    overflow-y: auto !important; 
+    overscroll-behavior: contain !important;
     width: 320px !important;
     margin: 0 !important;
-    top: 88px !important;
+    top: 69px !important;
     bottom: 0 !important;
     z-index: 500 !important;
 }

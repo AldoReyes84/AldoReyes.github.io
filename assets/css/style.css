@@ -455,11 +455,11 @@ section {
   -webkit-tap-highlight-color: transparent; /* Elimina el flash azul en iOS/Android */
 }
 
-.nav-item:focus,
+/*.nav-item:focus,
 .nav-item:active {
-  background-color: transparent; /* O define tu color deseado */
+  background-color: transparent; /* O define tu color deseado 
   outline: none;
-}
+}*/
 
 
 .head-toggle,

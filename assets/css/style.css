@@ -297,8 +297,14 @@ a[aria-label="LinkedIn"] svg {
 
 .arrow-icon {
   transition: transform 0.2s ease;
+  transform: rotate(0deg);
   margin-right: 0.5em;
 }
+
+.dropdown-toggle[aria-expanded="true"] .arrow-icon {
+  transform: rotate(90deg); /* Flecha hacia abajo */
+}
+
 
 .sub-list {
   margin-left: 1.5em;

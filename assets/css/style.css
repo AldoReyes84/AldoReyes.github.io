@@ -290,12 +290,17 @@ a[aria-label="LinkedIn"] svg {
   transition: transform 0.2s ease;
 }
 
-.head-toggle,
-.tree-toggle[aria-expanded="true"] .arrow-indicator {
+.head-toggle[aria-expanded="true"] .arrow-indicator {
   transform: rotate(180deg);
 }
 
-.arrow-icon {
+.tree-toggle[aria-expanded="true"] .arrow-icon{
+  transform: rotate(90deg);
+}
+
+
+
+.tree-toggle.arrow-icon {
   transition: transform 0.2s ease;
   transform: rotate(0deg);
   margin-right: 0.5em;

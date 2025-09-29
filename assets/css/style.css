@@ -318,13 +318,13 @@ a[aria-label="LinkedIn"] svg {
   margin: 1em 0;
 }
 
-.toggle-arrow {
+.headertoggle.toggle-arrow {
   display: inline-block;
   transition: transform 0.2s ease;
   margin-right: 0.5em;
 }
 
-.toggle-arrow[aria-expanded="true"] {
+.header-toggle[aria-expanded="true"] .toggle-arrow {
   transform: rotate(180deg); /* Flecha hacia abajo */
 }
 

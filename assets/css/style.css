@@ -72,11 +72,13 @@ header {
   flex-direction: row;
   align-items: center;
   width: 100%;
+  height: 53px;
 }
 
 .site-header-divider {
   height: 1.5rem;
   margin-inline-start: .5rem;
+  border-inline-start: 2px solid black;
   display: inline-block;
 }
 
@@ -456,6 +458,26 @@ section {
   top: 0;
   align-self: start;
 }
+
+section {
+  max-height: 100vh;
+  overflow-y: auto;
+  scroll-behavior: contain;
+  padding-right: 0.5em;
+}
+
+section::-webkit-scrollbar {
+  width: 6px;
+}
+
+section::-webkit-scrollbar-thumb {
+  background-color: #ccc;
+  border-radius: 3px;
+}
+
+
+
+
 
 .nav-tree {
   list-style: none;

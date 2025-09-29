@@ -62,7 +62,8 @@ header {
   top: 0;
   z-index: 1000;
   padding: 0px 16px 0 16px;
-  border-bottom: 666 1px solid;
+  border-bottom: gray 1px solid;
+  background-color: darkgray;
 }
 
 .holder {
@@ -83,8 +84,7 @@ header {
 
 
 .site-header-nav {
-  background: ffffff;
-  padding: 1rem 2rem;
+  padding: 0.5rem;
 }
 
 .nav-list {
@@ -227,6 +227,7 @@ a[aria-label="LinkedIn"] svg {
 
 .logo {
   overflow: visible;
+  margin-left: .5em;
 }
 
 .icon {
@@ -343,8 +344,13 @@ td a:hover {
 
 .share-side-header {
   margin-left : auto;
-  margin-top: auto;
+  margin-top: 1em;
 }
+
+.share-button {
+  margin-right: 2em;  
+}
+
 
 .share-menu {
   display: flex;
@@ -434,7 +440,7 @@ td a:hover {
   flex-direction: row;
   min-height: 80vh;
   padding: 1rem;
-  background-color: #fff;
+  background-color: #f3f3f3;
   z-index: 1;
 }
 
@@ -443,7 +449,7 @@ td a:hover {
 
 section {
   flex: 0 0 20%;
-  background-color: white;
+  background-color: #f3f3f3;
   color: Gray;
   padding: 24px;
   position: sticky;
@@ -547,7 +553,7 @@ main {
 aside {
   flex: 0 0 20%;
   height: 100%;
-  background-color: #ffffff;
+  background-color: #f3f3f3;
   padding: 1rem;
   position: sticky;
   top: 0;

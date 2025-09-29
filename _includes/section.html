@@ -4,13 +4,14 @@
                <ul class="nav-tree" role="tree" tabindex="0" aria-label="Árbol de navegación principal">
 
                 <li class="nav-item" id="nav-tree-portfolio" role="treeitem" aria-level="1">
-                    <button class="tree-toggle" aria-label="hide/show sección Portafolio" aria-expanded="false" tabindex="0">
+                     <a href="{{ site.sections.portfolio.url | relative_url }}" class="tree-toggle" aria-label="Ir a sección Portafolio" tabindex="0">
                         <svg width="12" height="12" xmlns="http://www.w3.org/2000/svg">
                             <rect width="12" height="12" fill="none"/>
                         </svg>
                         Portfolio
-                    </button>
+                    </a>
                 </li>
+
                 <li class="nav-item" id="nav-tree-skills" role="treeitem" aria-level="1">
                     <button class="tree-toggle" aria-expanded="false" id="nav-tree-skills" aria-label="hide/show sección Skills" tabindex="0">
                         <svg class="arrow-icon" viewBox="0 0 24 24" width="12" height="12">
@@ -28,7 +29,7 @@
                                         <span class="nav-label">ETL</span>
                                     </button>
                                     <ul class="sub-list" hidden aria-label="Proyectos ETL">
-                                    <li><a href="{{ site.sections.siss.url }}" aria-label="Projects_ETL SISS Integration Package with Python">ETL SISS Integration Package with Python</a></li>
+                                        <li><a href="{{ site.sections.siss.url }}" aria-label="Projects_ETL SISS Integration Package with Python">ETL SISS Integration Package with Python</a></li>
                                     </ul>
                                 </li>
                             <li class="nav-item has-children" role="treeitem" aria-level="2">

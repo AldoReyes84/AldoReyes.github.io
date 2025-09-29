@@ -36,3 +36,6 @@ sections:
   aboutme:
     name: "About me"
     url: "https://aldoreyes84.github.io/About-me/"  
+  portfolio:
+    name: "Portfolio"
+    url: "http://aldoreyes84.github.io"

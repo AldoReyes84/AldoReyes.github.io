@@ -460,9 +460,9 @@ section {
 }
 
 section {
-  max-height: 100vh;
+  max-height: 80vh;
   overflow-y: auto;
-  scroll-behavior: contain;
+  overscroll-behavior: contain;
   padding-right: 0.5em;
 }
 

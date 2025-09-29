@@ -135,6 +135,12 @@ header {
   width: 100%;
 }
 
+.tree-toggle a:hover {
+  color: #333;
+}
+
+
+
 button a {
   all: unset;
 }
@@ -654,6 +660,7 @@ footer {
 #nav-tree-portfolio{
   margin-bottom: 0.5em;
   font-size: 0.875rem;
+  font-weight: 600;
   background-color: darkgray
 }
 

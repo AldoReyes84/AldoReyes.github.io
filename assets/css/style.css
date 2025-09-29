@@ -124,6 +124,7 @@ header {
   width: 0%;
   height: 2px;
   transition: width 0.3s ease;
+  background-color: #0078D4;
 }
 
 .nav-item button:hover::after,
@@ -230,7 +231,14 @@ a[aria-label="LinkedIn"] svg {
   margin-right: 0.5em;
   vertical-align: middle;
   fill: #0078D4;
+  transition: transform 0.2s ease-in-out;
 }
+
+.icon:hover {
+  transform: scale(1.2); /* Aumenta el tamaño un 20% */
+}
+
+
 
 .interactive-table {
   width: 100%;

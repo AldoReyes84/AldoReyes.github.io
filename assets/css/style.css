@@ -419,7 +419,7 @@ td a:hover {
 .modal-content-menu {
     background-color: #f3f3f3;
     outline-color: black;
-    position: sticky;
+    position: fixed;
     max-width: 100% !important;
     max-height: 92vh !important;
     overflow-y: auto !important; 

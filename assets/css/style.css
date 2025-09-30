@@ -1,4 +1,7 @@
 /* Style file verified on 2025-09-26 */
+html {
+  scroll-behavior: smooth;
+}
 
 em {
   font-style: italic;

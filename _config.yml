@@ -5,6 +5,8 @@ url: "https://aldoreyes84.github.io"
 
 theme: jekyll-theme-minimal
 
+flyer_url: "/assets/Portfolio Flyer.pdf"
+
 # Navigation labels
 nav:
   home: "Home"
@@ -39,3 +41,5 @@ sections:
   portfolio:
     name: "Portfolio"
     url: "https://aldoreyes84.github.io/AldoReyes.github.io/"
+
+    

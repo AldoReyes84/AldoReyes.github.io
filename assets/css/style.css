@@ -441,7 +441,7 @@ td a:hover {
     padding: 8px;
     position: absolute;
     z-index: 1;
-    bottom: 125%; /* arriba del botón */
+    top: 125%; /* arriba del botón */
     left: 50%;
     transform: translateX(-50%);
     opacity: 0;

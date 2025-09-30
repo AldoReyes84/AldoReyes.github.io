@@ -264,7 +264,15 @@ a[aria-label="LinkedIn"] svg {
   width: 100%;
   border-collapse: collapse;
   padding: 0.5rem;
+  display: flex;
 }
+
+.working-exp-table td{
+  width: 16em;
+}
+
+
+
 .panel-templates {
   display: grid;
   grid-template-columns: 1fr;

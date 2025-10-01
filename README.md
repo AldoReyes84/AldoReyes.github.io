@@ -5,9 +5,7 @@
 ---------------------------------------------------------------------------------------------
 ### Skills 
 
-<div class="tooltip-container">
-<span class="tootip-trigger"> ETL || Data Analysis || Data Modeling || Dashboard Design || Data Visaulization || Insights || OKR/KPI </span>
-<span class=tooltip-text>You can find this skills showcade in this portfolio projects</span></div>
+####<div class="tooltip-container"><span class="tootip-trigger"> ETL || Data Analysis || Data Modeling || Dashboard Design || Data Visaulization || Insights || OKR/KPI </span><span class=tooltip-text>You can find this skills showcade in this portfolio projects</span></div>
 
 ----------------------------------------------------------------------------------------------  
 ### Tools

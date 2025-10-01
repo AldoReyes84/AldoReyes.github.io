@@ -872,8 +872,16 @@ body.dark-mode .site-footer {
   color: #cccccc;
 }
 
+body.dark-mode .section {
+  background-color: #1a1a1a;
+}
+
 body.dark-mode a {
   color: #00bcd4;
+}
+
+body.dark-mode h {
+  color:#ffffff
 }
 
 .darkmode-toggle {

@@ -672,12 +672,6 @@ aside {
   border-left: 3px solid #0078d4;
 }
 
-footer {
-  background-color: #eaeaea;
-  text-align: center;
-  padding: 1rem;
-  font-size: 0.9rem;
-}
 
 .layout-body-footer {
   margin-top: 2rem;
@@ -696,6 +690,7 @@ footer {
 .view {
 	margin: 20px
 }
+
 
 /*.nav-item a{
   margin: 0.5em;
@@ -792,19 +787,35 @@ h1 {
  font-size: 2em
 }
 
-.footer {
-    width: 270px;
-    float: left;
-    position: fixed;
-    bottom: 50px;
-    -webkit-font-smoothing: subpixel-antialiased
-}
 
 /* Main content on the right */
 .content {
   flex: 1;
   padding: 2em;
 }
+
+.site-footer {
+  background-color: #1a1a1a;
+  color: #f0f0f0;
+  padding: 2rem;
+  font-size: 0.9rem;
+}
+
+.footer-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.footer-note {
+  margin-top: 2rem;
+  text-align: center;
+  font-size: 0.8rem;
+  opacity: 0.7;
+}
+
+
 
 
 

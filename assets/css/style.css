@@ -866,10 +866,14 @@ body.dark-mode .main-content {
   color: #f0f0f0;
 }
 
-
+body.dark-mode header,
 body.dark-mode .site-footer {
   background-color: #000000;
   color: #cccccc;
+}
+
+body.dark-mode .header-panels-container{
+  background-color: #333;
 }
 
 body.dark-mode section,
@@ -879,7 +883,8 @@ body.dark-mode .layout-body-content {
 }
 
 
-body.dark-mode a {
+body.dark-mode a,
+body.dark-mode .nav-lable {
   color: #00bcd4;
 }
 

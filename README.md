@@ -5,12 +5,12 @@
 ---------------------------------------------------------------------------------------------
 ### Skills 
 
-<div class="tooltip-container"><h5 class="tooltip-trigger"> ETL || Data Analysis || Data Modeling || Dashboard Design || Data Visualization || Insights || OKR/KPI </h5><span class="tooltip-text">These skills are showcased in this portfolio's projects.</span></div>
+<div class="tooltip-container"><h5 class="tooltip-trigger"> ETL || Data Analysis || Data Modeling || Dashboard Design || Data Visualization || Insights || OKR/KPI </h5><span class="tooltip-text">Skills are showcased in this portfolio's projects.</span></div>
 
 ----------------------------------------------------------------------------------------------  
 ### Tools
 
-##### <span title="Poject-1">[Power BI]()</span> || <span title="Poject-2, 3">[SQL]()</span> || <span title="Poject-2">[Excel]()</span> || <span title="Poject-2, 3">[Python]()</span> || <span title="Poject-2">[SSIS]()</span>
+<div class="tooltip-container"><h5 class="tooltip-trigger"> Power BI || SQL || Excel || Python || SSIS </h5><span class="tooltip-text">Tools are showcased in this portfolio's projects.</span></div>
 
 -----------------------------------------------------------------------------------------------
 ### [Work Experience](https://aldoreyes84.github.io/working_experience/)

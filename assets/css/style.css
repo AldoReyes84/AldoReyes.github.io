@@ -878,21 +878,34 @@ body.dark-mode .header-panels-container{
 
 body.dark-mode section,
 body.dark-mode aside,
-body.dark-mode .layout-body-content {
+body.dark-mode .layout-body-content,
+body.dark-mode table tr {
   background-color: #444;
 }
 
 
 body.dark-mode a,
-body.dark-mode .nav-lable {
-  color: #00bcd4;
+body.dark-mode .nav-item button {
+  color: #0078D4;
 }
 
+body.dark-mode a:hover,
+body.dark-mode .nav-item button:hover {
+  color: #66cfff;
+}
+
+
 body.dark-mode {
-  h1, h2, h3, h4, h5, h6 {
+  h1, h2, h3, h4, h5, h6, td {
     color: #ffffff;
   }
 }
+
+body.dark-mode table tr td:first-child {
+  color: #000000;
+}
+
+
 
 .darkmode-toggle {
   display: flex;

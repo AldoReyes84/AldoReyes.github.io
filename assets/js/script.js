@@ -183,13 +183,13 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
   //🌙 Dark Mode
-  const toggleButton = document.getElementById('toggle-dark');
-  toggleButton.addEventListener('click', () => {
-    document.body.classList.toggle('dark-mode');
-  });
+  const toggle = document.getElementById('dark-toggle');
 
-  const body = document.body;
-  const toggleButton = document.getElementById('toggle-dark');
+  toggle.addEventListener('change', () => {
+  document.body.classList.toggle('dark-mode');
+  const theme = document.body.classList.contains('dark-mode') ? 'dark' : 'light';
+  localStorage.setItem('theme', theme);
+  });
 
   // Load preference
   if (localStorage.getItem('theme') === 'dark') {

@@ -861,17 +861,17 @@ input:checked + .slider::before {
 
 /*-------Dark Mode----------*/
 
-main.dark-mode {
+.main-content.dark-mode {
   background-color: #1a1a1a;
   color: #f0f0f0;
 }
 
-main.dark-mode .site-footer {
+.main-content.dark-mode .site-footer {
   background-color: #000000;
   color: #cccccc;
 }
 
-main.dark-mode a {
+.main-content.dark-mode a {
   color: #00bcd4;
 }
 

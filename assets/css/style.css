@@ -875,6 +875,25 @@ body.dark-mode a {
   color: #00bcd4;
 }
 
+.darkmode-toggle {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-size: 0.95rem;
+  color: var(--text-color, #1a1a1a);
+}
+
+.darkmode-label {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+
+/* Dark mode override */
+body.dark-mode .darkmode-toggle {
+  color: #f0f0f0;
+}
 
 
 

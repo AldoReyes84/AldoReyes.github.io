@@ -884,10 +884,14 @@ body.dark-mode table tr {
 }
 
 
-body.dark-mode a,
-body.dark-mode .nav-item button {
+body.dark-mode a {
   color: #0078D4;
 }
+
+body.dark-mode .nav-item button{
+  color: #8658d6;
+}
+
 
 body.dark-mode a:hover,
 body.dark-mode .nav-item button:hover {

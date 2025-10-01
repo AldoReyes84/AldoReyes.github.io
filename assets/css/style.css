@@ -872,7 +872,9 @@ body.dark-mode .site-footer {
   color: #cccccc;
 }
 
-body.dark-mode .layout-body-content {
+body.dark-mode .layout-body-content,
+body.dark-mode .section,
+body.dark-mode .aside {
   background-color: #444;
 }
 

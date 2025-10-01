@@ -861,17 +861,17 @@ input:checked + .slider::before {
 
 /*-------Dark Mode----------*/
 
-body.dark-mode {
+main.dark-mode {
   background-color: #1a1a1a;
   color: #f0f0f0;
 }
 
-body.dark-mode .site-footer {
+main.dark-mode .site-footer {
   background-color: #000000;
   color: #cccccc;
 }
 
-body.dark-mode a {
+main.dark-mode a {
   color: #00bcd4;
 }
 
@@ -888,6 +888,12 @@ body.dark-mode a {
   align-items: center;
   gap: 0.4rem;
   color: #ffffff
+}
+
+.moon-icon {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
 }
 
 

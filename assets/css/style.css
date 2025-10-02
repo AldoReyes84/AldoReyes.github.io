@@ -374,6 +374,7 @@ td a {
   transition: background-color 0.2s ease;
   border-bottom: 2px solid #0078d4;
   color: black;
+  background-color: #f8f8f8;
 }
 
 td a:hover {

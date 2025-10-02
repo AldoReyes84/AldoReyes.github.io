@@ -882,7 +882,8 @@ body.dark-mode table tr {
   background-color: #444;
 }
 
-body.dark-mode th {
+body.dark-mode th,
+body.dark-mode td a {
   color: #75b6e7;
   background-color: #444;
 }

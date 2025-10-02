@@ -470,6 +470,10 @@ td a:hover {
     line-height: 1.3;
   }
 
+  .share-menu .tooltip-text{
+    left: -50%;
+  }
+
   .tooltip-container:hover .tooltip-text {
     visibility: visible;
     opacity: 1;
@@ -889,6 +893,13 @@ body.dark-mode td a {
   background-color: #444;
 }
 
+body.dark-mode .contact-menu a,
+body.dark-mode .share-menu a{
+  color: #f0f0f0
+}
+
+
+
 body.dark-mode .nav-item button,
 body.dark-mode button a {
   color: #e6e6e6;
@@ -903,13 +914,14 @@ body.dark-mode .nav-item button:hover {
   color: #66cfff;
 }
 
-body.dark-mode .panel-header-grid a {
+body.dark-mode .panel-header-content a {
   color: #ffffff;
 }
 
 body.dark-mode .panel-header-grid a:first-of-type {
   color: #75b6e7;
 }
+
 
 body.dark-mode {
   h1, h2, h3, h4, h5, h6, td {

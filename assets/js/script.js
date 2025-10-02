@@ -181,4 +181,23 @@ document.addEventListener("DOMContentLoaded", function () {
       if (subList) subList.hidden = !subList.hidden;
     });
   });
+
+  //🌙 Dark Mode Toggle
+  const toggle = document.getElementById('dark-toggle');
+
+  // Restaurar preferencia al cargar
+  window.addEventListener('DOMContentLoaded', () => {
+    const savedTheme = localStorage.getItem('theme');
+    const isDark = savedTheme === 'dark';
+    document.body.classList.toggle('dark-mode', isDark);
+    toggle.checked = isDark;
+  });
+
+  // Alternar y guardar preferencia
+  toggle.addEventListener('change', () => {
+    const isDark = toggle.checked;
+    document.body.classList.toggle('dark-mode', isDark);
+    localStorage.setItem('theme', isDark ? 'dark' : 'light');
+  });
+
 });

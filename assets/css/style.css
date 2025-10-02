@@ -902,6 +902,7 @@ body.dark-mode .share-menu a{
 
 
 body.dark-mode .nav-item button,
+body.dark-mode #nav-tree-portfolio,
 body.dark-mode button a {
   color: #e6e6e6;
 }

@@ -1,113 +1,87 @@
- <header class="sticky-header" role="banner" aria-label="Main site header">
-            <div class="holder">
-             <div class="logo" role="link" aria-label="Home">
-                 <a href="{{ site.sections.portfolio.url | relative_url }}" class="logo" role="link" aria-label="Home">
-                     <span class="icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" aria-label="Home icon" role="img">
-                            <path d="M3 9.5L12 3l9 6.5V21a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1V9.5z"/>
-                        </svg>
-                    </span>
-                </a>
-             </div>
-                <div class="site-header-divider"></div>
-                
-                <div class="mobile-menu-hamburger" role="button"> 
-                <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="modal-content-menu" aria-label="Open main menu" tabindex="0">
-                    <span class="hamburger-icon">
-                        <svg width="24" height="24" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
-                            <path d="M3 6h18M3 12h18M3 18h18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-                        </svg>
-                    </span>
-                </button>
-                </div>
-                
-                <nav class="site-header-nav" aria-label="Main navigation">
-                    <ul class="nav-list" role="menubar">
-    
-                        <li class="nav-item dropdown" role="none">
-                            <button class="header-toggle" type="button" aria-expanded="false" aria-controls="panel-skills" data-target="panel-skills" aria-label="Open Skills panel" role="menuitem" tabindex="0">
-                                Skills
-                                <svg class="toggle-arrow" width="12" height="12" viewBox="0 0 24 24" aria-hidden="true">
-                                    <path d="M7 10l5 5 5-5z" fill="currentColor"/>
-                                </svg>
-                            </button>
-                        </li>
+{% assign lang = page.lang | default: 'es' %}
 
-                        <li class="nav-item dropdown" role="none">
-                            <button class="header-toggle" type="button" aria-expanded="false" aria-controls="panel-tools" data-target="panel-tools" aria-label="Open Tools panel" role="menuitem" tabindex="0">
-                                Tools
-                                <svg class="toggle-arrow" width="12" height="12" viewBox="0 0 24 24" aria-hidden="true">
-                                    <path d="M7 10l5 5 5-5z" fill="currentColor"/>
-                                </svg>
-                            </button>
-                        </li>
+<header class="sticky-header" role="banner" aria-label="{{ site.data.textos[lang].main_header }}">
+  <div class="holder">
+    <div class="logo" role="link" aria-label="{{ site.data.textos[lang].home }}">
+      <a href="{{ site.sections.portfolio.url | relative_url }}" class="logo" role="link" aria-label="{{ site.data.textos[lang].home }}">
+        <span class="icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" aria-label="{{ site.data.textos[lang].home_icon }}" role="img">
+            <title>{{ site.data.textos[lang].home_icon }}</title>
+            <path d="M3 9.5L12 3l9 6.5V21a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1V9.5z"/>
+          </svg>
+        </span>
+      </a>
+    </div>
 
-                        <li class="nav-item dropdown" role="none">
-                            <button class="header-toggle" type="button" aria-expanded="false" aria-controls="panel-work-experience" data-target="panel-work-experience" aria-label="Open Work Experience panel" role="menuitem" tabindex="0">
-                                Work Experience
-                                <svg class="toggle-arrow" width="12" height="12" viewBox="0 0 24 24" aria-hidden="true">
-                                    <path d="M7 10l5 5 5-5z" fill="currentColor"/>
-                                </svg>
-                            </button>
-                        </li>
+    <div class="site-header-divider"></div>
 
-                        <li class="nav-item dropdown" role="none">
-                            <button class="tree-toggle" aria-label="Go to About me section" role="menuitem" tabindex="0">
-                                 <svg width="12" height="12" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                                    <rect width="12" height="12" fill="none"/>
-                                </svg>
-                                <a id="about-me-link" href="{{ site.sections.aboutme.url }}" aria-label="About me">About me</a>
-                            </button>
-                        </li>
+    <div class="mobile-menu-hamburger" role="button">
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="modal-content-menu" aria-label="{{ site.data.textos[lang].open_main_menu }}" tabindex="0">
+        <span class="hamburger-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+            <path d="M3 6h18M3 12h18M3 18h18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+        </span>
+      </button>
+    </div>
 
+    <nav class="site-header-nav" aria-label="{{ site.data.textos[lang].main_navigation }}">
+      <ul class="nav-list" role="menubar">
 
-                        <li class="nav-item dropdown" role="none">
-                            <button class="header-toggle" type="button" aria-expanded="false" aria-controls="panel-projects" data-target="panel-projects" aria-label="Open Projects panel" role="menuitem" tabindex="0">
-                                Projects
-                                <svg class="toggle-arrow" width="12" height="12" viewBox="0 0 24 24" aria-hidden="true">
-                                    <path d="M7 10l5 5 5-5z" fill="currentColor"/>
-                                </svg>
-                            </button>
-                        </li>
+        {% assign items = "skills,tools,work_experience,projects,documents,contact,share" | split: "," %}
+        {% for item in items %}
+        <li class="nav-item dropdown" role="none">
+          <button class="header-toggle" type="button"
+                  aria-expanded="false"
+                  aria-controls="panel-{{ item }}"
+                  data-target="panel-{{ item }}"
+                  aria-label="{{ site.data.textos[lang].open_panel }} {{ site.data.textos[lang][item] }}"
+                  role="menuitem"
+                  tabindex="0">
+            {{ site.data.textos[lang][item] }}
+            <svg class="toggle-arrow" width="12" height="12" viewBox="0 0 24 24" aria-hidden="true">
+              <title>{{ site.data.textos[lang].dropdown_icon }}</title>
+              <path d="M7 10l5 5 5-5z" fill="currentColor"/>
+            </svg>
+          </button>
+        </li>
+        {% endfor %}
 
-                        <li class="nav-item dropdown" role="none">
-                            <button class="header-toggle" type="button" aria-expanded="false" aria-controls="panel-documents" data-target="panel-documents" aria-label="Open Documents panel" role="menuitem" tabindex="0">
-                                Documents
-                                <svg class="toggle-arrow" width="12" height="12" viewBox="0 0 24 24" aria-hidden="true">
-                                    <path d="M7 10l5 5 5-5z" fill="currentColor"/>
-                                </svg>
-                            </button>
-                        </li>
+        <li class="nav-item dropdown" role="none">
+          <button class="tree-toggle" aria-label="{{ site.data.textos[lang].go_to_section }} {{ site.data.textos[lang].about_me }}" role="menuitem" tabindex="0">
+            <svg width="12" height="12" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <rect width="12" height="12" fill="none"/>
+            </svg>
+            <a id="about-me-link" href="{{ site.sections.aboutme.url }}" aria-label="{{ site.data.textos[lang].about_me }}">
+              {{ site.data.textos[lang].about_me }}
+            </a>
+          </button>
+        </li>
 
-                        <li class="nav-item dropdown" role="none">
-                            <button class="header-toggle" type="button" aria-expanded="false" aria-controls="panel-contact" data-target="panel-contact" aria-label="Open Contact panel" role="menuitem" tabindex="0">
-                                Contact
-                                <svg class="toggle-arrow" width="12" height="12" viewBox="0 0 24 24" aria-hidden="true">
-                                    <path d="M7 10l5 5 5-5z" fill="currentColor"/>
-                                </svg>
-                            </button>
-                        </li>
-                    </ul>
-                </nav>
-                <div class = "share-side-header">
-                    <nav class="share-button" id="share-button" aria-label="Share menu" aria-expanded="false" role="navigation">
-                        <ul>
-                            <li class ="nav-item dropdown" role="none">
-                                <button class="header-toggle" type="button" aria-expanded="false" aria-controls="share-menu" data-target="share-menu" aria-label="Open Share menu" role="menuitem" tabindex="0">
-                                    <span class="icon">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" aria-label="Share">
-                                            <path d="M14 3h7v7h-2V6.41l-9.29 9.3-1.42-1.42L17.59 5H14V3z"/>
-                                            <path d="M5 5h4V3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2v-4h-2v4H5V5z"/>
-                                        </svg>
-                                    </span>
-                                    Share
-                                    <svg class="toggle-arrow" width="12" height="12" viewBox="0 0 24 24" aria-hidden="true">
-                                        <path d="M7 10l5 5 5-5z" fill="currentColor"/>
-                                    </svg>
-                                </button>
-                            </li>
-                        </ul>
-                    </nav>
-                </div>
-            </div>
-        </header>
+      </ul>
+    </nav>
+
+    <div class="share-side-header">
+      <nav class="share-button" id="share-button" aria-label="{{ site.data.textos[lang].share_menu }}" aria-expanded="false" role="navigation">
+        <ul>
+          <li class="nav-item dropdown" role="none">
+            <button class="header-toggle" type="button" aria-expanded="false" aria-controls="share-menu" data-target="share-menu" aria-label="{{ site.data.textos[lang].open_panel }} {{ site.data.textos[lang].share }}" role="menuitem" tabindex="0">
+              <span class="icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" aria-label="{{ site.data.textos[lang].share_icon }}">
+                  <title>{{ site.data.textos[lang].share_icon }}</title>
+                  <path d="M14 3h7v7h-2V6.41l-9.29 9.3-1.42-1.42L17.59 5H14V3z"/>
+                  <path d="M5 5h4V3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2v-4h-2v4H5V5z"/>
+                </svg>
+              </span>
+              {{ site.data.textos[lang].share }}
+              <svg class="toggle-arrow" width="12" height="12" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M7 10l5 5 5-5z" fill="currentColor"/>
+              </svg>
+            </button>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</header>
+

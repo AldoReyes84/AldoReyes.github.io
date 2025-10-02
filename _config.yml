@@ -1,3 +1,4 @@
+---
 Title: Aldo Reyes BI Portfolio
 logo: assets/images/Logo Github Photo.png
 description: "Modular, scalable documentation for BI projects"
@@ -42,6 +43,8 @@ sections:
     name: "Portfolio"
     url: "https://aldoreyes84.github.io/AldoReyes.github.io/"
 
+lang: es
+
 es:
   main_header: "Encabezado principal del sitio"
   home: "Inicio"
@@ -82,3 +85,4 @@ en:
   contact: "Contact"
   share: "Share"
 
+---

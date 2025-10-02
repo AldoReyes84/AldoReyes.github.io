@@ -882,9 +882,10 @@ body.dark-mode table tr {
   background-color: #444;
 }
 
-
+body.dark-mode th,
 body.dark-mode a {
   color: #75b6e7;
+  background-color: #444;
 }
 
 body.dark-mode .nav-item button,

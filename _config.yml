@@ -42,4 +42,31 @@ sections:
     name: "Portfolio"
     url: "https://aldoreyes84.github.io/AldoReyes.github.io/"
 
-    
+es:
+  skills: "Habilidades"
+  tools: "Herramientas"
+  work_experience: "Experiencia laboral"
+  about_me: "Sobre mí"
+  projects: "Proyectos"
+  documents: "Documentos"
+  contact: "Contacto"
+  share: "Compartir"
+  open_panel: "Abrir panel de"
+  open_skills_panel: "Abrir panel de habilidades"
+  go_to_section: "Ir a la sección de"
+  dropdown_icon: "Icono de desplegable"
+
+en:
+  skills: "Skills"
+  tools: "Tools"
+  work_experience: "Work Experience"
+  about_me: "About me"
+  projects: "Projects"
+  documents: "Documents"
+  contact: "Contact"
+  share: "Share"
+  open_panel: "Open"
+  open_skills_panel: "Open Skills panel"
+  go_to_section: "Go to"
+  dropdown_icon: "Dropdown icon"
+   

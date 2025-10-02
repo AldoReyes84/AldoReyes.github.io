@@ -912,11 +912,6 @@ body.dark-mode table tr td:first-child {
   background-color: #444;
 }
 
-body.dark-mode #about-me-link {
-  background-color: #000000;
-}
-
-
 .darkmode-toggle {
   display: flex;
   align-items: center;

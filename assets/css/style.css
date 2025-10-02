@@ -882,8 +882,7 @@ body.dark-mode table tr {
   background-color: #444;
 }
 
-body.dark-mode th,
-body.dark-mode a {
+body.dark-mode th {
   color: #75b6e7;
   background-color: #444;
 }
@@ -910,9 +909,12 @@ body.dark-mode {
 }
 
 body.dark-mode table tr td:first-child {
-  color: #000000;
+  background-color: #444;
 }
 
+body.dark-mode #about-me-link {
+  background-color: #000000;
+}
 
 
 .darkmode-toggle {

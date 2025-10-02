@@ -795,9 +795,9 @@ h1 {
 }
 
 .site-footer {
-  background-color: #1a1a1a;
+  background-color: #444;
   color: #f0f0f0;
-  padding: 2rem;
+  padding: 1rem;
   font-size: 0.9rem;
 }
 
@@ -809,7 +809,6 @@ h1 {
 }
 
 .footer-note {
-  margin-top: 2rem;
   text-align: center;
   font-size: 0.8rem;
   opacity: 0.7;
@@ -918,6 +917,7 @@ body.dark-mode table tr td:first-child {
   gap: 0.75rem;
   font-size: 0.95rem;
   color: var(--text-color, #1a1a1a);
+  margin-left: auto;
 }
 
 .darkmode-label {

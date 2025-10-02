@@ -182,25 +182,22 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 
-  //🌙 Dark Mode
+  //🌙 Dark Mode Toggle
   const toggle = document.getElementById('dark-toggle');
 
-  toggle.addEventListener('change', () => {
-  document.body.classList.toggle('dark-mode');
-  const theme = document.body.classList.contains('dark-mode') ? 'dark' : 'light';
-  localStorage.setItem('theme', theme);
+  // Restaurar preferencia al cargar
+  window.addEventListener('DOMContentLoaded', () => {
+    const savedTheme = localStorage.getItem('theme');
+    const isDark = savedTheme === 'dark';
+    document.body.classList.toggle('dark-mode', isDark);
+    toggle.checked = isDark;
   });
 
-  // Load preference
-  if (localStorage.getItem('theme') === 'dark') {
-    body.classList.add('dark-mode');
-  }
-
-  // Altern and save
-  toggleButton.addEventListener('click', () => {
-    body.classList.toggle('dark-mode');
-    const theme = body.classList.contains('dark-mode') ? 'dark' : 'light';
-    localStorage.setItem('theme', theme);
+  // Alternar y guardar preferencia
+  toggle.addEventListener('change', () => {
+    const isDark = toggle.checked;
+    document.body.classList.toggle('dark-mode', isDark);
+    localStorage.setItem('theme', isDark ? 'dark' : 'light');
   });
 
 });

@@ -902,6 +902,13 @@ body.dark-mode .nav-item button:hover {
   color: #66cfff;
 }
 
+body.dark-mode .panel-header-grid a {
+  color: #ffffff;
+}
+
+body.dark-mode .panel-header-grid a:first-of-type {
+  color: #75b6e7;
+}
 
 body.dark-mode {
   h1, h2, h3, h4, h5, h6, td {

@@ -883,6 +883,7 @@ body.dark-mode .header-panels-container{
 body.dark-mode section,
 body.dark-mode aside,
 body.dark-mode .layout-body-content,
+body.dark-mode .modal-content-menu,
 body.dark-mode table tr {
   background-color: #444;
 }

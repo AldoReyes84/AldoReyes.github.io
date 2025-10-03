@@ -37,3 +37,96 @@ en:
   documents: "Documents"
   contact: "Contact"
   share: "Share"
+
+
+# Dropdown Menu
+
+es:
+  skills_view: "Ver habilidades técnicas"
+  skills_title: "Habilidades técnicas"
+  skills_description: "Estas habilidades técnicas están demostradas en este portafolio"
+  skills_table_label: "Tabla de habilidades técnicas"
+
+en:
+  skills_view: "View technical skills"
+  skills_title: "Technical Skills"
+  skills_description: "You can find these technical skills showcased in this portfolio project"
+  skills_table_label: "Technical skills table"
+
+es:
+  tools_view: "Ver herramientas"
+  tools_title: "Herramientas"
+  tools_description: "Estas son las herramientas que uso para crear soluciones de datos"
+  tools_table_label: "Tabla de herramientas"
+
+en:
+  tools_view: "View tools"
+  tools_title: "Tools"
+  tools_description: "These are the tools I use to create data solutions"
+  tools_table_label: "Tools table"
+
+es:
+  work_experience_view: "Ver experiencia laboral"
+  work_experience_title: "Analista de Inteligencia de Negocios"
+  work_experience_description: "6 años de experiencia en empresas internacionales"
+  work_experience_table_label: "Tabla de experiencia laboral"
+
+en:
+  work_experience_view: "View work experience"
+  work_experience_title: "Business Intelligence Analyst"
+  work_experience_description: "6 years of experience in international companies"
+  work_experience_table_label: "Work experience table"
+
+es:
+  projects_view: "Ver proyectos"
+  projects_title: "Proyectos destacados"
+  projects_description: "Estos proyectos muestran soluciones BI aplicadas a casos reales"
+  projects_table_label: "Tabla de proyectos"
+
+en:
+  projects_view: "View projects"
+  projects_title: "Featured Projects"
+  projects_description: "These projects showcase BI solutions applied to real-world cases"
+  projects_table_label: "Projects table"
+
+es:
+  documents_view: "Ver documentos"
+  documents_title: "Documentos profesionales"
+  documents_description: "Estos documentos complementan los proyectos y experiencia mostrados en el portafolio"
+  documents_table_label: "Tabla de documentos"
+
+en:
+  documents_view: "View documents"
+  documents_title: "Professional Documents"
+  documents_description: "These documents complement the projects and experience showcased in the portfolio"
+  documents_table_label: "Documents table"
+
+es:
+  share_menu_label: "Opciones para compartir"
+  share_email_label: "Correo"
+  share_email_aria: "Compartir por correo electrónico"
+  share_email_url: "mailto:?subject=Portafolio BI de Aldo Reyes&body=Recomendado para tu revisión: https://aldoreyes84.github.io/AldoReyes.github.io/%0A%0AAnalista de Inteligencia de Negocios con más de 6 años de experiencia corporativa.%0AHabilidades: Diseño de dashboards, modelado de datos, análisis, visualización, OKR/KPI, ETL.%0AHerramientas: Power BI, Excel, SQL, Python, Figma.%0AProyectos que demuestran habilidades y herramientas."
+
+  share_whatsapp_label: "WhatsApp"
+  share_whatsapp_aria: "Compartir por WhatsApp"
+  share_whatsapp_url: "https://wa.me/?text=Hola%2C%20revisa%20el%20portafolio%20BI%20de%20Aldo%20Reyes%3A%0Ahttps%3A%2F%2Faldoreyes84.github.io%2FAldoReyes.github.io%2F%0AIncluye%20documentación%20modular%20y%20proyectos%20de%20casos%20de%20negocio."
+
+  share_linkedin_label: "LinkedIn"
+  share_linkedin_aria: "Compartir en LinkedIn"
+  share_linkedin_url: "https://www.linkedin.com/shareArticle?mini=true&url=https://aldoreyes84.github.io/AldoReyes.github.io/&title=Portafolio%20BI%20de%20Aldo%20Reyes&summary=Explora%20documentación%20escalable%20y%20soluciones%20BI%20modulares.&source=aldoreyes84.github.io"
+  share_linkedin_tooltip: "¿Quieres recomendar este portafolio a alguien?<br>Compártelo públicamente o envía la URL como mensaje privado desde tu cuenta de LinkedIn."
+
+en:
+  share_menu_label: "Sharing options"
+  share_email_label: "Email"
+  share_email_aria: "Share by email"
+  share_email_url: "mailto:?subject=Aldo Reyes's BI Portfolio&body=Recommended for your review: https://aldoreyes84.github.io/AldoReyes.github.io/%0A%0ABusiness Intelligence Analyst with more than 6 years of corporate experience.%0ASkills: Dashboard Design, Data Modeling, Analysis, Visualization, OKR/KPI, ETL.%0ATools: Power BI, Excel, SQL, Python, Figma.%0AProjects showcasing skills and toolkit."
+
+  share_whatsapp_label: "WhatsApp"
+  share_whatsapp_aria: "Share via WhatsApp"
+  share_whatsapp_url: "https://wa.me/?text=Hi%2C%20check%20out%20Aldo%20Reyes's%20BI%20portfolio%3A%0Ahttps%3A%2F%2Faldoreyes84.github.io%2FAldoReyes.github.io%2F%0AIt%20includes%20modular%20documentation%20and%20business%20case%20projects."
+
+  share_linkedin_label: "LinkedIn"
+  share_linkedin_aria: "Share on LinkedIn"
+  share_linkedin_url: "https://www.linkedin.com/shareArticle?mini=true&url=https://aldoreyes84.github.io/AldoReyes.github.io/&title=Aldo%20Reyes's%20BI%20Portfolio&summary=Explore%20scalable%20documentation%20and%20modular%20BI%20solutions.&source=aldoreyes84.github.io"
+  share_linkedin_tooltip: "Want to recommend this portfolio to someone?<br>Share it publicly or send the URL as a private message from your LinkedIn account."

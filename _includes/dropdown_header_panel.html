@@ -1,5 +1,7 @@
 <!-- Dropdown Panel with variable content -->
 
+    {% assign lang = page.lang | default: 'en' %}
+
     <div class="header-panels-container" id="header-panels-container" hidden aria-label="Dropdown header panels" role="region">
         
             <div class="header-panel-content" id="header-panel-content" role="region" aria-live="polite">
@@ -7,10 +9,10 @@
                 <div class="panel-templates" hidden aria-hidden="true">
                     <template id="skills"> 
                         <div class = "panel-header-grid">
-                            <a class="button" tabindex="0" aria-label="View technical skills">Technical Skills</a>
-                            <a tabindex="-1" aria-hidden="true">"You can find these technical skills showcased in this portfolio project"</a>
+                            <a class="button" tabindex="0" aria-label="{{ site.data.textos[lang].skills_view }}">{{ site.data.textos[lang].skills_title }}</a>
+                            <a tabindex="-1" aria-hidden="true">{{ site.data.textos[lang].skills_description }}</a>
                         </div>
-                        <div class="interactive-table" role="region" aria-label="Technical skills table">
+                        <div class="interactive-table" role="region" aria-label="{{ site.data.textos[lang].skills_table_label }}">
                             <table aria-describedby="skills-table-desc">
                                 <caption id="skills-table-desc" class="sr-only"></caption>
                                 <tr>
@@ -61,13 +63,20 @@
                         </div>
                     </template>
 
-                    <template id="tools"> 
-                        <div class = "panel-header-grid">
-                            <a class="button" tabindex="0" aria-label="View tools">Tools</a>
-                            <a tabindex="-1" aria-hidden="true">"These are the tools I use to create data solutions"</a>
+                    <template id="tools">
+                        <div class="panel-header-grid">
+                            <a class="button" tabindex="0" aria-label="{{ site.data.textos[lang].tools_view }}">
+                                {{ site.data.textos[lang].tools_title }}
+                            </a>
+
+                            <a tabindex="-1" aria-hidden="true">
+                                {{ site.data.textos[lang].tools_description }}
+                            </a>
                         </div>
-                        <div class="interactive-table" role="region" aria-label="Tools table">
+
+                        <div class="interactive-table" role="region" aria-label="{{ site.data.textos[lang].tools_table_label }}">
                             <table aria-describedby="tools-table-desc">
+
                                 <caption id="tools-table-desc" class="sr-only"></caption>
                                 <tr>
                                     <th scope="col"></th>
@@ -94,37 +103,51 @@
                         </div>
                     </template>
 
-                    <template id="work-experience"> 
-                        <div class = "panel-header-grid">
-                            <a class="button" tabindex="0" aria-label="View work experience">Business Intelligence Analyst</a>
-                            <a tabindex="-1" aria-hidden="true">"6 years of experience in International Companies"</a>
+                    <template id="work-experience">
+                      <div class="panel-header-grid">
+                            <a class="button" tabindex="0" aria-label="{{ site.data.textos[lang].work_experience_view }}">
+                                {{ site.data.textos[lang].work_experience_title }}
+                            </a>
+
+                            <a tabindex="-1" aria-hidden="true">
+                                {{ site.data.textos[lang].work_experience_description }}
+                            </a>
                         </div>
-                        <div class="interactive-table" role="region" aria-label="Work experience table">  
+
+                        <div class="interactive-table" role="region" aria-label="{{ site.data.textos[lang].work_experience_table_label }}">
+                    
+
                             <table class="working-exp-table" aria-describedby="workexp-table-desc"> 
-                                <caption id="workexp-table-desc" class="sr-only"></caption>
-                            <tr>    
-                                <th><a href="{{ site.sections.experience.url }}#working-experience-intel-project-analyst" aria-label="View experience Intel Project Analyst">Intel Project Analyst</a></th>
-                                <td><a href="{{ site.sections.experience.url }}#working-experience-intel-cip-dashboard" aria label="View CIP Dashboard">Certified Instructor Program Dashboard</a></td>
-                                <td><a href="{{ site.sections.experience.url }}#working-experience-intel-qualtrics-dashboard" aria label="View Qualtrics Dashboard">Workshop Quality Survey Dashboard</a></td>
-                                <td><a href="{{ site.sections.experience.url }}#working-experience-intel-devtrained-dashboard" aria label="View Devs Trained Dashboard">Developers Trained Dashboar/DEP ORKs</a></td>
-                                <td><a href="{{ site.sections.experience.url }}#working-experience-intel-docebo-dashboard" aria label="View Docebo Dashboard">Docebo LMS Dashboar</td>
-                            </tr>
-                            <tr>
-                                <th><a href="{{ site.sections.experience.url }}#working-experience-conagra-sales-analyst" aria-label="View experience Conagra Brands Sales Analyst">Conagra Brands Sales Analyst</a></th>
-                                <td><a href="{{ site.sections.experience.url }}#working-experience-conagra-sales-analyst" aria-label="View experience Conagra Brands Sales Analyst">Conagra Sales Analyst</a></td>
-                                <td><a href="{{ site.sections.experience.url }}#working-experience-conagra-operational-managment" aria label="View Operational Managment">Operational Leadership & Process Manager</a></td>
-                                <td><a href="{{ site.sections.experience.url }}#working-experience-conagra-mangcontrol-analyst" aria label="View Managment Control Analyst">Management Control Analyst</td>
-                            </tr>                            
+                                    <caption id="workexp-table-desc" class="sr-only"></caption>
+                                <tr>    
+                                    <th><a href="{{ site.sections.experience.url }}#working-experience-intel-project-analyst" aria-label="View experience Intel Project Analyst">Intel Project Analyst</a></th>
+                                    <td><a href="{{ site.sections.experience.url }}#working-experience-intel-cip-dashboard" aria label="View CIP Dashboard">Certified Instructor Program Dashboard</a></td>
+                                    <td><a href="{{ site.sections.experience.url }}#working-experience-intel-qualtrics-dashboard" aria label="View Qualtrics Dashboard">Workshop Quality Survey Dashboard</a></td>
+                                    <td><a href="{{ site.sections.experience.url }}#working-experience-intel-devtrained-dashboard" aria label="View Devs Trained Dashboard">Developers Trained Dashboar/DEP ORKs</a></td>
+                                    <td><a href="{{ site.sections.experience.url }}#working-experience-intel-docebo-dashboard" aria label="View Docebo Dashboard">Docebo LMS Dashboar</td>
+                                </tr>
+                                <tr>
+                                    <th><a href="{{ site.sections.experience.url }}#working-experience-conagra-sales-analyst" aria-label="View experience Conagra Brands Sales Analyst">Conagra Brands Sales Analyst</a></th>
+                                    <td><a href="{{ site.sections.experience.url }}#working-experience-conagra-sales-analyst" aria-label="View experience Conagra Brands Sales Analyst">Conagra Sales Analyst</a></td>
+                                    <td><a href="{{ site.sections.experience.url }}#working-experience-conagra-operational-managment" aria label="View Operational Managment">Operational Leadership & Process Manager</a></td>
+                                    <td><a href="{{ site.sections.experience.url }}#working-experience-conagra-mangcontrol-analyst" aria label="View Managment Control Analyst">Management Control Analyst</td>
+                                </tr>                            
                             </table>
                         </div>
                     </template>
 
-                    <template id="projects"> 
-                        <div class = "panel-header-grid">
-                            <a class="button" tabindex="0" aria-label="View projects">Projects</a>
-                            <a tabindex="-1" aria-hidden="true">"Explore some of my key projects"</a>
+                    <template id="projects">
+                        <div class="panel-header-grid">
+                            <a class="button" tabindex="0" aria-label="{{ site.data.textos[lang].projects_view }}">
+                                {{ site.data.textos[lang].projects_title }}
+                            </a>
+
+                            <a tabindex="-1" aria-hidden="true">
+                                {{ site.data.textos[lang].projects_description }}
+                            </a>
                         </div>
-                        <div class="interactive-table" role="region" aria-label="Projects table">  
+
+                        <div class="interactive-table" role="region" aria-label="{{ site.data.textos[lang].projects_table_label }}">
                             <table aria-describedby="projects-table-desc">
                                 <caption id="projects-table-desc" class="sr-only"></caption>
                                  <tr>
@@ -157,11 +180,16 @@
                         </div>
                     </template>
 
-                    <template id="documents"> 
-                        <div class = "header-panel-content">
-                            <a tabindex="-1" aria-hidden="true"></a>
-                            <a tabindex="-1" aria-hidden="true">"Find relevant documents and resources"</a>
+                    <template id="documents">
+                      <div class="panel-header-grid">
+                            <a class="button" tabindex="0" aria-label="{{ site.data.textos[lang].documents_view }}">
+                                {{ site.data.textos[lang].documents_title }}
+                            </a>
+                            <a tabindex="-1" aria-hidden="true">
+                                {{ site.data.textos[lang].documents_description }}
+                            </a>
                         </div>
+
                         <div class="documents-menu" role="region" aria-label="Relevant documents">
                             <ul class="documents-list">
                                 <li>
@@ -178,103 +206,103 @@
                             </ul>
                     </template>
 
-                    <template id="contact"> 
-                        <div class="header-panel-content" role="region" aria-label="Contact information"> 
+                    <template id="contact">
+                         <div class="header-panel-content" role="region" aria-label="{{ site.data.textos[lang].contact_panel_label }}">
                             <a tabindex="-1" aria-hidden="true"></a>
-                            <a tabindex="-1" aria-hidden="true"><i>"Feel free to get in touch by any mean listed in this section"</i></a> 
+                            <a tabindex="-1" aria-hidden="true">
+                                <i>{{ site.data.textos[lang].contact_intro }}</i>
+                            </a>
+
                             <ul class="contact-menu">
-                                    <li>
-                                        <a href="tel:+525569318062" aria-label="Call number +52 55 6931 8062">
-                                             <span class="icon">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
-                                                    <path d="M7 2C5.9 2 5 2.9 5 4v16c0 1.1.9 2 2 2h10c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2H7zm5 19c-.6 0-1-.4-1-1s.4-1 1-1 1 .4 1 1-.4 1-1 1zm5-3H7V5h10v13z"/>
-                                                </svg>
-                                            </span>
-                                            Cel Phone: +52 55 6931 8062 
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="mailto:aldoan84@gmail.com" aria-label="Enviar correo a aldoan84@gmail.com">
-                                            <span class="icon">
-                                                <img src="assets/icons/gmail.png" alt="Gmail icon" width="24" height="17">
-                                            </span>
+                                <li>
+                                    <a href="tel:+525569318062" aria-label="{{ site.data.textos[lang].contact_phone_aria }}">
+                                        <span class="icon">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                                                <path d="M7 2C5.9 2 5 2.9 5 4v16c0 1.1.9 2 2 2h10c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2H7zm5 19c-.6 0-1-.4-1-1s.4-1 1-1 1 .4 1 1-.4 1-1 1zm5-3H7V5h10v13z"/>
+                                            </svg>
+                                        </span>
+                                        {{ site.data.textos[lang].contact_phone_label }}
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="mailto:aldoan84@gmail.com" aria-label="{{ site.data.textos[lang].contact_gmail_aria }}">
+                                        <span class="icon">
+                                            <img src="assets/icons/gmail.png" alt="Gmail icon" width="24" height="17">
+                                        </span>
                                             aldoan84@gmail.com
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="mailto:aldoan84@hotmail.com" target="_blank" aria-label="Send email to aldoan84@hotmail.com">
-                                            <span class="icon">
-                                                <img src="assets/icons/outlook.png" alt="Outlook icon" width="24" height="22">
-                                            </span>
-                                            aldoan84@hotmail.com
-                                       </a>
-                                    </li>
-                                    <li>
-                                        <a href="https://www.linkedin.com/in/aldoreyesbianalyst?" target="_blank" aria-label="View LinkedIn profile">
-                                            <span class="icon">
-                                                <img src="assets/icons/linkedin.png" alt="LinkedIn icon" width="22" height="22">
-                                            </span>
-                                            LinkedIn Profile
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="https://github.com/AldoReyes84" target="_blank" aria-label="View GitHub profile">
-                                            <span class="icon">
-                                                <img src="assets/icons/github.svg" alt="GitHub icon" width="22" height="22">
-                                            </span>
-                                            Github/AldoReyes84
-                                        </a>
-                                    </li>
-                             </ul>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="mailto:aldoan84@hotmail.com" target="_blank" aria-label="{{ site.data.textos[lang].contact_outlook_aria }}">
+                                        <span class="icon">
+                                            <img src="assets/icons/outlook.png" alt="Outlook icon" width="24" height="22">
+                                        </span>
+                                        aldoan84@hotmail.com
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="https://www.linkedin.com/in/aldoreyesbianalyst?" target="_blank" aria-label="{{ site.data.textos[lang].contact_linkedin_aria }}">
+                                        <span class="icon">
+                                            <img src="assets/icons/linkedin.png" alt="LinkedIn icon" width="22" height="22">
+                                        </span>
+                                            {{ site.data.textos[lang].contact_linkedin_label }}
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="https://github.com/AldoReyes84" target="_blank" aria-label="{{ site.data.textos[lang].contact_github_aria }}">
+                                        <span class="icon">
+                                            <img src="assets/icons/github.svg" alt="GitHub icon" width="22" height="22">
+                                        </span>
+                                            {{ site.data.textos[lang].contact_github_label }}
+                                    </a>
+                                </li>
+                            </ul>
                         </div>
                     </template>
-                    <template id="share-menu"> 
-                        <ul class="share-menu" aria-label="Sharing options">
+
+                    <template id="share-menu">
+                        <ul class="share-menu" aria-label="{{ site.data.textos[lang].share_menu_label }}">
+    
                             <li>
-                                <a href="mailto:?subject=Aldo Reyes's BI Portfolio&body=Recommended for your review: Aldo Reyes’s Portfolio:
-                                            %0A%0Ahttps://aldoreyes84.github.io/AldoReyes.github.io/
-                                            %0A%0AI think this portfolio might be of your interest
-                                            %0A%0ABusiness Intelligence Analyst
-                                            %0AMore than 6 years of corporate experience
-                                            %0ASkills: Business Dashboard Design, Data Modeling, Data Analysis, Data Visualization, Insights, OKR/KPI's, ETL
-                                            %0ATools: Power BI, Excel, SQL, Python, Figma, and more
-                                            %0AProjects showcasing skills and toolkit
-                                            " aria-label="Share by email">
+                                <a href="{{ site.data.textos[lang].share_email_url }}" aria-label="{{ site.data.textos[lang].share_email_aria }}">
                                     <span class="icon">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                                             <path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 2v.01L12 13 4 6.01V6h16zM4 18V8l8 5 8-5v10H4z"/>
                                         </svg>
                                     </span>
-                                    Email
+                                        {{ site.data.textos[lang].share_email_label }}
                                 </a>
                             </li>
-                           
+
                             <li>
-                                <a href="https://wa.me/?text=Hi%2C%20check%20out%20Aldo%20Reyes's%20BI%20portfolio%3A%0Ahttps%3A%2F%2Faldoreyes84.github.io%2FAldoReyes.github.io%2F%0AIt%20includes%20modular%20documentation%20and%20business%20case%20projects."
-                                target="_blank" aria-label="Share Via WhatsApp">
+                                <a href="{{ site.data.textos[lang].share_whatsapp_url }}" target="_blank" aria-label="{{ site.data.textos[lang].share_whatsapp_aria }}">
                                     <span class="icon">
-                                    <img src="assets/icons/whatsapp.webp" alt="WhatsApp icon" width="22" height="22">
+                                        <img src="assets/icons/whatsapp.webp" alt="WhatsApp icon" width="22" height="22">
                                     </span>
-                                    WhatsApp
+                                        {{ site.data.textos[lang].share_whatsapp_label }}
                                 </a>
                             </li>
+
                             <li>
                                 <div class="tooltip-container">
-
-                                    <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://aldoreyes84.github.io/AldoReyes.github.io/&title=Aldo%20Reyes's%20BI%20Portfolio&summary=Explore%20scalable%20documentation%20and%20modular%20BI%20solutions.&source=aldoreyes84.github.io" target="_blank" rel="noopener noreferrer" aria-label="Share on LinkedIn">
-                                    <span class="icon">
-                                        <img src="assets/icons/linkedin.png" alt="LinkedIn icon" width="22" height="22">
-                                    </span>
-                                    LinkedIn
-                                     </a>
+                                    <a href="{{ site.data.textos[lang].share_linkedin_url }}" target="_blank" rel="noopener noreferrer" aria-label="{{ site.data.textos[lang].share_linkedin_aria }}">
+                                        <span class="icon">
+                                            <img src="assets/icons/linkedin.png" alt="LinkedIn icon" width="22" height="22">
+                                        </span>
+                                            {{ site.data.textos[lang].share_linkedin_label }}
+                                    </a>
                                     <div class="tooltip-text">
-                                      Want to recommend this portfolio to someone?<br>
-                                    Share it publicly or send the url as a private message from your LinkedIn account.<br>
+                                        {{ site.data.textos[lang].share_linkedin_tooltip }}
                                     </div>
                                 </div>
-                            </li>                        
+                            </li>
+
                         </ul>
-                    </template>           
+                    </template>      
                 </div>
             </div>
 

@@ -79,7 +79,7 @@ es:
   share_linkedin_url: "https://www.linkedin.com/shareArticle?mini=true&url=https://aldoreyes84.github.io/AldoReyes.github.io/&title=Portafolio%20BI%20de%20Aldo%20Reyes&summary=Explora%20documentación%20escalable%20y%20soluciones%20BI%20modulares.&source=aldoreyes84.github.io"
   share_linkedin_tooltip: "¿Quieres recomendar este portafolio a alguien?<br>Compártelo públicamente o envía la URL como mensaje privado desde tu cuenta de LinkedIn."
 
-  es:
+
   skills_list_label: "Lista de habilidades"
   skills_list_intro: "Estas habilidades técnicas están demostradas en los proyectos de este portafolio"
 
@@ -239,7 +239,7 @@ en:
   share_linkedin_url: "https://www.linkedin.com/shareArticle?mini=true&url=https://aldoreyes84.github.io/AldoReyes.github.io/&title=Aldo%20Reyes's%20BI%20Portfolio&summary=Explore%20scalable%20documentation%20and%20modular%20BI%20solutions.&source=aldoreyes84.github.io"
   share_linkedin_tooltip: "Want to recommend this portfolio to someone?<br>Share it publicly or send the URL as a private message from your LinkedIn account."
 
-  en:
+
   skills_list_label: "Skills list"
   skills_list_intro: "You can find these technical skills showcased in this portfolio projects"
 

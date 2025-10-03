@@ -6,9 +6,11 @@ es:
   main_navigation: "Navegación principal"
   open_panel: "Abrir panel de"
   go_to_section: "Ir a la sección de"
+  hide_and_show_section: "Ocultar y mostrar sección"
   dropdown_icon: "Icono de desplegable"
   share_menu: "Menú de compartir"
   share_icon: "Icono de compartir"
+  portfolio: "Portafolio"
   skills: "Habilidades"
   tools: "Herramientas"
   work-experience: "Experiencia laboral"
@@ -17,6 +19,21 @@ es:
   documents: "Documentos"
   contact: "Contacto"
   share: "Compartir"
+  main_navigation: "Navegación del portafolio"
+  etl: "ETL"
+  data_analysis: "Analisis de Datos"
+  data_modeling: "Modelado de Datos"
+  dashboard_design: "Diseño de Tableros"
+  data_visualization: "Visualización de Datos"
+  insights: "Perspectivas"
+  web_development: "Diseño Web"
+  intel_project_analyst: "Analista de Proyectos en Intel"
+  conagra_sales_analyst: "Analista de Ventas en Conagra"
+  curriculum: "Currículum"
+  contoso_sales: "Tablero de Ventas en Power BI para Contoso"
+  adventureworks_analysis: "Analisis de Datos BD AdventureWorks2022"
+  etl_siss_package: "Paquete de Integracion ETL SISS con Python Faker"
+
 
   skills_view: "Ver habilidades técnicas"
   skills_title: "Habilidades técnicas"
@@ -62,6 +79,86 @@ es:
   share_linkedin_url: "https://www.linkedin.com/shareArticle?mini=true&url=https://aldoreyes84.github.io/AldoReyes.github.io/&title=Portafolio%20BI%20de%20Aldo%20Reyes&summary=Explora%20documentación%20escalable%20y%20soluciones%20BI%20modulares.&source=aldoreyes84.github.io"
   share_linkedin_tooltip: "¿Quieres recomendar este portafolio a alguien?<br>Compártelo públicamente o envía la URL como mensaje privado desde tu cuenta de LinkedIn."
 
+  es:
+  skills_list_label: "Lista de habilidades"
+  skills_list_intro: "Estas habilidades técnicas están demostradas en los proyectos de este portafolio"
+
+  skills_categories:
+    etl: "ETL"
+    data_analysis: "Análisis de datos"
+    data_modeling: "Modelado de datos"
+    dashboard_design: "Diseño de dashboards"
+    data_visualization: "Visualización de datos"
+    insights: "Insights"
+    okr_kpis: "OKR/KPIs"
+    web_development: "Desarrollo web"
+
+  skills_aria:
+    toggle_prefix: "Mostrar/ocultar"
+    projects_prefix: "Proyectos de"
+    view_portfolio: "Ver este portafolio"
+    portfolio_label: "Este portafolio"
+
+  tools_list_label: "Lista de herramientas"
+  tools_list_intro: "Estas herramientas están demostradas en los proyectos de este portafolio"
+
+  tools_aria:
+    toggle_prefix: "Mostrar/ocultar"
+    projects_prefix: "Proyectos con"
+    view_portfolio: "Ver este portafolio"
+    portfolio_label: "Este portafolio"
+
+  tools_categories:
+    powerbi: "Power BI"
+    sql: "SQL"
+    excel: "Excel"
+    python: "Python"
+    ssis: "SSIS"
+    vscode: "Visual Studio Code"
+    github: "GitHub"
+    figma: "Figma"
+
+    working_experience: "Experiencia laboral"
+  working_experience_aria: "Mostrar/ocultar experiencia laboral"
+  working_experience_list_label: "Lista de experiencias laborales"
+  working_experience_items:
+    intel: "Intel Project Analyst"
+    conagra: "Conagra Sales Analyst"
+
+  about_me: "Sobre mí"
+  about_me_aria: "Ir a Sobre mí"
+
+  projects: "Proyectos"
+  projects_aria: "Mostrar/ocultar proyectos"
+  projects_list_label: "Lista de proyectos"
+
+  documents: "Documentos"
+  documents_aria: "Mostrar/ocultar documentos"
+  documents_list_label: "Lista de documentos"
+  documents_cv_label: "Currículum"
+  documents_cv_aria: "Descargar currículum en PDF"
+
+  contact: "Contacto"
+  contact_aria: "Mostrar/ocultar contacto"
+  contact_list_label: "Lista de contactos"
+
+  contact_items:
+    phone_label: "Celular: +52 55 6931 8062"
+    phone_aria: "Llamar al número +52 55 6931 8062"
+
+    gmail_label: "aldoan84@gmail.com"
+    gmail_aria: "Enviar correo a aldoan84@gmail.com"
+
+    outlook_label: "aldoan84@hotmail.com"
+    outlook_aria: "Enviar correo a aldoan84@hotmail.com"
+
+    linkedin_label: "Perfil en LinkedIn"
+    linkedin_aria: "Ver perfil en LinkedIn"
+
+    github_label: "Github/AldoReyes84"
+    github_aria: "Ver perfil en GitHub"
+
+
 en:
   main_header: "Main site header"
   home: "Home"
@@ -70,9 +167,11 @@ en:
   main_navigation: "Main navigation"
   open_panel: "Open"
   go_to_section: "Go to"
+  hide_and_show_section: "Hide and Show Section"
   dropdown_icon: "Dropdown icon"
   share_menu: "Share menu"
   share_icon: "Share icon"
+  Portfolio: "Portfolio"
   skills: "Skills"
   tools: "Tools"
   work-experience: "Work Experience"
@@ -81,6 +180,20 @@ en:
   documents: "Documents"
   contact: "Contact"
   share: "Share"
+  main_navigation: "Portfolio navigation"
+  etl: "ETL"
+  data_analysis: "Data Analysis"
+  data_modeling: "Data Modeling"
+  dashboard_design: "Dashboard Design"
+  data_visualization: "Data Visualization"
+  insights: "Insights"
+  web_development: "Web Development"
+  intel_project_analyst: "Intel Project Analyst"
+  conagra_sales_analyst: "Conagra Sales Analyst"
+  curriculum: "Resume"
+  contoso_sales: "Contoso Sales Power BI Dashboard"
+  adventureworks_analysis: "AdventureWorks2022 Data Analysis"
+  etl_siss_package: "ETL SISS Integration Package con Python Faker"
 
   skills_view: "View technical skills"
   skills_title: "Technical Skills"
@@ -125,3 +238,86 @@ en:
   share_linkedin_aria: "Share on LinkedIn"
   share_linkedin_url: "https://www.linkedin.com/shareArticle?mini=true&url=https://aldoreyes84.github.io/AldoReyes.github.io/&title=Aldo%20Reyes's%20BI%20Portfolio&summary=Explore%20scalable%20documentation%20and%20modular%20BI%20solutions.&source=aldoreyes84.github.io"
   share_linkedin_tooltip: "Want to recommend this portfolio to someone?<br>Share it publicly or send the URL as a private message from your LinkedIn account."
+
+  en:
+  skills_list_label: "Skills list"
+  skills_list_intro: "You can find these technical skills showcased in this portfolio projects"
+
+  skills_categories:
+    etl: "ETL"
+    data_analysis: "Data Analysis"
+    data_modeling: "Data Modeling"
+    dashboard_design: "Dashboard Design"
+    data_visualization: "Data Visualization"
+    insights: "Insights"
+    okr_kpis: "OKR/KPIs"
+    web_development: "Web Development"
+
+  skills_aria:
+    toggle_prefix: "Hide/show"
+    projects_prefix: "Projects in"
+    view_portfolio: "View this portfolio"
+    portfolio_label: "This portfolio"
+
+    tools_list_label: "Tools list"
+  tools_list_intro: "You can find these tools displayed through the projects in this portfolio"
+
+  tools_aria:
+    toggle_prefix: "Hide/show"
+    projects_prefix: "Projects using"
+    view_portfolio: "View this portfolio"
+    portfolio_label: "This portfolio"
+
+  tools_categories:
+    powerbi: "Power BI"
+    sql: "SQL"
+    excel: "Excel"
+    python: "Python"
+    ssis: "SSIS"
+    vscode: "Visual Studio Code"
+    github: "GitHub"
+    figma: "Figma"
+
+    working_experience: "Working Experience"
+  working_experience_aria: "Hide/show working experience"
+  working_experience_list_label: "Working experience list"
+  working_experience_items:
+    intel: "Intel Project Analyst"
+    conagra: "Conagra Sales Analyst"
+
+  about_me: "About me"
+  about_me_aria: "Go to About me"
+
+  projects: "Projects"
+  projects_aria: "Hide/show projects"
+  projects_list_label: "Projects list"
+
+  documents: "Documents"
+  documents_aria: "Hide/show documents"
+  documents_list_label: "Documents list"
+  documents_cv_label: "Curriculum"
+  documents_cv_aria: "Download curriculum in PDF"
+
+  contact: "Contact"
+  contact_aria: "Hide/show contact"
+  contact_list_label: "Contact list"
+
+  contact_items:
+    phone_label: "Cel Phone: +52 55 6931 8062"
+    phone_aria: "Call number +52 55 6931 8062"
+
+    gmail_label: "aldoan84@gmail.com"
+    gmail_aria: "Send email to aldoan84@gmail.com"
+
+    outlook_label: "aldoan84@hotmail.com"
+    outlook_aria: "Send email to aldoan84@hotmail.com"
+
+    linkedin_label: "LinkedIn Profile"
+    linkedin_aria: "View LinkedIn profile"
+
+    github_label: "Github/AldoReyes84"
+    github_aria: "View GitHub profile"
+
+
+
+

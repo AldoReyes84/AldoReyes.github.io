@@ -1,222 +1,332 @@
-<!--Section-->
-<section role="navigation" aria-label="Navegación del portafolio">
+{% assign lang = page.lang | deafault: 'es' %}
+<!--Section-->                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              <!--Section-->
+<section role="navigation" aria-label="{{ site.data.textos[lang].main_navigation }}">
 
-               <ul class="nav-tree" role="tree" tabindex="0" aria-label="Árbol de navegación principal">
+               <ul class="nav-tree" role="tree" tabindex="0" aria-label="{{ site.data.textos[lang].main_navigation }}">
 
                 <li class="nav-item" id="nav-tree-portfolio" role="treeitem" aria-level="1">
-                     <a href="{{ site.sections.portfolio.url | relative_url }}" class="tree-toggle" aria-label="Ir a sección Portafolio" tabindex="0">
+                     <a href="{{ site.sections.portfolio.url | relative_url }}" class="tree-toggle" aria-label="{{ site.data.textos[lang].go_to_section }} {{ site.data.textos[lang].portfolio }}" tabindex="0">
                         <svg width="12" height="12" xmlns="http://www.w3.org/2000/svg">
                             <rect width="12" height="12" fill="none"/>
                         </svg>
-                        Portfolio
+                        {{ site.data.textos[lang.]portfolio }}
                     </a>
                 </li>
 
                 <li class="nav-item" id="nav-tree-skills" role="treeitem" aria-level="1">
-                    <button class="tree-toggle" aria-expanded="false" id="nav-tree-skills" aria-label="hide/show sección Skills" tabindex="0">
+                    <button class="tree-toggle" aria-expanded="false" id="nav-tree-skills" aria-label="{{ site.data.textos[lang].hide_and_show_section }} {{ site.data.textos[lang].skills }}" tabindex="0">
                         <svg class="arrow-icon" viewBox="0 0 24 24" width="12" height="12">
                             <path d="M8 5v14l11-7z" fill="currentColor" />
                         </svg>
-                        <span class="nav-label">Skills</span>
+                        <span class="nav-label">{{ site.data.textos[lang].skills }}</span>
                     </button>
-                        <ul class="sub-list" hidden aria-label="Lista de habilidades">
-                            <li><a tabindex="-1"><em>You can find these technical skills showcase in this portfolio projects</em></a></li>
-                                <li class="nav-item has-children" role="treeitem" aria-level="2">
-                                    <button class="tree-toggle" aria-expanded="false" id="sub-list-nav-tree-etl" aria-label="hide/show ETL" tabindex="0">
-                                        <svg class="arrow-icon" viewBox="0 0 24 24" width="12" height="12">
-                                            <path d="M8 5v14l11-7z" fill="currentColor" />
-                                        </svg>
-                                        <span class="nav-label">ETL</span>
-                                    </button>
-                                    <ul class="sub-list" hidden aria-label="Proyectos ETL">
-                                        <li><a href="{{ site.sections.siss.url }}" aria-label="Projects_ETL SISS Integration Package with Python"><img src="assets/icons/microsoft-sql-server-logo.png" alt="ssis icon" width="24" height="19"> ETL SISS Integration Package with Python</a></li>
-                                    </ul>
-                                </li>
-                            <li class="nav-item has-children" role="treeitem" aria-level="2">
-                                <button class="tree-toggle" aria-expanded="false" id="sub-list-nav-tree-data-analyst" aria-label="hide/show Data Analysis" tabindex="0">
-                                    <svg class="arrow-icon" viewBox="0 0 24 24" width="12" height="12">
-                                        <path d="M8 5v14l11-7z" fill="currentColor" />
-                                    </svg>
-                                    <span class="nav-label">Data Analysis</span>
-                                </button>
-                                <ul class="sub-list" hidden aria-label="Projects_Data Analysis">
-                                    <li><a href="{{ site.sections.adventureworks.url }}" aria-label="Projects_AdventureWorks2022 Data Analysis">🧠 AdventureWorks2022 Data Analysis</a></li> 
-                                    <li><a href="{{ site.sections.contoso.url }}" aria-label="Projects_Contoso Sales Power BI Dashboard"><img src="assets/icons/powerbi.png" alt="power bi icon" width="24" height="17"> Contoso Sales Power BI Dashboard</a></li> 
-                                    </ul>
-                            </li>
-                            <li class="nav-item has-children" role="treeitem" aria-level="2">
-                                <button class="tree-toggle" aria-expanded="false" id="sub-list-nav-tree-data-modeling" aria-label="hide/show Data Modeling" tabindex="0">
-                                    <svg class="arrow-icon" viewBox="0 0 24 24" width="12" height="12">
-                                        <path d="M8 5v14l11-7z" fill="currentColor" />
-                                    </svg>
-                                    <span class="nav-label">Data Modeling</span>
-                                </button>
-                                <ul class="sub-list" hidden aria-label="Projects_Data Modeling">
-                                    <li><a href="{{ site.sections.contoso.url }}" aria-label="Projects_Contoso Sales Power BI Dashboard"><img src="assets/icons/powerbi.png" alt="power bi icon" width="24" height="17"> Contoso Sales Power BI Dashboard</a></li> 
-                                    </ul>
-                            </li>
-                            <li class="nav-item has-children" role="treeitem" aria-level="2">
-                                <button class="tree-toggle" aria-expanded="false" id="sub-list-nav-tree-dashboard-design" aria-label="hide/show Dashboard Design" tabindex="0">
-                                    <svg class="arrow-icon" viewBox="0 0 24 24" width="12" height="12">
-                                        <path d="M8 5v14l11-7z" fill="currentColor" />
-                                    </svg>
-                                    <span class="nav-label">Dashboard Design</span>
-                                </button>
-                                <ul class="sub-list" hidden aria-label="Projects_Dashboard Design">
-                                    <li><a href="{{ site.sections.contoso.url }}" aria-label="Projects_Contoso Sales Power BI Dashboard"><img src="assets/icons/powerbi.png" alt="power bi icon" width="24" height="17"> Contoso Sales Power BI Dashboard</a></li>  
-                                    </ul>
-                            </li>
-                            <li class="nav-item has-children" role="treeitem" aria-level="2">
-                                <button class="tree-toggle" aria-expanded="false" id="sub-list-nav-tree-data-visualization" aria-label="hide/show Data Visualization" tabindex="0">
-                                    <svg class="arrow-icon" viewBox="0 0 24 24" width="12" height="12">
-                                        <path d="M8 5v14l11-7z" fill="currentColor" />
-                                    </svg>
-                                    <span class="nav-label">Data Visualization</span>
-                                </button>
-                                <ul class="sub-list" hidden aria-label="Projects_Data Visualization">
-                                    <li><a href="{{ site.sections.contoso.url }}" aria-label="Projects_Contoso Sales Power BI Dashboard"><img src="assets/icons/powerbi.png" alt="power bi icon" width="24" height="17"> Contoso Sales Power BI Dashboard</a></li> 
-                                    </ul>
-                            </li>
-                            <li class="nav-item has-children" role="treeitem" aria-level="2">
-                                <button class="tree-toggle" aria-expanded="false" id="sub-list-nav-tree-insights" aria-label="hide/show Insights" tabindex="0">
-                                    <svg class="arrow-icon" viewBox="0 0 24 24" width="12" height="12">
-                                        <path d="M8 5v14l11-7z" fill="currentColor" />
-                                    </svg>
-                                    <span class="nav-label">Insights</span>
-                                </button>
-                                <ul class="sub-list" hidden aria-label="Projects_Insights">
-                                    <li><a href="{{ site.sections.contoso.url }}" aria-label="Projects_Contoso Sales Power BI Dashboard"><img src="assets/icons/powerbi.png" alt="power bi icon" width="24" height="17"> Contoso Sales Power BI Dashboard</a></li> 
-                                    <li><a href="{{ site.sections.adventureworks.url }}" aria-label="Projects_AdventureWorks2022 Data Analysis">🧠 AdventureWorks2022 Data Analysis</a></li> 
-                                    </ul>
-                            </li>
-                            <li class="nav-item has-children" role="treeitem" aria-level="2">
-                                <button class="tree-toggle" aria-expanded="false" id="sub-list-nav-tree-okr-kpis" aria-label="hide/show OKR/KPIs" tabindex="0">
-                                    <svg class="arrow-icon" viewBox="0 0 24 24" width="12" height="12">
-                                        <path d="M8 5v14l11-7z" fill="currentColor" />
-                                    </svg>
-                                    <span class="nav-label">OKR/KPIs</span>
-                                </button>
-                                <ul class="sub-list" hidden aria-label="Projects_OKR/KPIs">
-                                    <li><a href="{{ site.sections.experience.url }}" aria-label="Ver experiencia Project Analyst at Intel">Project Analyst at Intel</a></li> 
-                                    </ul>
-                            </li>
-                            <li class="nav-item has-children" role="treeitem" aria-level="2">
-                                <button class="tree-toggle" aria-expanded="false" id="sub-list-nav-tree-web-development" aria-label="hide/show Web Development" tabindex="0">
-                                    <svg class="arrow-icon" viewBox="0 0 24 24" width="12" height="12">
-                                        <path d="M8 5v14l11-7z" fill="currentColor" />
-                                    </svg>
-                                    <span class="nav-label">Web Development</span>
-                                </button>
-                                <ul class="sub-list" hidden aria-label="Projects_Web Development">
-                                    <li><a href="#" aria-label="Ver este portafolio">This Portfolio</a></li> 
-                                    </ul>
-                            </li>
-                        </ul>
-                </li>                     
+                        <ul class="sub-list" hidden aria-label="{{ site.data.textos[lang].skills_list_label }}">
+  <li>
+    <a tabindex="-1">
+      <em>{{ site.data.textos[lang].skills_list_intro }}</em>
+    </a>
+  </li>
+
+  <!-- ETL -->
+  <li class="nav-item has-children" role="treeitem" aria-level="2">
+    <button class="tree-toggle"
+            aria-expanded="false"
+            id="sub-list-nav-tree-etl"
+            aria-label="{{ site.data.textos[lang].skills_aria.toggle_prefix }} {{ site.data.textos[lang].skills_categories.etl }}"
+            tabindex="0">
+      <svg class="arrow-icon" viewBox="0 0 24 24" width="12" height="12">
+        <path d="M8 5v14l11-7z" fill="currentColor" />
+      </svg>
+      <span class="nav-label">{{ site.data.textos[lang].skills_categories.etl }}</span>
+    </button>
+    <ul class="sub-list" hidden aria-label="{{ site.data.textos[lang].skills_aria.projects_prefix }} {{ site.data.textos[lang].skills_categories.etl }}">
+      <li>
+        <a href="{{ site.sections.siss.url }}" aria-label="ETL SISS Integration Package with Python">
+          <img src="assets/icons/microsoft-sql-server-logo.png" alt="SSIS icon" width="24" height="19">
+          ETL SISS Integration Package with Python
+        </a>
+      </li>
+    </ul>
+  </li>
+
+  <!-- Data Analysis -->
+  <li class="nav-item has-children" role="treeitem" aria-level="2">
+    <button class="tree-toggle"
+            aria-expanded="false"
+            id="sub-list-nav-tree-data-analysis"
+            aria-label="{{ site.data.textos[lang].skills_aria.toggle_prefix }} {{ site.data.textos[lang].skills_categories.data_analysis }}"
+            tabindex="0">
+      <svg class="arrow-icon" viewBox="0 0 24 24" width="12" height="12">
+        <path d="M8 5v14l11-7z" fill="currentColor" />
+      </svg>
+      <span class="nav-label">{{ site.data.textos[lang].skills_categories.data_analysis }}</span>
+    </button>
+    <ul class="sub-list" hidden aria-label="{{ site.data.textos[lang].skills_aria.projects_prefix }} {{ site.data.textos[lang].skills_categories.data_analysis }}">
+      <li>
+        <a href="{{ site.sections.adventureworks.url }}" aria-label="AdventureWorks2022 Data Analysis">🧠 AdventureWorks2022 Data Analysis</a>
+      </li>
+      <li>
+        <a href="{{ site.sections.contoso.url }}" aria-label="Contoso Sales Power BI Dashboard">
+          <img src="assets/icons/powerbi.png" alt="Power BI icon" width="24" height="17">
+          Contoso Sales Power BI Dashboard
+        </a>
+      </li>
+    </ul>
+  </li>
+
+  <!-- Data Modeling -->
+  <li class="nav-item has-children" role="treeitem" aria-level="2">
+    <button class="tree-toggle"
+            aria-expanded="false"
+            id="sub-list-nav-tree-data-modeling"
+            aria-label="{{ site.data.textos[lang].skills_aria.toggle_prefix }} {{ site.data.textos[lang].skills_categories.data_modeling }}"
+            tabindex="0">
+      <svg class="arrow-icon" viewBox="0 0 24 24" width="12" height="12">
+        <path d="M8 5v14l11-7z" fill="currentColor" />
+      </svg>
+      <span class="nav-label">{{ site.data.textos[lang].skills_categories.data_modeling }}</span>
+    </button>
+    <ul class="sub-list" hidden aria-label="{{ site.data.textos[lang].skills_aria.projects_prefix }} {{ site.data.textos[lang].skills_categories.data_modeling }}">
+      <li>
+        <a href="{{ site.sections.contoso.url }}" aria-label="Contoso Sales Power BI Dashboard">
+          <img src="assets/icons/powerbi.png" alt="Power BI icon" width="24" height="17">
+          Contoso Sales Power BI Dashboard
+        </a>
+      </li>
+    </ul>
+  </li>
+
+  <!-- Dashboard Design -->
+  <li class="nav-item has-children" role="treeitem" aria-level="2">
+    <button class="tree-toggle"
+            aria-expanded="false"
+            id="sub-list-nav-tree-dashboard-design"
+            aria-label="{{ site.data.textos[lang].skills_aria.toggle_prefix }} {{ site.data.textos[lang].skills_categories.dashboard_design }}"
+            tabindex="0">
+      <svg class="arrow-icon" viewBox="0 0 24 24" width="12" height="12">
+        <path d="M8 5v14l11-7z" fill="currentColor" />
+      </svg>
+      <span class="nav-label">{{ site.data.textos[lang].skills_categories.dashboard_design }}</span>
+    </button>
+    <ul class="sub-list" hidden aria-label="{{ site.data.textos[lang].skills_aria.projects_prefix }} {{ site.data.textos[lang].skills_categories.dashboard_design }}">
+      <li>
+        <a href="{{ site.sections.contoso.url }}" aria-label="Contoso Sales Power BI Dashboard">
+          <img src="assets/icons/powerbi.png" alt="Power BI icon" width="24" height="17">
+          Contoso Sales Power BI Dashboard
+        </a>
+      </li>
+    </ul>
+  </li>
+
+  <!-- Data Visualization -->
+  <li class="nav-item has-children" role="treeitem" aria-level="2">
+    <button class="tree-toggle"
+            aria-expanded="false"
+            id="sub-list-nav-tree-data-visualization"
+            aria-label="{{ site.data.textos[lang].skills_aria.toggle_prefix }} {{ site.data.textos[lang].skills_categories.data_visualization }}"
+            tabindex="0">
+      <svg class="arrow-icon" viewBox="0 0 24 24" width="12" height="12">
+        <path d="M8 5v14l11-7z" fill="currentColor" />
+      </svg>
+      <span class="nav-label">{{ site.data.textos[lang].skills_categories.data_visualization }}</span>
+    </button>
+    <ul class="sub-list" hidden aria-label="{{ site.data.textos[lang].skills_aria.projects_prefix }} {{ site.data.textos[lang].skills_categories.data_visualization }}">
+      <li>
+        <a href="{{ site.sections.contoso.url }}" aria-label="Contoso Sales Power BI Dashboard">
+          <img src="assets/icons/powerbi.png" alt="Power BI icon" width="24" height="17">
+          Contoso Sales Power BI Dashboard
+        </a>
+      </li>
+    </ul>
+  </li>
+
+  <!-- Insights -->
+  <li class="nav-item has-children" role="treeitem" aria-level="2">
+    <button class="tree-toggle"
+            aria-expanded="false"
+            id="sub-list-nav-tree-insights"
+            aria-label="{{ site.data.textos[lang].skills_aria.toggle_prefix }} {{ site.data.textos[lang].skills_categories.insights }}"
+            tabindex="0">
+      <svg class="arrow-icon" viewBox="0 0 24 24" width="12" height="12">
+        <path d="M8 5v14l11-7z" fill="currentColor" />
+      </svg>
+      <span class="nav-label">{{ site.data.textos[lang].skills_categories.insights }}</span>
+    </button>
+    <ul class="sub-list" hidden aria-label="{{ site.data.textos[lang].skills_aria.projects_prefix }} {{ site.data.textos[lang].skills_categories.insights }}">
+      <li>
+        <a href="{{ site.sections.contoso.url }}" aria-label="Contoso Sales Power BI Dashboard">
+          <img src="assets/icons/powerbi.png" alt="Power BI icon" width="24" height="17">
+          Contoso Sales Power BI Dashboard
+        </a>
+      </li>
+      <li>
+        <a href="{{ site.sections.adventureworks.url }}" aria-label="AdventureWorks2022 Data Analysis">🧠 AdventureWorks2022 Data Analysis</a>
+      </li>
+    </ul>
+  </li>
+
+  <!-- OKR/KPIs -->
+  <li class="nav-item has-children" role="treeitem" aria-level="2">
+    <button class="tree-toggle"
+            aria-expanded="false"
+            id="sub-list-nav-tree-okr-kpis"
+            aria-label="{{ site.data.textos[lang].skills_aria.toggle_prefix }} {{ site.data.textos[lang].skills_categories.okr_kpis }}"
+            tabindex="0">
+      <svg class="arrow-icon" viewBox="0 0 24 24" width="12" height="12">
+          <path d="M8 5v14l11-7z" fill="currentColor" />
+      </svg>
+      <span class="nav-label">{{ site.data.textos[lang].skills_categories.okr_kpis }}</span>
+    </button>
+    <ul class="sub-list" hidden aria-label="{{ site.data.textos[lang].skills_aria.projects_prefix }} {{ site.data.textos[lang].skills_categories.okr_kpis }}">
+      <li>
+        <a href="{{ site.sections.experience.url }}" aria-label="Project Analyst at Intel">
+          Project Analyst at Intel
+        </a>
+      </li>
+    </ul>
+  </li>
+
+  <!-- Web Development -->
+  <li class="nav-item has-children" role="treeitem" aria-level="2">
+    <button class="tree-toggle"
+            aria-expanded="false"
+            id="sub-list-nav-tree-web-development"
+            aria-label="{{ site.data.textos[lang].skills_aria.toggle_prefix }} {{ site.data.textos[lang].skills_categories.web_development }}"
+            tabindex="0">
+      <svg class="arrow-icon" viewBox="0 0 24 24" width="12" height="12">
+        <path d="M8 5v14l11-7z" fill="currentColor" />
+      </svg>
+      <span class="nav-label">{{ site.data.textos[lang].skills_categories.web_development }}</span>
+    </button>
+    <ul class="sub-list" hidden aria-label="{{ site.data.textos[lang].skills_aria.projects_prefix }} {{ site.data.textos[lang].skills_categories.web_development }}">
+      <li>
+        <a href="#" aria-label="{{ site.data.textos[lang].skills_aria.view_portfolio }}">
+          {{ site.data.textos[lang].skills_aria.portfolio_label }}
+        </a>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+
                 <li class="nav-item" id="nav-tree-tools" role="treeitem" aria-level="1">
-                    <button class="tree-toggle" aria-expanded="false" aria-label="hide/show Tools" tabindex="0">
-                        <svg class="arrow-icon" viewBox="0 0 24 24" width="12" height="12">
-                            <path d="M8 5v14l11-7z" fill="currentColor" />
-                        </svg>
-                        <span class="nav-label">Tools</span>
-                    </button>
-                    <ul class="sub-list" hidden aria-label="Lista de herramientas">
-                        <li class="nav-item has-children" role="treeitem" aria-level="2">
-                            <li><a tabindex="-1"><em>You can find these tools display through this portfolio projects</em></a></li>
-                                <button class="tree-toggle" aria-expanded="false" aria-label="hide/show Power BI" tabindex="0">
-                                    <svg class="arrow-icon" viewBox="0 0 24 24" width="12" height="12">
-                                        <path d="M8 5v14l11-7z" fill="currentColor" />
-                                    </svg>
-                                    <span class="nav-label">Power BI</span>
-                                </button>
-                                <ul class="sub-list" hidden aria-label="Proyectos Power BI">
-                                    <li><a href="{{ site.sections.contoso.url }}" aria-label="Projects_Contoso Sales Power BI Dashboard"><img src="assets/icons/powerbi.png" alt="power bi icon" width="24" height="17"> Contoso Sales Power BI Dashboard</a></li> 
-                                    <li><a href="{{ site.sections.adventureworks.url }}" aria-label="Projects_AdventureWorks2022 Data Analysis">🧠 AdventureWorks2022 Data Analysis</a></li>  
-                                    </ul>
-                            </li>
-                      <li class="nav-item has-children" role="treeitem" aria-level="2">
-                          <button class="tree-toggle" aria-expanded="false" aria-label="hide/show SQL" tabindex="0">
-                                    <svg class="arrow-icon" viewBox="0 0 24 24" width="12" height="12">
-                                        <path d="M8 5v14l11-7z" fill="currentColor" />
-                                    </svg>
-                                    <span class="nav-label">SQL</span>
-                                </button>
-                                <ul class="sub-list" hidden aria-label="Proyectos SQL">
-                                    <li><a href="{{ site.sections.siss.url }}" aria-label="Projects_ETL SISS Integration Package with Python"><img src="assets/icons/microsoft-sql-server-logo.png" alt="ssis icon" width="24" height="19"> ETL SISS Integration Package with Python</a></li> 
-                                    <li><a href="{{ site.sections.adventureworks.url }}" aria-label="Projects_AdventureWorks2022 Data Analysis">🧠 AdventureWorks2022 Data Analysis</a></li> 
-                                    </ul>
-                            </li>
-                            <li class="nav-item has-children" role="treeitem" aria-level="2">
-                                <button class="tree-toggle" aria-expanded="false" aria-label="hide/show Excel" tabindex="0">
-                                    <svg class="arrow-icon" viewBox="0 0 24 24" width="12" height="12">
-                                        <path d="M8 5v14l11-7z" fill="currentColor" />
-                                    </svg>
-                                    <span class="nav-label">Excel</span>
-                                </button>
-                                <ul class="sub-list" hidden aria-label="Proyectos Excel">
-                                    <li><a href="{{ site.sections.contoso.url }}" aria-label="Projects_Contoso Sales Power BI Dashboard"><img src="assets/icons/powerbi.png" alt="power bi icon" width="24" height="17"> Contoso Sales Power BI Dashboard</a></li>
-                                    <li><a href="{{ site.sections.adventureworks.url }}" aria-label="Projects_AdventureWorks2022 Data Analysis">🧠 AdventureWorks2022 Data Analysis</a></li> 
-                                    </ul>
-                            </li>
-                            <li class="nav-item has-children" role="treeitem" aria-level="2">
-                                <button class="tree-toggle" aria-expanded="false" aria-label="hide/show Python" tabindex="0">
-                                    <svg class="arrow-icon" viewBox="0 0 24 24" width="12" height="12">
-                                        <path d="M8 5v14l11-7z" fill="currentColor" />
-                                    </svg>
-                                    <span class="nav-label">Python</span>
-                                </button>
-                                <ul class="sub-list" hidden aria-label="Proyectos Python">
-                                    <li><a href="{{ site.sections.adventureworks.url }}" aria-label="Projects_AdventureWorks2022 Data Analysis">🧠 AdventureWorks2022 Data Analysis</a></li>
-                                    <li><a href="{{ site.sections.siss.url }}" aria-label="Projects_ETL SISS Integration Package with Python"><img src="assets/icons/microsoft-sql-server-logo.png" alt="ssis icon" width="24" height="19"> ETL SISS Integration Package with Python</a></li>  
-                                    </ul>
-                            </li>
-                            <li class="nav-item has-children" role="treeitem" aria-level="2">
-                                <button class="tree-toggle" aria-expanded="false" aria-label="hide/show SSIS" tabindex="0">
-                                    <svg class="arrow-icon" viewBox="0 0 24 24" width="12" height="12">
-                                        <path d="M8 5v14l11-7z" fill="currentColor" />
-                                    </svg>
-                                    <span class="nav-label">SSIS</span>
-                                </button>
-                                <ul class="sub-list" hidden aria-label="Proyectos SSIS">
-                                    <li><a href="{{ site.sections.siss.url }}" aria-label="Projects_ETL SISS Integration Package with Python"><img src="assets/icons/microsoft-sql-server-logo.png" alt="ssis icon" width="24" height="19"> ETL SISS Integration Package with Python</a></li> 
-                                    </ul>
-                            </li>
-                            <li class="nav-item has-children" role="treeitem" aria-level="2">
-                                <button class="tree-toggle" aria-expanded="false" aria-label="hide/show Visual Studio Code" tabindex="0">
-                                    <svg class="arrow-icon" viewBox="0 0 24 24" width="12" height="12">
-                                        <path d="M8 5v14l11-7z" fill="currentColor" />
-                                    </svg>
-                                    <span class="nav-label">Visual Studio Code</span>
-                                </button>
-                                <ul class="sub-list" hidden aria-label="Proyectos Visual Studio Code">
-                                    <li><a href="#" aria-label="Ver este portafolio">This Portfolio</a></li> 
-                                    <li><a href="{{ site.sections.adventureworks.url }}" aria-label="Projects_AdventureWorks2022 Data Analysis">🧠 AdventureWorks2022 Data Analysis</a></li> 
-                                    </ul>
-                            </li>
-                            <li class="nav-item has-children" role="treeitem" aria-level="2">
-                                <button class="tree-toggle" aria-expanded="false" aria-label="hide/show GitHub" tabindex="0">
-                                    <svg class="arrow-icon" viewBox="0 0 24 24" width="12" height="12">
-                                        <path d="M8 5v14l11-7z" fill="currentColor" />
-                                    </svg>
-                                    <span class="nav-label">GitHub</span>
-                                </button>
-                                <ul class="sub-list" hidden aria-label="Proyectos GitHub">
-                                    <li><a href="#" aria-label="Ver este portafolio">This Portfolio</a></li> 
-                                    </ul>
-                            </li>
-                            <li class="nav-item has-children" role="treeitem" aria-level="2">
-                                <button class="tree-toggle" aria-expanded="false" aria-label="hide/show Figma" tabindex="0">
-                                    <svg class="arrow-icon" viewBox="0 0 24 24" width="12" height="12">
-                                        <path d="M8 5v14l11-7z" fill="currentColor" />
-                                    </svg>
-                                    <span class="nav-label">Figma</span>
-                                </button>
-                                <ul class="sub-list" hidden aria-label="Proyectos Figma">
-                                    <li><a href="{{ site.sections.contoso.url }}" aria-label="Projects_Contoso Sales Power BI Dashboard"><img src="assets/icons/powerbi.png" alt="power bi icon" width="24" height="17"> Contoso Sales Power BI Dashboard</a></li> 
-                                    </ul>
-                            </li>
-                        </ul>
+    <button class="tree-toggle"
+            aria-expanded="false"
+            aria-label="{{ site.data.textos[lang].tools_aria.toggle_prefix }} {{ site.data.textos[lang].tools }}"
+            tabindex="0">
+        <svg class="arrow-icon" viewBox="0 0 24 24" width="12" height="12">
+        <path d="M8 5v14l11-7z" fill="currentColor" />
+        </svg>
+        <span class="nav-label">{{ site.data.textos[lang].tools }}</span>
+    </button>
+
+    <ul class="sub-list" hidden aria-label="{{ site.data.textos[lang].tools_list_label }}">
+        <li>
+        <a tabindex="-1">
+            <em>{{ site.data.textos[lang].tools_list_intro }}</em>
+        </a>
+        </li>
+
+        {% assign tools = "powerbi,sql,excel,python,ssis,vscode,github,figma" | split: "," %}
+        {% for tool in tools %}
+        <li class="nav-item has-children" role="treeitem" aria-level="2">
+            <button class="tree-toggle"
+                    aria-expanded="false"
+                    aria-label="{{ site.data.textos[lang].tools_aria.toggle_prefix }} {{ site.data.textos[lang].tools_categories[tool] }}"
+                    tabindex="0">
+            <svg class="arrow-icon" viewBox="0 0 24 24" width="12" height="12">
+                <path d="M8 5v14l11-7z" fill="currentColor" />
+            </svg>
+            <span class="nav-label">{{ site.data.textos[lang].tools_categories[tool] }}</span>
+            </button>
+
+            <ul class="sub-list" hidden aria-label="{{ site.data.textos[lang].tools_aria.projects_prefix }} {{ site.data.textos[lang].tools_categories[tool] }}">
+            {% if tool == "powerbi" %}
+                <li>
+                <a href="{{ site.sections.contoso.url }}" aria-label="Contoso Sales Power BI Dashboard">
+                    <img src="assets/icons/powerbi.png" alt="Power BI icon" width="24" height="17">
+                    Contoso Sales Power BI Dashboard
+                </a>
                 </li>
+                <li>
+                <a href="{{ site.sections.adventureworks.url }}" aria-label="AdventureWorks2022 Data Analysis">
+                    🧠 AdventureWorks2022 Data Analysis
+                </a>
+                </li>
+            {% elsif tool == "sql" %}
+                <li>
+                <a href="{{ site.sections.siss.url }}" aria-label="ETL SISS Integration Package with Python">
+                    <img src="assets/icons/microsoft-sql-server-logo.png" alt="SSIS icon" width="24" height="19">
+                    ETL SISS Integration Package with Python
+                </a>
+                </li>
+                <li>
+                <a href="{{ site.sections.adventureworks.url }}" aria-label="AdventureWorks2022 Data Analysis">
+                    🧠 AdventureWorks2022 Data Analysis
+                </a>
+                </li>
+            {% elsif tool == "excel" %}
+                <li>
+                <a href="{{ site.sections.contoso.url }}" aria-label="Contoso Sales Power BI Dashboard">
+                    <img src="assets/icons/powerbi.png" alt="Power BI icon" width="24" height="17">
+                    Contoso Sales Power BI Dashboard
+                </a>
+                </li>
+                <li>
+                <a href="{{ site.sections.adventureworks.url }}" aria-label="AdventureWorks2022 Data Analysis">
+                    🧠 AdventureWorks2022 Data Analysis
+                </a>
+                </li>
+            {% elsif tool == "python" %}
+                <li>
+                <a href="{{ site.sections.adventureworks.url }}" aria-label="AdventureWorks2022 Data Analysis">
+                    🧠 AdventureWorks2022 Data Analysis
+                </a>
+                </li>
+                <li>
+                <a href="{{ site.sections.siss.url }}" aria-label="ETL SISS Integration Package with Python">
+                    <img src="assets/icons/microsoft-sql-server-logo.png" alt="SSIS icon" width="24" height="19">
+                    ETL SISS Integration Package with Python
+                </a>
+                </li>
+            {% elsif tool == "ssis" %}
+                <li>
+                <a href="{{ site.sections.siss.url }}" aria-label="ETL SISS Integration Package with Python">
+                    <img src="assets/icons/microsoft-sql-server-logo.png" alt="SSIS icon" width="24" height="19">
+                    ETL SISS Integration Package with Python
+                </a>
+                </li>
+            {% elsif tool == "vscode" %}
+                <li>
+                <a href="#" aria-label="{{ site.data.textos[lang].tools_aria.view_portfolio }}">
+                    {{ site.data.textos[lang].tools_aria.portfolio_label }}
+                </a>
+                </li>
+                <li>
+                <a href="{{ site.sections.adventureworks.url }}" aria-label="AdventureWorks2022 Data Analysis">
+                    🧠 AdventureWorks2022 Data Analysis
+                </a>
+                </li>
+            {% elsif tool == "github" %}
+                <li>
+                <a href="#" aria-label="{{ site.data.textos[lang].tools_aria.view_portfolio }}">
+                    {{ site.data.textos[lang].tools_aria.portfolio_label }}
+                </a>
+                </li>
+            {% elsif tool == "figma" %}
+                <li>
+                <a href="{{ site.sections.contoso.url }}" aria-label="Contoso Sales Power BI Dashboard">
+                    <img src="assets/icons/powerbi.png" alt="Power BI icon" width="24" height="17">
+                    Contoso Sales Power BI Dashboard
+                </a>
+                </li>
+            {% endif %}
+            </ul>
+        </li>
+        {% endfor %}
+    </ul>
+    </li>
+
                      
                 <li class="nav-item" id="nav-tree-working-experience" role="treeitem" aria-level="1">
                     <button class="tree-toggle" aria-expanded="false" aria-label="hide/show Working Experience" tabindex="0">
@@ -272,59 +382,68 @@
                         </li>
                     </ul>
                 </li>
-                <li class="nav-item" id="nav-tree-contact" role="treeitem" aria-level="1">
-                    <button class="tree-toggle" aria-expanded="false" aria-label="hide/show Contact" tabindex="0">
-                        <svg class="arrow-icon" viewBox="0 0 24 24" width="12" height="12">
-                            <path d="M8 5v14l11-7z" fill="currentColor" />
-                        </svg>
-                        <span class="nav-label">Contact</span>
-                    </button>
-                    <ul class="sub-list" hidden aria-label="Lista de contactos">
-                        <li>
-                            <a href="tel:+525569318062" aria-label="Llamar al número +52 55 6931 8062">
-                                <span class="icon">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+               <li class="nav-item" id="nav-tree-contact" role="treeitem" aria-level="1">
+                            <button class="tree-toggle"
+                                    aria-expanded="false"
+                                    aria-label="{{ site.data.textos[lang].contact_aria }}"
+                                    tabindex="0">
+                                <svg class="arrow-icon" viewBox="0 0 24 24" width="12" height="12">
+                                <path d="M8 5v14l11-7z" fill="currentColor" />
+                                </svg>
+                                <span class="nav-label">{{ site.data.textos[lang].contact }}</span>
+                            </button>
+
+                            <ul class="sub-list" hidden aria-label="{{ site.data.textos[lang].contact_list_label }}">
+                                <li>
+                                <a href="tel:+525569318062" aria-label="{{ site.data.textos[lang].contact_items.phone_aria }}">
+                                    <span class="icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                        fill="currentColor" viewBox="0 0 24 24"
+                                        aria-hidden="true" focusable="false">
                                         <path d="M7 2C5.9 2 5 2.9 5 4v16c0 1.1.9 2 2 2h10c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2H7zm5 19c-.6 0-1-.4-1-1s.4-1 1-1 1 .4 1 1-.4 1-1 1zm5-3H7V5h10v13z"/>
                                     </svg>
-                                </span>
-                                Cel Phone: +52 55 6931 8062 
-                            </a>
-                        </li>
-                        <li>
-                            <a href="mailto:aldoan84@gmail.com" aria-label="Enviar correo a aldoan84@gmail.com">
-                                <span class="icon">
-                                    <img src="assets/icons/gmail.png" alt="Ícono de Gmail" width="24" height="17">
-                                </span>
-                                aldoan84@gmail.com
-                            </a>
-                        </li>
-                        <li>
-                            <a href="mailto:aldoan84@hotmail.com" target="_blank" aria-label="Enviar correo a aldoan84@hotmail.com">
-                                <span class="icon">
-                                    <img src="assets/icons/outlook.png" alt="Ícono de Outlook" width="24" height="22">
-                                </span>
-                                aldoan84@hotmail.com
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://www.linkedin.com/in/aldoreyesbianalyst?" target="_blank" aria-label="Ver perfil en LinkedIn">
-                                <span class="icon">
-                                    <img src="assets/icons/linkedin.png" alt="Ícono de LinkedIn" width="22" height="22">
-                                </span>
-                                LinkedIn Profile
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://github.com/AldoReyes84" target="_blank" aria-label="Ver perfil en GitHub">
-                                <span class="icon">
-                                    <img src="assets/icons/github.svg" alt="Ícono de GitHub" width="22" height="22">
-                                </span>
-                                Github/AldoReyes84
-                            </a>
-                        </li>
-                    </ul>
-                </li>
-            </ul> 
+                                    </span>
+                                    {{ site.data.textos[lang].contact_items.phone_label }}
+                                </a>
+                                </li>
+
+                                <li>
+                                <a href="mailto:aldoan84@gmail.com" aria-label="{{ site.data.textos[lang].contact_items.gmail_aria }}">
+                                    <span class="icon">
+                                    <img src="assets/icons/gmail.png" alt="Gmail icon" width="24" height="17">
+                                    </span>
+                                    {{ site.data.textos[lang].contact_items.gmail_label }}
+                                </a>
+                                </li>
+
+                                <li>
+                                <a href="mailto:aldoan84@hotmail.com" target="_blank" aria-label="{{ site.data.textos[lang].contact_items.outlook_aria }}">
+                                    <span class="icon">
+                                    <img src="assets/icons/outlook.png" alt="Outlook icon" width="24" height="22">
+                                    </span>
+                                    {{ site.data.textos[lang].contact_items.outlook_label }}
+                                </a>
+                                </li>
+
+                                <li>
+                                <a href="https://www.linkedin.com/in/aldoreyesbianalyst?" target="_blank" aria-label="{{ site.data.textos[lang].contact_items.linkedin_aria }}">
+                                    <span class="icon">
+                                    <img src="assets/icons/linkedin.png" alt="LinkedIn icon" width="22" height="22">
+                                    </span>
+                                    {{ site.data.textos[lang].contact_items.linkedin_label }}
+                                </a>
+                                </li>
+
+                                <li>
+                                <a href="https://github.com/AldoReyes84" target="_blank" aria-label="{{ site.data.textos[lang].contact_items.github_aria }}">
+                                    <span class="icon">
+                                    <img src="assets/icons/github.svg" alt="GitHub icon" width="22" height="22">
+                                    </span>
+                                    {{ site.data.textos[lang].contact_items.github_label }}
+                                </a>
+                                </li>
+                                </ul>
+                </li> 
             <div class="botton-menu">
                 
             </div> 

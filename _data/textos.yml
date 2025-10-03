@@ -39,9 +39,14 @@ es:
   projects_table_label: "Tabla de proyectos"
 
   documents_view: "Ver documentos"
-  documents_title: "Documentos profesionales"
-  documents_description: "Estos documentos complementan los proyectos y experiencia mostrados en el portafolio"
+  documents_title: "Documentos"
+  documents_description: ""
   documents_table_label: "Tabla de documentos"
+
+  contact_intro: "Sientase libre de ponerse en contacto por cualquier mediio en listado en esta sección"
+  contact_phone_label: "No. Celular"
+  contact_linkedin_label: "Perfil LinkedIn"
+  contact_github_label: "Github/AldoReyes84"
 
   share_menu_label: "Opciones para compartir"
   share_email_label: "Correo"
@@ -98,10 +103,15 @@ en:
   projects_table_label: "Projects table"
 
   documents_view: "View documents"
-  documents_title: "Professional Documents"
-  documents_description: "These documents complement the projects and experience showcased in the portfolio"
+  documents_title: "Documents"
+  documents_description: ""
   documents_table_label: "Documents table"
 
+  contact_intro: "Feel free to get in touch by any mean listed in this section"
+  contact_phone_label: "Cel Phone"
+  contact_linkedin_label: "LinkedIn Profile"
+  contact_github_label: "Github/AldoReyes84"
+  
   share_menu_label: "Sharing options"
   share_email_label: "Email"
   share_email_aria: "Share by email"

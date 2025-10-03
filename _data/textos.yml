@@ -14,7 +14,7 @@ es:
   skills: "Habilidades"
   tools: "Herramientas"
   work-experience: "Experiencia laboral"
-  about_me: "Sobre mí"
+  about_me: "Acerca de mí"
   projects: "Proyectos"
   documents: "Documentos"
   contact: "Contacto"
@@ -124,7 +124,7 @@ es:
     intel: "Intel Project Analyst"
     conagra: "Conagra Sales Analyst"
 
-  about_me: "Sobre mí"
+  
   about_me_aria: "Ir a Sobre mí"
 
   projects: "Proyectos"
@@ -283,7 +283,7 @@ en:
     intel: "Intel Project Analyst"
     conagra: "Conagra Sales Analyst"
 
-  about_me: "About me"
+  
   about_me_aria: "Go to About me"
 
   projects: "Projects"

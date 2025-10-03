@@ -19,9 +19,8 @@ es:
   documents: "Documentos"
   contact: "Contacto"
   share: "Compartir"
-  main_navigation: "Navegación del portafolio"
   etl: "ETL"
-  data_analysis: "Analisis de Datos"
+  data_analysis: "Análisis de Datos"
   data_modeling: "Modelado de Datos"
   dashboard_design: "Diseño de Tableros"
   data_visualization: "Visualización de Datos"
@@ -31,7 +30,7 @@ es:
   conagra_sales_analyst: "Analista de Ventas en Conagra"
   curriculum: "Currículum"
   contoso_sales: "Tablero de Ventas en Power BI para Contoso"
-  adventureworks_analysis: "Analisis de Datos BD AdventureWorks2022"
+  adventureworks_analysis: "Análisis de Datos BD AdventureWorks2022"
   etl_siss_package: "Paquete de Integracion ETL SISS con Python Faker"
 
 
@@ -60,7 +59,7 @@ es:
   documents_description: ""
   documents_table_label: "Tabla de documentos"
 
-  contact_intro: "Sientase libre de ponerse en contacto por cualquier mediio en listado en esta sección"
+  contact_intro: "Siéntase libre de ponerse en contacto por cualquier mediio en listado en esta sección"
   contact_phone_label: "No. Celular"
   contact_linkedin_label: "Perfil LinkedIn"
   contact_github_label: "Github/AldoReyes84"
@@ -118,7 +117,7 @@ es:
     github: "GitHub"
     figma: "Figma"
 
-    working_experience: "Experiencia laboral"
+  working_experience: "Experiencia laboral"
   working_experience_aria: "Mostrar/ocultar experiencia laboral"
   working_experience_list_label: "Lista de experiencias laborales"
   working_experience_items:
@@ -180,7 +179,6 @@ en:
   documents: "Documents"
   contact: "Contact"
   share: "Share"
-  main_navigation: "Portfolio navigation"
   etl: "ETL"
   data_analysis: "Data Analysis"
   data_modeling: "Data Modeling"
@@ -278,7 +276,7 @@ en:
     github: "GitHub"
     figma: "Figma"
 
-    working_experience: "Working Experience"
+  working_experience: "Working Experience"
   working_experience_aria: "Hide/show working experience"
   working_experience_list_label: "Working experience list"
   working_experience_items:

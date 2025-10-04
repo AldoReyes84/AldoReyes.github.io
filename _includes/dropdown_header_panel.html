@@ -17,14 +17,14 @@
                                 <caption id="skills-table-desc" class="sr-only"></caption>
                                 <tr>
                                     <th scope="col"></th>
-                                    <th scope="col">ETL</th>
-                                    <th scope="col">Data Analysis</th>
-                                    <th scope="col">Data Modeling</th>
-                                    <th scope="col">Dashboard Design</th>
-                                    <th scope="col">Data Visualization</th>
-                                    <th scope="col">Insights</th>
+                                    <th scope="col">{{ site.data.textos[lang].etl }}</th>
+                                    <th scope="col">{{ site.data.textos[lang].data_analysis }}</th>
+                                    <th scope="col">{{ site.data.textos[lang].data_modeling }}</th>
+                                    <th scope="col">{{ site.data.textos[lang].dashboard_design }}</th>
+                                    <th scope="col">{{ site.data.textos[lang].data_visaulization }}</th>
+                                    <th scope="col">{{ site.data.textos[lang].insights }}</th>
                                     <th scope="col">OKR/KPIs</th>
-                                    <th scope="col">Web Development</th>
+                                    <th scope="col">{{ site.data.textos[lang].web_development }}</th>
                                 </tr>
                                 <tr>
                                     <td>Main Tool</td>
@@ -39,23 +39,23 @@
                                 </tr>
                                 <tr>
                                     <td>Project</td>
-                                    <td><a href="{{ site.sections.ssis.url }}" aria-label="View project ETL Package Project">ETL Package Project</a></td>  
-                                    <td><a href="{{ site.sections.adventureworks.url }}" aria-label="View project AdWks Data Analysis">AdWks Data Analysis</a></td>
+                                    <td><a href="{{ site.sections.ssis.url }}" aria-label="{{ site.data.textos[lang].etl_siss_package }}">{{ site.data.textos[lang].etl_siss_package }}</a></td>  
+                                    <td><a href="{{ site.sections.adventureworks.url }}" aria-label="{{ site.data.textos[lang].contoso_sales }}">{{ site.data.textos[lang].adventureworks_analysis }}</a></td>
                                     <td></td>
-                                    <td><a href="{{ site.sections.contoso.url }}" aria-label="View project Contoso Dashboard">Contoso Dashboard</a></td>
-                                    <td><a href="{{ site.sections.contoso.url }}">Contoso Dashboard</a></td>
-                                    <td><a href="{{ site.sections.adventureworks.url }}">AdWks Data Analysis</a></td>
+                                    <td><a href="{{ site.sections.contoso.url }}" aria-label="{{ site.data.textos[lang].contoso_sales }}">{{ site.data.textos[lang].contoso_sales }}</a></td>
+                                    <td><a href="{{ site.sections.contoso.url }}" aria-label="{{ site.data.textos[lang].contoso_sales }}">{{ site.data.textos[lang].contoso_sales }}</a></td>
+                                    <td><a href="{{ site.sections.adventureworks.url }}" aria-label="{{ site.data.textos[lang].contoso_sales }}">{{ site.data.textos[lang].adventureworks_analysis }}</a></td>
                                     <td><a href="{{ site.sections.experience.url }}">Working Experience at Intel</a></td>
                                     <td><a href="Portfolio homepage" aria-label="View this portfolio">This portfolio</a></td>
                                 </tr>
                                 <tr>
                                     <td></td>
                                     <td></td>
-                                    <td><a href="{{ site.sections.contoso.url }}" aria-label="View project Contoso Dashboard">Contoso Dashboard</a></td>
+                                    <td><a href="{{ site.sections.contoso.url }}" aria-label="{{ site.data.textos[lang].contoso_sales }}">{{ site.data.textos[lang].contoso_sales }}</a></td>
                                     <td></td>
                                     <td></td>
                                     <td></td>
-                                    <td><a href="{{ site.sections.contoso.url }}">Contoso Dashboard</a></td>
+                                    <td><a href="{{ site.sections.contoso.url }}" aria-label="{{ site.data.textos[lang].contoso_sales }}">{{ site.data.textos[lang].contoso_sales }}</a></td>
                                     <td></td>
                                     <td></td>
                                 </tr>
@@ -91,14 +91,14 @@
                                 </tr>
                                 <tr>
                                     <td>Project</td>
-                                    <td><a href="{{ site.sections.contoso.url }}" aria-label="View project Contoso Dashboard">Contoso Dashboard</a></td>   
-                                    <td><a href="{{ site.sections.adventureworks.url }}" aria-label="View project AdWks Data Analysis">AdWks Data Analysis</a></td>
-                                    <td><a href="{{ site.sections.adventureworks.url }}" aria-label="View project AdWks Data Analysis">AdWks Data Analysis</a></td>
-                                    <td><a href="{{ site.sections.adventureworks.url }}" aria-label="View project AdWks Data Analysis">AdWks Data Analysis</a></td>
-                                    <td><a href="{{ site.sections.ssis.url }}" aria-label="View project ETL Package Project">ETL Package Project</a></td>
+                                    <td><a href="{{ site.sections.contoso.url }}" aria-label="{{ site.data.textos[lang].contoso_sales }}">{{ site.data.textos[lang].contoso_sales }}</a></td>  
+                                    <td><a href="{{ site.sections.adventureworks.url }}" aria-label="{{ site.data.textos[lang].contoso_sales }}">{{ site.data.textos[lang].adventureworks_analysis }}</a></td>
+                                    <td><a href="{{ site.sections.adventureworks.url }}" aria-label="{{ site.data.textos[lang].contoso_sales }}">{{ site.data.textos[lang].adventureworks_analysis }}</a></td>
+                                    <td><a href="{{ site.sections.adventureworks.url }}" aria-label="{{ site.data.textos[lang].contoso_sales }}">{{ site.data.textos[lang].adventureworks_analysis }}</a></td>
+                                    <td><a href="{{ site.sections.ssis.url }}" aria-label="{{ site.data.textos[lang].etl_siss_package }}">{{ site.data.textos[lang].etl_siss_package }}</a></td>  
                                     <td>This Portfolio</td>
                                     <td>This Portfolio</td>
-                                    <td><a href="{{ site.sections.contoso.url }}">Contoso Dashboard</a></td>
+                                    <td><a href="{{ site.sections.contoso.url }}" aria-label="{{ site.data.textos[lang].contoso_sales }}">{{ site.data.textos[lang].contoso_sales }}</a></td>
                             </table>
                         </div>
                     </template>
@@ -152,7 +152,7 @@
                                 <caption id="projects-table-desc" class="sr-only"></caption>
                                  <tr>
                                     <th scope="row">
-                                        <a href="{{ site.sections.contoso.url }}" aria-label="View project Contoso Dashboard">Contoso Dashboard</a>
+                                        <a href="{{ site.sections.contoso.url }}" aria-label="{{ site.data.textos[lang].contoso_sales }}">Contoso Dashboard</a>
                                         <div class="project-icons">
                                             <img src="assets/icons/powerbi.png" alt="power bi icon" width="24" height="17"><span class="icon"></span>
                                             <img src="assets/icons/excel.png" alt="excel icon" width="19" height="17"><span class="icon"></span>

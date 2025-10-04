@@ -179,8 +179,8 @@
     </button>
     <ul class="sub-list" hidden aria-label="{{ site.data.textos[lang].skills_aria.projects_prefix }} {{ site.data.textos[lang].skills_categories.okr_kpis }}">
       <li>
-        <a href="{{ site.sections.experience.url }}" aria-label="Project Analyst at Intel">
-          Project Analyst at Intel
+        <a href="{{ site.sections.experience.url }}" aria-label="{{ site.data.textos[lang]working_experience_items.intel }}">
+          {{ site.data.textos[lang]working_experience_items.intel }}
         </a>
       </li>
     </ul>
@@ -329,7 +329,7 @@
 
                      
                 <li class="nav-item" id="nav-tree-working-experience" role="treeitem" aria-level="1">
-                    <button class="tree-toggle" aria-expanded="false" aria-label="hide/show Working Experience" tabindex="0">
+                    <button class="tree-toggle" aria-expanded="false" aria-label="{{ site.data.textos[lang].working_experience_aria}}" tabindex="0">
                         <svg class="arrow-icon" viewBox="0 0 24 24" width="12" height="12">
                             <path d="M8 5v14l11-7z" fill="currentColor" />
                         </svg>
@@ -337,8 +337,8 @@
                     </button>
                     <ul class="sub-list" hidden aria-label="{{ site.data.textos[lang].working_experience_list_label }}
 ">
-                        <li><a href="{{ site.sections.experience.url }}" aria-label="Ver experiencia Intel Project Analyst">{{ site.data.textos[lang].working_experience_items.intel }}</a></li>
-                        <li><a href="{{ site.sections.experience.url }}" aria-label="Ver experiencia Conagra Sales Analyst">{{ site.data.textos[lang].working_experience_items.conagra }}
+                        <li><a href="{{ site.sections.experience.url }}" aria-label="{{ site.data.textos[lang].working_experience_items.intel }}">{{ site.data.textos[lang].working_experience_items.intel }}</a></li>
+                        <li><a href="{{ site.sections.experience.url }}" aria-label="{{ site.data.textos[lang].working_experience_items.conagra }}">{{ site.data.textos[lang].working_experience_items.conagra }}
 </a></li>
                     </ul>
                 </li>

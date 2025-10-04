@@ -121,8 +121,8 @@ es:
   working_experience_aria: "Mostrar/ocultar experiencia laboral"
   working_experience_list_label: "Lista de experiencias laborales"
   working_experience_items:
-    intel: "Intel Project Analyst"
-    conagra: "Conagra Sales Analyst"
+    intel: "Analista de proyectos en Intel"
+    conagra: "Analista de ventas en Conagra"
 
   
   about_me_aria: "Ir a Sobre mí"

@@ -32,7 +32,7 @@ es:
   contoso_sales: "Tablero de Ventas en Power BI para Contoso"
   adventureworks_analysis: "Análisis de Datos BD AdventureWorks2022"
   etl_siss_package: "Paquete de Integracion ETL SISS con Python Faker"
-
+  main_tool: Herramientas
 
   skills_view: "Ver habilidades técnicas"
   skills_title: "Habilidades técnicas"
@@ -123,6 +123,15 @@ es:
   working_experience_items:
     intel: "Analista de proyectos en Intel"
     conagra: "Analista de ventas en Conagra"
+  working_experience_jobs:
+    cip_dashboard: "Tablero del Programa de Instructores Certificados"
+    qualtrics_dashboard: "Tablero de Encuestas de Calidad de Talleres"
+    dev_trained_dahsboard: "Tablero de Desarrolladores Entrenados/DEP OKRs"
+    docebo_dashboard: "Tablero Docebo Sistema de gestion de aprendizaje"
+    conagra_brands_analyst: "Analista de ventas Conagra Brands"
+    conagra_sales_analyst: "Analista de ventas Conagra"
+    conagra_operatinal_lead: "Jefe Administrativo"
+    conagra_control_analyst: "Analista de control de gestión"
 
   
   about_me_aria: "Ir a Sobre mí"
@@ -192,6 +201,7 @@ en:
   contoso_sales: "Contoso Sales Power BI Dashboard"
   adventureworks_analysis: "AdventureWorks2022 Data Analysis"
   etl_siss_package: "ETL SISS Integration Package con Python Faker"
+  main_tool: "Main tool"
 
   skills_view: "View technical skills"
   skills_title: "Technical Skills"
@@ -282,6 +292,15 @@ en:
   working_experience_items:
     intel: "Intel Project Analyst"
     conagra: "Conagra Sales Analyst"
+  working_experience_jobs:
+    cip_dashboard: "Certified Instructor Program Dashboard"
+    qualtrics_dashboard: "Workshop Quality Surveys Dashboard"
+    dev_trained_dahsboard: "Developers Trained Dashboard/DEP OKRs"
+    docebo_dashboard: "Docebo LMS Dashboard"
+    conagra_brands_analyst: "Conagra Brands Sales Analyst"
+    conagra_sales_analyst: "Conagra Sales Analyst"
+    conagra_operational_lead: "Operational Leadership & Process Manager"
+    conagra_control_analyst: "Management Control Analyst"
 
   
   about_me_aria: "Go to About me"
@@ -293,8 +312,8 @@ en:
   documents: "Documents"
   documents_aria: "Hide/show documents"
   documents_list_label: "Documents list"
-  documents_cv_label: "Curriculum"
-  documents_cv_aria: "Download curriculum in PDF"
+  documents_cv_label: "Resume"
+  documents_cv_aria: "Download resume in PDF"
 
   contact: "Contact"
   contact_aria: "Hide/show contact"

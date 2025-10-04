@@ -41,9 +41,9 @@
     </button>
     <ul class="sub-list" hidden aria-label="{{ site.data.textos[lang].skills_aria.projects_prefix }} {{ site.data.textos[lang].skills_categories.etl }}">
       <li>
-        <a href="{{ site.sections.siss.url }}" aria-label="ETL SISS Integration Package with Python">
-          <img src="assets/icons/microsoft-sql-server-logo.png" alt="SSIS icon" width="24" height="19">
-          ETL SISS Integration Package with Python
+        <a href="{{ site.sections.siss.url }}" aria-label="{{ site.data.textos[lang].etl_siss_package }}">
+            <img src="assets/icons/microsoft-sql-server-logo.png" alt="SSIS icon" width="24" height="19">
+            {{ site.data.textos[lang].etl_siss_package }}
         </a>
       </li>
     </ul>
@@ -63,12 +63,12 @@
     </button>
     <ul class="sub-list" hidden aria-label="{{ site.data.textos[lang].skills_aria.projects_prefix }} {{ site.data.textos[lang].skills_categories.data_analysis }}">
       <li>
-        <a href="{{ site.sections.adventureworks.url }}" aria-label="AdventureWorks2022 Data Analysis">🧠 AdventureWorks2022 Data Analysis</a>
+        <a href="{{ site.sections.adventureworks.url }}" aria-label="{{ site.data.textos[lang].adventureworks_analysis }}">🧠 {{ site.data.textos[lang].adventureworks_analysis }}</a>
       </li>
       <li>
-        <a href="{{ site.sections.contoso.url }}" aria-label="Contoso Sales Power BI Dashboard">
-          <img src="assets/icons/powerbi.png" alt="Power BI icon" width="24" height="17">
-          Contoso Sales Power BI Dashboard
+        <a href="{{ site.sections.contoso.url }}" aria-label="{{ site.data.textos[lang].contoso_sales }}">
+         <img src="assets/icons/powerbi.png" alt="Power BI icon" width="24" height="17">
+            {{ site.data.textos[lang].contoso_sales }}
         </a>
       </li>
     </ul>
@@ -88,9 +88,9 @@
     </button>
     <ul class="sub-list" hidden aria-label="{{ site.data.textos[lang].skills_aria.projects_prefix }} {{ site.data.textos[lang].skills_categories.data_modeling }}">
       <li>
-        <a href="{{ site.sections.contoso.url }}" aria-label="Contoso Sales Power BI Dashboard">
-          <img src="assets/icons/powerbi.png" alt="Power BI icon" width="24" height="17">
-          Contoso Sales Power BI Dashboard
+        <a href="{{ site.sections.contoso.url }}" aria-label="{{ site.data.textos[lang].contoso_sales }}">
+         <img src="assets/icons/powerbi.png" alt="Power BI icon" width="24" height="17">
+            {{ site.data.textos[lang].contoso_sales }}
         </a>
       </li>
     </ul>
@@ -110,9 +110,9 @@
     </button>
     <ul class="sub-list" hidden aria-label="{{ site.data.textos[lang].skills_aria.projects_prefix }} {{ site.data.textos[lang].skills_categories.dashboard_design }}">
       <li>
-        <a href="{{ site.sections.contoso.url }}" aria-label="Contoso Sales Power BI Dashboard">
-          <img src="assets/icons/powerbi.png" alt="Power BI icon" width="24" height="17">
-          Contoso Sales Power BI Dashboard
+        <a href="{{ site.sections.contoso.url }}" aria-label="{{ site.data.textos[lang].contoso_sales }}">
+         <img src="assets/icons/powerbi.png" alt="Power BI icon" width="24" height="17">
+            {{ site.data.textos[lang].contoso_sales }}
         </a>
       </li>
     </ul>
@@ -132,9 +132,9 @@
     </button>
     <ul class="sub-list" hidden aria-label="{{ site.data.textos[lang].skills_aria.projects_prefix }} {{ site.data.textos[lang].skills_categories.data_visualization }}">
       <li>
-        <a href="{{ site.sections.contoso.url }}" aria-label="Contoso Sales Power BI Dashboard">
-          <img src="assets/icons/powerbi.png" alt="Power BI icon" width="24" height="17">
-          Contoso Sales Power BI Dashboard
+        <a href="{{ site.sections.contoso.url }}" aria-label="{{ site.data.textos[lang].contoso_sales }}">
+         <img src="assets/icons/powerbi.png" alt="Power BI icon" width="24" height="17">
+            {{ site.data.textos[lang].contoso_sales }}
         </a>
       </li>
     </ul>
@@ -154,13 +154,13 @@
     </button>
     <ul class="sub-list" hidden aria-label="{{ site.data.textos[lang].skills_aria.projects_prefix }} {{ site.data.textos[lang].skills_categories.insights }}">
       <li>
-        <a href="{{ site.sections.contoso.url }}" aria-label="Contoso Sales Power BI Dashboard">
-          <img src="assets/icons/powerbi.png" alt="Power BI icon" width="24" height="17">
-          Contoso Sales Power BI Dashboard
+        <a href="{{ site.sections.contoso.url }}" aria-label="{{ site.data.textos[lang].contoso_sales }}">
+         <img src="assets/icons/powerbi.png" alt="Power BI icon" width="24" height="17">
+            {{ site.data.textos[lang].contoso_sales }}
         </a>
       </li>
       <li>
-        <a href="{{ site.sections.adventureworks.url }}" aria-label="AdventureWorks2022 Data Analysis">🧠 AdventureWorks2022 Data Analysis</a>
+        <a href="{{ site.sections.adventureworks.url }}" aria-label="{{ site.data.textos[lang].adventureworks_analysis }}">🧠 {{ site.data.textos[lang].adventureworks_analysis }}</a>
       </li>
     </ul>
   </li>
@@ -243,9 +243,9 @@
             <ul class="sub-list" hidden aria-label="{{ site.data.textos[lang].tools_aria.projects_prefix }} {{ site.data.textos[lang].tools_categories[tool] }}">
             {% if tool == "powerbi" %}
                 <li>
-                <a href="{{ site.sections.contoso.url }}" aria-label="Contoso Sales Power BI Dashboard">
-                    <img src="assets/icons/powerbi.png" alt="Power BI icon" width="24" height="17">
-                    Contoso Sales Power BI Dashboard
+                <a href="{{ site.sections.contoso.url }}" aria-label="{{ site.data.textos[lang].contoso_sales }}">
+                 <img src="assets/icons/powerbi.png" alt="Power BI icon" width="24" height="17">
+                    {{ site.data.textos[lang].contoso_sales }}
                 </a>
                 </li>
                 <li>
@@ -255,9 +255,9 @@
                 </li>
             {% elsif tool == "sql" %}
                 <li>
-                <a href="{{ site.sections.siss.url }}" aria-label="ETL SISS Integration Package with Python">
+                <a href="{{ site.sections.siss.url }}" aria-label="{{ site.data.textos[lang].etl_siss_package }}">
                     <img src="assets/icons/microsoft-sql-server-logo.png" alt="SSIS icon" width="24" height="19">
-                    ETL SISS Integration Package with Python
+                    {{ site.data.textos[lang].etl_siss_package }}
                 </a>
                 </li>
                 <li>
@@ -267,33 +267,29 @@
                 </li>
             {% elsif tool == "excel" %}
                 <li>
-                <a href="{{ site.sections.contoso.url }}" aria-label="Contoso Sales Power BI Dashboard">
-                    <img src="assets/icons/powerbi.png" alt="Power BI icon" width="24" height="17">
-                    Contoso Sales Power BI Dashboard
+                <a href="{{ site.sections.contoso.url }}" aria-label="{{ site.data.textos[lang].contoso_sales }}">
+                 <img src="assets/icons/powerbi.png" alt="Power BI icon" width="24" height="17">
+                    {{ site.data.textos[lang].contoso_sales }}
                 </a>
                 </li>
                 <li>
-                <a href="{{ site.sections.adventureworks.url }}" aria-label="AdventureWorks2022 Data Analysis">
-                    🧠 AdventureWorks2022 Data Analysis
-                </a>
+                <a href="{{ site.sections.adventureworks.url }}" aria-label="{{ site.data.textos[lang].adventureworks_analysis }}">🧠 {{ site.data.textos[lang].adventureworks_analysis }}</a>
                 </li>
             {% elsif tool == "python" %}
                 <li>
-                <a href="{{ site.sections.adventureworks.url }}" aria-label="AdventureWorks2022 Data Analysis">
-                    🧠 AdventureWorks2022 Data Analysis
-                </a>
+                <a href="{{ site.sections.adventureworks.url }}" aria-label="{{ site.data.textos[lang].adventureworks_analysis }}">🧠 {{ site.data.textos[lang].adventureworks_analysis }}</a>
                 </li>
                 <li>
-                <a href="{{ site.sections.siss.url }}" aria-label="ETL SISS Integration Package with Python">
+                <a href="{{ site.sections.siss.url }}" aria-label="{{ site.data.textos[lang].etl_siss_package }}">
                     <img src="assets/icons/microsoft-sql-server-logo.png" alt="SSIS icon" width="24" height="19">
-                    ETL SISS Integration Package with Python
+                    {{ site.data.textos[lang].etl_siss_package }}
                 </a>
                 </li>
             {% elsif tool == "ssis" %}
                 <li>
-                <a href="{{ site.sections.siss.url }}" aria-label="ETL SISS Integration Package with Python">
+                <a href="{{ site.sections.siss.url }}" aria-label="{{ site.data.textos[lang].etl_siss_package }}">
                     <img src="assets/icons/microsoft-sql-server-logo.png" alt="SSIS icon" width="24" height="19">
-                    ETL SISS Integration Package with Python
+                    {{ site.data.textos[lang].etl_siss_package }}
                 </a>
                 </li>
             {% elsif tool == "vscode" %}
@@ -303,9 +299,7 @@
                 </a>
                 </li>
                 <li>
-                <a href="{{ site.sections.adventureworks.url }}" aria-label="AdventureWorks2022 Data Analysis">
-                    🧠 AdventureWorks2022 Data Analysis
-                </a>
+                <a href="{{ site.sections.adventureworks.url }}" aria-label="{{ site.data.textos[lang].adventureworks_analysis }}">🧠 {{ site.data.textos[lang].adventureworks_analysis }}</a>
                 </li>
             {% elsif tool == "github" %}
                 <li>
@@ -315,9 +309,9 @@
                 </li>
             {% elsif tool == "figma" %}
                 <li>
-                <a href="{{ site.sections.contoso.url }}" aria-label="Contoso Sales Power BI Dashboard">
-                    <img src="assets/icons/powerbi.png" alt="Power BI icon" width="24" height="17">
-                    Contoso Sales Power BI Dashboard
+                <a href="{{ site.sections.contoso.url }}" aria-label="{{ site.data.textos[lang].contoso_sales }}">
+                 <img src="assets/icons/powerbi.png" alt="Power BI icon" width="24" height="17">
+                    {{ site.data.textos[lang].contoso_sales }}
                 </a>
                 </li>
             {% endif %}
@@ -361,8 +355,8 @@
                     </button>
                     <ul class="sub-list" hidden aria-label="Lista de proyectos">
                         <li><a href="{{ site.sections.contoso.url }}" aria-label="Projects_Contoso Sales Power BI Dashboard"><img src="assets/icons/powerbi.png" alt="power bi icon" width="24" height="17"> Contoso Sales Power BI Dashboard</a></li>
-                        <li><a href="{{ site.sections.adventureworks.url }}" aria-label="Projects_AdventureWorks2022 Data Analysis">🧠 AdventureWorks2022 Data Analysis</a></li>
-                        <li><a href="{{ site.sections.siss.url }}" aria-label="Projects_ETL SISS Integration Package with Python"><img src="assets/icons/microsoft-sql-server-logo.png" alt="ssis icon" width="24" height="19"> ETL SISS Integration Package with Python</a></li>
+                        <li><a href="{{ site.sections.adventureworks.url }}" aria-label="{{ site.data.textos[lang].adventureworks_analysis }}">🧠 {{ site.data.textos[lang].adventureworks_analysis }}</a></li>
+                        <li><a href="{{ site.sections.siss.url }}" aria-label="{{ site.data.textos[lang].etl_siss_package }}"><img src="assets/icons/microsoft-sql-server-logo.png" alt="ssis icon" width="24" height="19"> {{ site.data.textos[lang].etl_siss_package }}</a></li>
                     </ul>
                 </li>
                 <li class="nav-item" id="nav-tree-documents" role="treeitem" aria-level="1">

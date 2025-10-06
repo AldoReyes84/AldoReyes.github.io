@@ -16,9 +16,7 @@
 ### [Work Experience](https://aldoreyes84.github.io/working_experience/)
 
 ------------------------------------------------------------------------------------------------
- <h3 href="{{ site.sections.experience.url }}" aria-label="{{ site.data.textos[lang]working_experience_items.intel }}">
-          {{ site.data.textos[lang]working_experience_items.intel }}
-        </h3>
+### [About me](https://aldoreyes84.github.io/About-me/)
 
 --------------------------------------------------------------------------------------------------
 ### Projects

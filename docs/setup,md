@@ -28,7 +28,7 @@ cd AldoReyes.github.io
 ├── _layouts/           # Base layout templates
 ├── assets/             # CSS, JS, images, icons
 ├── docs/               # Documentation files
-├── index.md            # Main landing page
+├── README.md            # Main landing page
 ├── _config.yml         # Global configuration variables
 
 

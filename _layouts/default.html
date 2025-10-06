@@ -1,5 +1,7 @@
+{% assign lang = page.lang | default: site.default_lang %}
 <!DOCTYPE html>
-<html lang="en">
+<html lang="{{ lang }}">
+
   <head>
     <meta charset="UTF-8">
     <title>{{ site.title }}</title>
@@ -13,13 +15,9 @@
     <!--<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/style.css">-->
     <!-- Add any other CSS or meta tags you need -->
      </head>
-<body>
+<body data-lang="{{ lang }}">
         <!--Header-->
-        {% assign lang = page.lang | default: site.default_lang %}
-
-
-
-
+       
         {% include header.html %}
 
          <!-- Dropdown Panel with variable content -->

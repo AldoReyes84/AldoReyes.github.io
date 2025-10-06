@@ -1,16 +1,16 @@
 <footer class="site-footer" role="contentinfo">
   <div class="footer-grid">
-    <nav class="language-switch" aria-label="Language switch">
-      {% if current_lang == "en" %}
-      <a href="/es{{ page.url | remove_first: '/en' }}" lang="es" hreflang="es">
-        Español
-      </a>
-      {% else %}
-      <a href="/en{{ page.url | remove_first: '/es' }}" lang="en" hreflang="en">
-      English
-      </a>
-      {% endif %}
-    </nav>
+    {% assign current_lang = page.lang | default: site.default_lang %}
+    {% assign page_name = page.name | split: '.' | first %}
+
+  <nav class="lang-switch" aria-label="Selector de idioma">
+    {% if current_lang == "es" %}
+    <a href="/en/{{ page_name }}/" lang="en" hreflang="en">English</a>
+    {% else %}
+    <a href="/es/{{ page_name }}/" lang="es" hreflang="es">Español</a>
+    {% endif %}
+  </nav>
+
 
 
 

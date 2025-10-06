@@ -1,7 +1,7 @@
 ---
 layout: default
 lang: es
-permalink: /es/main/
+permalink: /es/
 ---
 
 ### Aldo Alan Reyes Hernandez

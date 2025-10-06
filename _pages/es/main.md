@@ -1,4 +1,12 @@
+---
+layout: default
+lang: es
+permalink: /es/main/
+---
+
 ### Aldo Alan Reyes Hernandez
+
+### main.es
 
 ## Analista de Inteligencia de Negoscios y Datos
 

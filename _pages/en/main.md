@@ -1,6 +1,12 @@
+---
+layout: default
+lang: en
+permalink: /en/main/
+---
+
 ### Aldo Alan Reyes Hernandez
 
-### README
+### main
 
 ## Business Intelligence & Data Analyst
 

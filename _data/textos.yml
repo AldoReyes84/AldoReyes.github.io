@@ -166,6 +166,9 @@ es:
     github_label: "Github/AldoReyes84"
     github_aria: "Ver perfil en GitHub"
 
+  darkmode_label: "Modo Oscuro"
+  darkmode_aria: "Activar modo oscuro"
+
 
 en:
   main_header: "Main site header"
@@ -335,6 +338,7 @@ en:
     github_label: "Github/AldoReyes84"
     github_aria: "View GitHub profile"
 
-
+  darkmode_label: "Dark Mode"
+  darkmode_aria: "Active Dark Mode"
 
 

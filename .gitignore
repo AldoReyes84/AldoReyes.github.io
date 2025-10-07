@@ -1,6 +1,44 @@
+# Jekyll build output — never track this folder
 _site/
-*.log
-*.DS_Store
-node_modules/
+
+# Jekyll cache folders
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata
+
+# Ruby dependencies and lockfiles
 .bundle/
 vendor/
+Gemfile.lock
+
+# Temporary files and logs
+*.log
+*.tmp
+*.swp
+*.bak
+
+# System-specific files (macOS, Windows)
+.DS_Store
+Thumbs.db
+
+# Local environment files (never commit secrets)
+.env
+*.local
+
+# Node.js dependencies (if using npm for assets)
+node_modules/
+
+# VS Code settings (optional, personal)
+.vscode/
+
+# Exported files or test assets
+*.pdf
+*.zip
+*.tar.gz
+
+# Git conflict and patch files
+*.orig
+*.rej
+
+# Backup or renamed config files
+config.yml.backup

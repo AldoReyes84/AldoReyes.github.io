@@ -1,8 +1,8 @@
 ---
-
 layout: default
 lang: es
 permalink: /es/
+title: Aldo Alan Reyes Hernandez – BI Portfolio
 ---
 ### Aldo Alan Reyes Hernandez
 

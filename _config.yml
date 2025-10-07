@@ -3,7 +3,6 @@ logo: assets/images/Logo Github Photo.png
 description: "Modular, scalable documentation for BI projects"
 url: "https://aldoreyes84.github.io"
 default_lang: en
-permalink: /:lang/:title/
 
 
 collections:

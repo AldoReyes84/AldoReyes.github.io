@@ -1,0 +1,6 @@
+_site/
+*.log
+*.DS_Store
+node_modules/
+.bundle/
+vendor/

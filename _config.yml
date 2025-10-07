@@ -4,6 +4,9 @@ description: "Modular, scalable documentation for BI projects"
 url: "https://aldoreyes84.github.io"
 default_lang: en
 
+plugins:
+  - jekyll-seo-tag
+
 
 collections:
   pages:

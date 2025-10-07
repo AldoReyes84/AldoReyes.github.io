@@ -23,7 +23,7 @@
 --------------------------------------------------------------------------------------------------
 ### Projects
 
-##### 1.- <img src="assets/icons/powerbi.png" alt="power bi icon" width="24" height="17">[ Contoso Sales Power BI Dashboard](https://aldoreyes84.github.io/Contoso-Sales-Power-BI-Dashboard/)
+##### 1.- <img src="{{ 'assets/icons/powerbi.png' | relative_url }}" alt="power bi icon" width="24" height="17">[ Contoso Sales Power BI Dashboard](https://aldoreyes84.github.io/Contoso-Sales-Power-BI-Dashboard/)
 
 ##### 2.- 🧠[ AdventureWorks2022 Data Analysis](https://aldoreyes84.github.io/Data_Analisys_For_AdventureWorksDW2022/)
 

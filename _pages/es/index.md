@@ -29,7 +29,7 @@ permalink: /es/
 --------------------------------------------------------------------------------------------------
 ### Proyectos
 
-##### 1.- <img src="assets/icons/powerbi.png" alt="power bi icon" width="24" height="17">[ Tablero de ventas en Power BI para Contoso ](https://aldoreyes84.github.io/Contoso-Sales-Power-BI-Dashboard/)
+##### 1.- <img src="{{ 'assets/icons/powerbi.png' | relative_url }}" alt="power bi icon" width="24" height="17">[ Tablero de ventas en Power BI para Contoso ](https://aldoreyes84.github.io/Contoso-Sales-Power-BI-Dashboard/)
 
 ##### 2.- 🧠[ Análisis de datos BD AdventureWorks2022 ](https://aldoreyes84.github.io/Data_Analisys_For_AdventureWorksDW2022/)
 

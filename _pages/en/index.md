@@ -1,9 +1,9 @@
 ---
+
 layout: default
 lang: en
 permalink: /en/
 ---
-
 ### Aldo Alan Reyes Hernandez
 
 ### main

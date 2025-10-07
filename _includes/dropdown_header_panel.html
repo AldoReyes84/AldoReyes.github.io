@@ -27,14 +27,14 @@
                                 </tr>
                                 <tr>
                                     <td>{{ site.data.textos[lang].main_tool }}</td>
-                                    <td><img src="assets/icons/microsoft-sql-server-logo.png" alt="ssis icon" width="24" height="19"><span class="icon"></span>SSIS</td>   
-                                    <td><img src="assets/icons/excel.png" alt="excel icon" width="19" height="17"><span class="icon"></span>Excel</a></td>   
-                                    <td><img src="assets/icons/power-query.svg" alt="power query icon" width="24" height="17"><span class="icon"></span>Power Query</td>   
-                                    <td><img src="assets/icons/powerbi.png" alt="power bi icon" width="24" height="17"><span class="icon"></span>Power BI</td>   
-                                    <td><img src="assets/icons/figma.png" alt="figma icon" width="24" height="19"><span class="icon"></span>Figma</td>   
+                                    <td><img src="{{ 'assets/icons/microsoft-sql-server-logo.png' | relative_url }}" alt="ssis icon" width="24" height="19"><span class="icon"></span>SSIS</td>   
+                                    <td><img src="{{ 'assets/icons/excel.png' | relative_url }}" alt="excel icon" width="19" height="17"><span class="icon"></span>Excel</a></td>   
+                                    <td><img src="{{ 'assets/icons/power-query.svg' | relative_url }}" alt="power query icon" width="24" height="17"><span class="icon"></span>Power Query</td>   
+                                    <td><img src="{{ 'assets/icons/powerbi.png' | relative_url }}" alt="power bi icon" width="24" height="17"><span class="icon"></span>Power BI</td>   
+                                    <td><img src="{{ 'assets/icons/figma.png' | relative_url }}" alt="figma icon" width="24" height="19"><span class="icon"></span>Figma</td>   
                                     <td>🧠Business Analysis</td>
                                     <td>🧠Business Analysis</td>
-                                    <td><img src="assets/icons/github.svg" alt="github icon" width="24" height="17"><span class="icon"></span>GitHub</td>   
+                                    <td><img src="{{ 'assets/icons/github.svg' | relative_url }}" alt="github icon" width="24" height="17"><span class="icon"></span>GitHub</td>   
                                 </tr>
                                 <tr>
                                     <td>{{ site.data.textos[lang].projects }}</td>
@@ -79,14 +79,14 @@
                                 <caption id="tools-table-desc" class="sr-only"></caption>
                                 <tr>
                                     <th scope="col"></th>
-                                    <th scope="col"><img src="assets/icons/powerbi.png" alt="power bi icon" width="24" height="17"><span class="icon"></span>Power BI</th>
-                                    <th scope="col"><img src="assets/icons/sql.png" alt="sql icon" width="19" height="19"><span class="icon"></span>SQL</th>
-                                    <th scope="col"><img src="assets/icons/excel.png" alt="excel icon" width="19" height="17"><span class="icon"></span>Excel</th>
+                                    <th scope="col"><img src="{{ 'assets/icons/powerbi.png' | relative_url }}" alt="power bi icon" width="24" height="17"><span class="icon"></span>Power BI</th>
+                                    <th scope="col"><img src="{{ 'assets/icons/sql.png' | relative_url }}" alt="sql icon" width="19" height="19"><span class="icon"></span>SQL</th>
+                                    <th scope="col"><img src="{{ 'assets/icons/excel.png' | relative_url }}" alt="excel icon" width="19" height="17"><span class="icon"></span>Excel</th>
                                     <th scope="col"><img src="assets/icons/python-logo.png" alt="python icon" width="24" height="17"><span class="icon"></span>Python</th>
-                                    <th scope="col"><img src="assets/icons/microsoft-sql-server-logo.png" alt="ssis icon" width="24" height="19"><span class="icon"></span>SSIS</th>
+                                    <th scope="col"><img src="{{ 'assets/icons/microsoft-sql-server-logo.png' | relative_url }}" alt="ssis icon" width="24" height="19"><span class="icon"></span>SSIS</th>
                                     <th scope="col"><img src="assets/icons/vscode-logo.png" alt="vscode icon" width="20" height="17"><span class="icon"></span>Visual Studio Code</th>
-                                    <th scope="col"><img src="assets/icons/github.svg" alt="github icon" width="24" height="17"><span class="icon"></span>GitHub</th>
-                                    <th scope="col"><img src="assets/icons/figma.png" alt="figma icon" width="24" height="19"><span class="icon"></span>Figma</th>
+                                    <th scope="col"><img src="{{ 'assets/icons/github.svg' | relative_url }}" alt="github icon" width="24" height="17"><span class="icon"></span>GitHub</th>
+                                    <th scope="col"><img src="{{ 'assets/icons/figma.png' | relative_url }}" alt="figma icon" width="24" height="19"><span class="icon"></span>Figma</th>
                                 </tr>
                                 <tr>
                                     <td>{{ site.data.textos[lang].projects }}</td>
@@ -153,24 +153,24 @@
                                     <th scope="row">
                                         <a href="{{ site.sections.contoso.url }}" aria-label="{{ site.data.textos[lang].contoso_sales }}">{{ site.data.textos[lang].contoso_sales }}</a>
                                         <div class="project-icons">
-                                            <img src="assets/icons/powerbi.png" alt="power bi icon" width="24" height="17"><span class="icon"></span>
-                                            <img src="assets/icons/excel.png" alt="excel icon" width="19" height="17"><span class="icon"></span>
-                                            <img src="assets/icons/figma.png" alt="figma icon" width="24" height="19"><span class="icon"></span>
+                                            <img src="{{ 'assets/icons/powerbi.png' | relative_url }}" alt="power bi icon" width="24" height="17"><span class="icon"></span>
+                                            <img src="{{ 'assets/icons/excel.png' | relative_url }}" alt="excel icon" width="19" height="17"><span class="icon"></span>
+                                            <img src="{{ 'assets/icons/figma.png' | relative_url }}" alt="figma icon" width="24" height="19"><span class="icon"></span>
                                         </div>                                        
                                     </th>
                                     <th scope="row">
                                         <a href="{{ site.sections.adventureworks.url }}" aria-label="{{ site.data.textos[lang].adventureworks_analysis }}">{{ site.data.textos[lang].adventureworks_analysis }}</a>
                                         <div class="project-icons">
-                                            <img src="assets/icons/microsoft-sql-server-logo.png" alt="ssis icon" width="24" height="19"><span class="icon"></span>
-                                            <img src="assets/icons/excel.png" alt="excel icon" width="19" height="17"><span class="icon"></span>
-                                            <img src="assets/icons/powerbi.png" alt="power bi icon" width="24" height="17"><span class="icon"></span>
+                                            <img src="{{ 'assets/icons/microsoft-sql-server-logo.png' | relative_url }}" alt="ssis icon" width="24" height="19"><span class="icon"></span>
+                                            <img src="{{ 'assets/icons/excel.png' | relative_url }}" alt="excel icon" width="19" height="17"><span class="icon"></span>
+                                            <img src="{{ 'assets/icons/powerbi.png' | relative_url }}" alt="power bi icon" width="24" height="17"><span class="icon"></span>
                                             <img src="assets/icons/python-logo.png" alt="python icon" width="24" height="17"><span class="icon"></span>
                                         </div>
                                     </th>
                                     <th scope="row">
                                         <a href="{{ site.sections.ssis.url }}" aria-label="{{ site.data.textos[lang].etl_siss_package }}">{{ site.data.textos[lang].etl_siss_package }}</a>
                                         <div class="project-icons">
-                                            <img src="assets/icons/microsoft-sql-server-logo.png" alt="ssis icon" width="24" height="19"><span class="icon"></span>
+                                            <img src="{{ 'assets/icons/microsoft-sql-server-logo.png' | relative_url }}" alt="ssis icon" width="24" height="19"><span class="icon"></span>
                                             <img src="assets/icons/python-logo.png" alt="python icon" width="24" height="17"><span class="icon"></span>
                                         </div>
                                     </th>
@@ -227,7 +227,7 @@
                                 <li>
                                     <a href="mailto:aldoan84@gmail.com" aria-label="{{ site.data.textos[lang].contact_gmail_aria }}">
                                         <span class="icon">
-                                            <img src="assets/icons/gmail.png" alt="Gmail icon" width="24" height="17">
+                                            <img src="{{ 'assets/icons/gmail.png' | relative_url }} alt="Gmail icon" width="24" height="17">
                                         </span>
                                             aldoan84@gmail.com
                                     </a>
@@ -236,7 +236,7 @@
                                 <li>
                                     <a href="mailto:aldoan84@hotmail.com" target="_blank" aria-label="{{ site.data.textos[lang].contact_outlook_aria }}">
                                         <span class="icon">
-                                            <img src="assets/icons/outlook.png" alt="Outlook icon" width="24" height="22">
+                                            <img src="{{ 'assets/icons/outlook.png' | relative_url }}" alt="Outlook icon" width="24" height="22">
                                         </span>
                                         aldoan84@hotmail.com
                                     </a>
@@ -245,7 +245,7 @@
                                 <li>
                                     <a href="https://www.linkedin.com/in/aldoreyesbianalyst?" target="_blank" aria-label="{{ site.data.textos[lang].contact_linkedin_aria }}">
                                         <span class="icon">
-                                            <img src="assets/icons/linkedin.png" alt="LinkedIn icon" width="22" height="22">
+                                            <img src="{{ 'assets/icons/linkedin.png' | relative_url }}" alt="LinkedIn icon" width="22" height="22">
                                         </span>
                                             {{ site.data.textos[lang].contact_linkedin_label }}
                                     </a>
@@ -254,7 +254,7 @@
                                 <li>
                                     <a href="https://github.com/AldoReyes84" target="_blank" aria-label="{{ site.data.textos[lang].contact_github_aria }}">
                                         <span class="icon">
-                                            <img src="assets/icons/github.svg" alt="GitHub icon" width="22" height="22">
+                                            <img src="{{ 'assets/icons/github.svg' | relative_url }}" alt="GitHub icon" width="22" height="22">
                                         </span>
                                             {{ site.data.textos[lang].contact_github_label }}
                                     </a>
@@ -280,7 +280,7 @@
                             <li>
                                 <a href="{{ site.data.textos[lang].share_whatsapp_url }}" target="_blank" aria-label="{{ site.data.textos[lang].share_whatsapp_aria }}">
                                     <span class="icon">
-                                        <img src="assets/icons/whatsapp.webp" alt="WhatsApp icon" width="22" height="22">
+                                        <img src="{{ 'assets/icons/whatsapp.webp' | relative_url }}" alt="WhatsApp icon" width="22" height="22">
                                     </span>
                                         {{ site.data.textos[lang].share_whatsapp_label }}
                                 </a>
@@ -290,7 +290,7 @@
                                 <div class="tooltip-container">
                                     <a href="{{ site.data.textos[lang].share_linkedin_url }}" target="_blank" rel="noopener noreferrer" aria-label="{{ site.data.textos[lang].share_linkedin_aria }}">
                                         <span class="icon">
-                                            <img src="assets/icons/linkedin.png" alt="LinkedIn icon" width="22" height="22">
+                                            <img src="{{ 'assets/icons/linkedin.png' | relative_url }}" alt="LinkedIn icon" width="22" height="22">
                                         </span>
                                             {{ site.data.textos[lang].share_linkedin_label }}
                                     </a>

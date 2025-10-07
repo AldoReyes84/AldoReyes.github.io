@@ -42,7 +42,7 @@
     <ul class="sub-list" hidden aria-label="{{ site.data.textos[lang].skills_aria.projects_prefix }} {{ site.data.textos[lang].skills_categories.etl }}">
       <li>
         <a href="{{ site.sections.siss.url }}" aria-label="{{ site.data.textos[lang].etl_siss_package }}">
-            <img src="assets/icons/microsoft-sql-server-logo.png" alt="SSIS icon" width="24" height="19">
+            <img src="{{'assets/icons/microsoft-sql-server-logo.png' | relative_url }}" alt="SSIS icon" width="24" height="19">
             {{ site.data.textos[lang].etl_siss_package }}
         </a>
       </li>
@@ -67,7 +67,7 @@
       </li>
       <li>
         <a href="{{ site.sections.contoso.url }}" aria-label="{{ site.data.textos[lang].contoso_sales }}">
-         <img src="assets/icons/powerbi.png" alt="Power BI icon" width="24" height="17">
+         <img src="{{' assets/icons/powerbi.png' | relative_url}}" alt="Power BI icon" width="24" height="17">
             {{ site.data.textos[lang].contoso_sales }}
         </a>
       </li>
@@ -89,7 +89,7 @@
     <ul class="sub-list" hidden aria-label="{{ site.data.textos[lang].skills_aria.projects_prefix }} {{ site.data.textos[lang].skills_categories.data_modeling }}">
       <li>
         <a href="{{ site.sections.contoso.url }}" aria-label="{{ site.data.textos[lang].contoso_sales }}">
-         <img src="assets/icons/powerbi.png" alt="Power BI icon" width="24" height="17">
+         <img src="{{ 'assets/icons/powerbi.png' | relative_url }}" alt="Power BI icon" width="24" height="17">
             {{ site.data.textos[lang].contoso_sales }}
         </a>
       </li>
@@ -111,7 +111,7 @@
     <ul class="sub-list" hidden aria-label="{{ site.data.textos[lang].skills_aria.projects_prefix }} {{ site.data.textos[lang].skills_categories.dashboard_design }}">
       <li>
         <a href="{{ site.sections.contoso.url }}" aria-label="{{ site.data.textos[lang].contoso_sales }}">
-         <img src="assets/icons/powerbi.png" alt="Power BI icon" width="24" height="17">
+         <img src="{{' assets/icons/powerbi.png' | relative_url }}" alt="Power BI icon" width="24" height="17">
             {{ site.data.textos[lang].contoso_sales }}
         </a>
       </li>
@@ -133,7 +133,7 @@
     <ul class="sub-list" hidden aria-label="{{ site.data.textos[lang].skills_aria.projects_prefix }} {{ site.data.textos[lang].skills_categories.data_visualization }}">
       <li>
         <a href="{{ site.sections.contoso.url }}" aria-label="{{ site.data.textos[lang].contoso_sales }}">
-         <img src="assets/icons/powerbi.png" alt="Power BI icon" width="24" height="17">
+         <img src="{{' assets/icons/powerbi.png' | relative_url }}" alt="Power BI icon" width="24" height="17">
             {{ site.data.textos[lang].contoso_sales }}
         </a>
       </li>
@@ -155,7 +155,7 @@
     <ul class="sub-list" hidden aria-label="{{ site.data.textos[lang].skills_aria.projects_prefix }} {{ site.data.textos[lang].skills_categories.insights }}">
       <li>
         <a href="{{ site.sections.contoso.url }}" aria-label="{{ site.data.textos[lang].contoso_sales }}">
-         <img src="assets/icons/powerbi.png" alt="Power BI icon" width="24" height="17">
+         <img src="{{ 'assets/icons/powerbi.png' | relative_url }}" alt="Power BI icon" width="24" height="17">
             {{ site.data.textos[lang].contoso_sales }}
         </a>
       </li>
@@ -244,7 +244,7 @@
             {% if tool == "powerbi" %}
                 <li>
                 <a href="{{ site.sections.contoso.url }}" aria-label="{{ site.data.textos[lang].contoso_sales }}">
-                 <img src="assets/icons/powerbi.png" alt="Power BI icon" width="24" height="17">
+                 <img src="{{ 'assets/icons/powerbi.png | relative_url }}" alt="Power BI icon" width="24" height="17">
                     {{ site.data.textos[lang].contoso_sales }}
                 </a>
                 </li>
@@ -256,7 +256,7 @@
             {% elsif tool == "sql" %}
                 <li>
                 <a href="{{ site.sections.siss.url }}" aria-label="{{ site.data.textos[lang].etl_siss_package }}">
-                    <img src="assets/icons/microsoft-sql-server-logo.png" alt="SSIS icon" width="24" height="19">
+                    <img src="{{ 'assets/icons/microsoft-sql-server-logo.png' | relative_url }}" alt="SSIS icon" width="24" height="19">
                     {{ site.data.textos[lang].etl_siss_package }}
                 </a>
                 </li>
@@ -268,7 +268,7 @@
             {% elsif tool == "excel" %}
                 <li>
                 <a href="{{ site.sections.contoso.url }}" aria-label="{{ site.data.textos[lang].contoso_sales }}">
-                 <img src="assets/icons/powerbi.png" alt="Power BI icon" width="24" height="17">
+                 <img src="{{ 'assets/icons/powerbi.png' | relative_url }}" alt="Power BI icon" width="24" height="17">
                     {{ site.data.textos[lang].contoso_sales }}
                 </a>
                 </li>
@@ -281,14 +281,14 @@
                 </li>
                 <li>
                 <a href="{{ site.sections.siss.url }}" aria-label="{{ site.data.textos[lang].etl_siss_package }}">
-                    <img src="assets/icons/microsoft-sql-server-logo.png" alt="SSIS icon" width="24" height="19">
+                    <img src="{{ 'assets/icons/microsoft-sql-server-logo.png' | relative_url }}" alt="SSIS icon" width="24" height="19">
                     {{ site.data.textos[lang].etl_siss_package }}
                 </a>
                 </li>
             {% elsif tool == "ssis" %}
                 <li>
                 <a href="{{ site.sections.siss.url }}" aria-label="{{ site.data.textos[lang].etl_siss_package }}">
-                    <img src="assets/icons/microsoft-sql-server-logo.png" alt="SSIS icon" width="24" height="19">
+                    <img src="{{ 'assets/icons/microsoft-sql-server-logo.png' | relative_url}}" alt="SSIS icon" width="24" height="19">
                     {{ site.data.textos[lang].etl_siss_package }}
                 </a>
                 </li>
@@ -310,7 +310,7 @@
             {% elsif tool == "figma" %}
                 <li>
                 <a href="{{ site.sections.contoso.url }}" aria-label="{{ site.data.textos[lang].contoso_sales }}">
-                 <img src="assets/icons/powerbi.png" alt="Power BI icon" width="24" height="17">
+                 <img src="{{ 'assets/icons/powerbi.png' | relative_url }}" alt="Power BI icon" width="24" height="17">
                     {{ site.data.textos[lang].contoso_sales }}
                 </a>
                 </li>
@@ -417,7 +417,7 @@
                                 <li>
                                 <a href="mailto:aldoan84@hotmail.com" target="_blank" aria-label="{{ site.data.textos[lang].contact_items.outlook_aria }}">
                                     <span class="icon">
-                                    <img src="assets/icons/outlook.png" alt="Outlook icon" width="24" height="22">
+                                    <img src="{{ 'assets/icons/outlook.png' | relative_url }}" alt="Outlook icon" width="24" height="22">
                                     </span>
                                     {{ site.data.textos[lang].contact_items.outlook_label }}
                                 </a>
@@ -426,7 +426,7 @@
                                 <li>
                                 <a href="https://www.linkedin.com/in/aldoreyesbianalyst?" target="_blank" aria-label="{{ site.data.textos[lang].contact_items.linkedin_aria }}">
                                     <span class="icon">
-                                    <img src="assets/icons/linkedin.png" alt="LinkedIn icon" width="22" height="22">
+                                    <img src="{{ 'assets/icons/linkedin.png' | relative_url }}" alt="LinkedIn icon" width="22" height="22">
                                     </span>
                                     {{ site.data.textos[lang].contact_items.linkedin_label }}
                                 </a>
@@ -435,7 +435,7 @@
                                 <li>
                                 <a href="https://github.com/AldoReyes84" target="_blank" aria-label="{{ site.data.textos[lang].contact_items.github_aria }}">
                                     <span class="icon">
-                                    <img src="assets/icons/github.svg" alt="GitHub icon" width="22" height="22">
+                                    <img src="{{ 'assets/icons/github.svg' | relative_url }}" alt="GitHub icon" width="22" height="22">
                                     </span>
                                     {{ site.data.textos[lang].contact_items.github_label }}
                                 </a>

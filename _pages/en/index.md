@@ -33,7 +33,7 @@ permalink: /en/
 
 ##### 2.- 🧠[ AdventureWorks2022 Data Analysis](https://aldoreyes84.github.io/Data_Analisys_For_AdventureWorksDW2022/)
 
-##### 3.- <img src="assets/icons/microsoft-sql-server-logo.png" alt="ssis icon" width="24" height="19">[ ETL SSIS Integration Package with Python Faker Files](https://aldoreyes84.github.io/ETL/)
+##### 3.- <img src="{{ 'assets/icons/microsoft-sql-server-logo.png' | relative_url}}" alt="ssis icon" width="24" height="19">[ ETL SSIS Integration Package with Python Faker Files](https://aldoreyes84.github.io/ETL/)
 
 ---------------------------------------------------------------------------------------------------
 ### Documents

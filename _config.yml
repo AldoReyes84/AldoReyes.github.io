@@ -1,6 +1,7 @@
 Title: Aldo Reyes BI Portfolio
 logo: assets/images/Logo Github Photo.png
 description: "Modular, scalable documentation for BI projects"
+baseurl: "/AldoReyes.github.io"
 url: "https://aldoreyes84.github.io"
 default_lang: en
 

@@ -67,7 +67,7 @@
       </li>
       <li>
         <a href="{{ site.sections.contoso.url }}" aria-label="{{ site.data.textos[lang].contoso_sales }}">
-         <img src="{{' assets/icons/powerbi.png' | relative_url}}" alt="Power BI icon" width="24" height="17">
+         <img src="{{'assets/icons/powerbi.png' | relative_url}}" alt="Power BI icon" width="24" height="17">
             {{ site.data.textos[lang].contoso_sales }}
         </a>
       </li>
@@ -111,7 +111,7 @@
     <ul class="sub-list" hidden aria-label="{{ site.data.textos[lang].skills_aria.projects_prefix }} {{ site.data.textos[lang].skills_categories.dashboard_design }}">
       <li>
         <a href="{{ site.sections.contoso.url }}" aria-label="{{ site.data.textos[lang].contoso_sales }}">
-         <img src="{{' assets/icons/powerbi.png' | relative_url }}" alt="Power BI icon" width="24" height="17">
+         <img src="{{ 'asets/icons/powerbi.png' | relative_url }}" alt="Power BI icon" width="24" height="17">
             {{ site.data.textos[lang].contoso_sales }}
         </a>
       </li>
@@ -133,7 +133,7 @@
     <ul class="sub-list" hidden aria-label="{{ site.data.textos[lang].skills_aria.projects_prefix }} {{ site.data.textos[lang].skills_categories.data_visualization }}">
       <li>
         <a href="{{ site.sections.contoso.url }}" aria-label="{{ site.data.textos[lang].contoso_sales }}">
-         <img src="{{' assets/icons/powerbi.png' | relative_url }}" alt="Power BI icon" width="24" height="17">
+         <img src="{{ 'assets/icons/powerbi.png' | relative_url }}" alt="Power BI icon" width="24" height="17">
             {{ site.data.textos[lang].contoso_sales }}
         </a>
       </li>
@@ -244,7 +244,7 @@
             {% if tool == "powerbi" %}
                 <li>
                 <a href="{{ site.sections.contoso.url }}" aria-label="{{ site.data.textos[lang].contoso_sales }}">
-                 <img src="{{ 'assets/icons/powerbi.png | relative_url }}" alt="Power BI icon" width="24" height="17">
+                 <img src="{{ 'assets/icons/powerbi.png' | relative_url }}" alt="Power BI icon" width="24" height="17">
                     {{ site.data.textos[lang].contoso_sales }}
                 </a>
                 </li>
@@ -354,9 +354,9 @@
                         <span class="nav-label">{{ site.data.textos[lang].projects }}</span>
                     </button>
                     <ul class="sub-list" hidden aria-label="Lista de proyectos">
-                        <li><a href="{{ site.sections.contoso.url }}" aria-label="Projects_Contoso Sales Power BI Dashboard"><img src="assets/icons/powerbi.png" alt="power bi icon" width="24" height="17"> Contoso Sales Power BI Dashboard</a></li>
+                        <li><a href="{{ site.sections.contoso.url }}" aria-label="Projects_Contoso Sales Power BI Dashboard"><img src="{{ 'assets/icons/powerbi.png' | relative_url }}" alt="power bi icon" width="24" height="17"> Contoso Sales Power BI Dashboard</a></li>
                         <li><a href="{{ site.sections.adventureworks.url }}" aria-label="{{ site.data.textos[lang].adventureworks_analysis }}">🧠 {{ site.data.textos[lang].adventureworks_analysis }}</a></li>
-                        <li><a href="{{ site.sections.siss.url }}" aria-label="{{ site.data.textos[lang].etl_siss_package }}"><img src="assets/icons/microsoft-sql-server-logo.png" alt="ssis icon" width="24" height="19"> {{ site.data.textos[lang].etl_siss_package }}</a></li>
+                        <li><a href="{{ site.sections.siss.url }}" aria-label="{{ site.data.textos[lang].etl_siss_package }}"><img src="{{ 'assets/icons/microsoft-sql-server-logo.png' | relative_url }}" alt="ssis icon" width="24" height="19"> {{ site.data.textos[lang].etl_siss_package }}</a></li>
                     </ul>
                 </li>
                 <li class="nav-item" id="nav-tree-documents" role="treeitem" aria-level="1">
@@ -408,7 +408,7 @@
                                 <li>
                                 <a href="mailto:aldoan84@gmail.com" aria-label="{{ site.data.textos[lang].contact_items.gmail_aria }}">
                                     <span class="icon">
-                                    <img src="assets/icons/gmail.png" alt="Gmail icon" width="24" height="17">
+                                    <img src="{{ 'assets/icons/gmail.png' | relative_url }}" alt="Gmail icon" width="24" height="17">
                                     </span>
                                     {{ site.data.textos[lang].contact_items.gmail_label }}
                                 </a>

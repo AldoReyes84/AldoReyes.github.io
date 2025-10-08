@@ -49,6 +49,7 @@ th {
     font-size: .875rem;
     padding: 0.5rem;
     background: lightgray;
+    width: 96px;
 }
 
 /* header */
@@ -196,7 +197,7 @@ button a {
 }
 
 .panel-header-grid {
-  width: 300px;
+  width: 250px;
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
@@ -221,6 +222,8 @@ button a {
 table tr td:first-child {
   font-weight: bold;
   background-color: lightgray;
+  align-items: center;
+  width: 6rem;
 }
 
 table tr {
@@ -234,7 +237,7 @@ table tr {
 .project-icons {
   display: flex;
   margin-top: 1em;
-  margin-left: 2em;
+  margin-left: 7em;
 }
 
 
@@ -362,6 +365,10 @@ a[aria-label="LinkedIn"] svg {
   display: none;
 }
 
+table {
+  flex:auto
+}
+
 td {
   height: 40px;
   vertical-align: bottom;
@@ -407,6 +414,7 @@ td a:hover {
   list-style: none;
   padding: 0;
   width: 200px;
+  margin-left: auto;
 }
 
 .contact-menu {

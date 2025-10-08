@@ -6,8 +6,6 @@ title: Aldo Alan Reyes Hernandez – BI Portfolio
 ---
 ### Aldo Alan Reyes Hernandez
 
-### main
-
 ## Business Intelligence & Data Analyst
 
 ---------------------------------------------------------------------------------------------

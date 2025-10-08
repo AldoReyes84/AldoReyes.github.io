@@ -126,11 +126,11 @@ es:
   working_experience_jobs:
     cip_dashboard: "Tablero del Programa de Instructores Certificados"
     qualtrics_dashboard: "Tablero de Encuestas de Calidad de Talleres"
-    dev_trained_dahsboard: "Tablero de Desarrolladores Entrenados/DEP OKRs"
+    dev_trained_dashboard: "Tablero de Desarrolladores Entrenados/DEP OKRs"
     docebo_dashboard: "Tablero Docebo Sistema de gestion de aprendizaje"
     conagra_brands_analyst: "Analista de ventas Conagra Brands"
     conagra_sales_analyst: "Analista de ventas Conagra"
-    conagra_operatinal_lead: "Jefe Administrativo"
+    conagra_operational_lead: "Jefe Administrativo"
     conagra_control_analyst: "Analista de control de gestión"
 
   

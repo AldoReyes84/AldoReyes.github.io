@@ -38,7 +38,7 @@ social:
 sections:
   contoso:
     name: "Contoso Sales Dashboard"
-    url: "https://aldoreyes84.github.io/Contoso-Sales-Power-BI-Dashboard/"
+    url: "https://aldoreyes84.github.io/contoso_pbi_dashboard"
   adventureworks:
     name: "AdventureWorks2022 Analysis"
     url: "https://aldoreyes84.github.io/SQL_Server_AdventureWorks/"

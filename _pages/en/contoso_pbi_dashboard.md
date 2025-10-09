@@ -8,6 +8,7 @@ title: Contoso Power BI Dashboard
 
 # Contoso Sales PowerBI Dashboard 
 
+## Structure analysis
 
 Source Model, Contoso Sales Sample for Power BI data Model 
 
@@ -28,11 +29,11 @@ However, when testing this logic, the result exceeds the actual SalesAmount, sug
 <img width="320" height="439" alt="image" src="https://github.com/user-attachments/assets/bf6ecf70-1e95-419d-87e6-50a3c28a3b66" />
 
 
-# 📘 Metrics Glossary – Contoso Sales Dashboard
+## 📘 Metrics Glossary – Contoso Sales Dashboard
 
 This glossary defines the key metrics used in the Contoso Sales analysis. Each entry includes a description, a suggested formula, and a DAX implementation example for Power BI.
 
-## 🧮 Base Metrics (Explicit Measures)
+### 🧮 Base Metrics (Explicit Measures)
 
 This section defines the foundational metrics used in the Contoso Sales Dashboard. All metrics are implemented as explicit DAX measures to ensure compatibility with Calculation Groups and maintain clarity across visuals.
 
@@ -47,13 +48,13 @@ This section defines the foundational metrics used in the Contoso Sales Dashboar
 
 ---
 
-### 🧠 Notes
+#### 🧠 Notes
 
 - All metrics above are defined as **explicit DAX measures** to ensure compatibility with Calculation Groups and advanced Time Intelligence logic.
 - Avoid using raw columns directly in visuals or calculations when dynamic logic (e.g., YTD, YoY) is required.
 - These measures serve as the foundation for derived metrics such as revenue, cost, and profitability.
 
-## 💰 Revenue and Cost Metrics
+### 💰 Revenue and Cost Metrics
 
 | Metric         | Description                                                                 | Suggested Formula                                  | DAX Example |
 |----------------|-----------------------------------------------------------------------------|----------------------------------------------------|-------------|
@@ -62,7 +63,7 @@ This section defines the foundational metrics used in the Contoso Sales Dashboar
 | **ReturnAmount** | Monetary value of returned products.                                       | `SUM(Sales[ReturnAmount]`                       | `ReturnAmount = SUM(Sales[DiscountAmount]` |
 | **TotalCost**    | Total cost of sold products (excluding returns).                           | `SUM(Sales[TotalCost]`      | `TotalCost = (SUM(Sales[TotalCost]` |
 
-## 📊 Profitability Metrics
+### 📊 Profitability Metrics
 
 | Metric           | Description                                                               | Suggested Formula                                  | DAX Example |
 |------------------|---------------------------------------------------------------------------|----------------------------------------------------|-------------|
@@ -71,7 +72,7 @@ This section defines the foundational metrics used in the Contoso Sales Dashboar
 | **GrossMargin %**   | Gross margin as a percentage of sales.                                    | `GrossProfit / SalesAmount`                        | `GrossMargin % = DIVIDE([GrossProfit], [SalesAmount])` |
 | **NetMargin %**     | Net margin as a percentage of sales.                                      | `NetProfit / SalesAmount`                          | `NetMargin % = DIVIDE([NetProfit], [SalesAmount])` |
 
-## 📉 Discount and Return Metrics
+### 📉 Discount and Return Metrics
 
 | Metric             | Description                                                              | Suggested Formula                                  | DAX Example |
 |--------------------|--------------------------------------------------------------------------|----------------------------------------------------|-------------|
@@ -79,7 +80,7 @@ This section defines the foundational metrics used in the Contoso Sales Dashboar
 | **ReturnRate %**     | Return percentage over quantity sold.                                    | `ReturnQuantity / SalesQuantity`                   | `ReturnRate % = DIVIDE([ReturnQuantity], [SalesQuantity])` |
 
 
-## ⏱️ Time Intelligence Calculation Group
+### ⏱️ Time Intelligence Calculation Group
 
 This section defines reusable time-based transformations using Calculation Groups in Power BI. These allow dynamic application of logic (YTD, MTD, YoY, etc.) to any measure using `SELECTEDMEASURE()`.
 
@@ -100,7 +101,7 @@ This section defines reusable time-based transformations using Calculation Group
 > - Ensure consistency between `UnitPrice` and `UnitCost` across tables.  
 > - Formulas are adaptable to DAX, SQL, or other BI environments.
 
-|  ## Dashboard Desing & Story Telling  |
+  ## Dashboard Desing & Story Telling  
 |---------------------------------------|
 | KIP´s  that could provide us with a simple Overview of the company Sales statement. | 
 |                                                                                     |

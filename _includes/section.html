@@ -5,7 +5,7 @@
                <ul class="nav-tree" role="tree" tabindex="0" aria-label="{{ site.data.textos[lang].main_navigation }}">
 
                 <li class="nav-item" id="nav-tree-portfolio" role="treeitem" aria-level="1">
-                     <a href="{{ site.sections.portfolio.url | relative_url }}" class="tree-toggle" aria-label="{{ site.data.textos[lang].go_to_section }} {{ site.data.textos[lang].portfolio }}" tabindex="0">
+                     <a href="{{ '/' | relative_url }}{{ page.lang }}/" class="tree-toggle" aria-label="{{ site.data.textos[lang].go_to_section }} {{ site.data.textos[lang].portfolio }}" tabindex="0">
                         <svg width="12" height="12" xmlns="http://www.w3.org/2000/svg">
                             <rect width="12" height="12" fill="none"/>
                         </svg>
@@ -41,7 +41,7 @@
     </button>
     <ul class="sub-list" hidden aria-label="{{ site.data.textos[lang].skills_aria.projects_prefix }} {{ site.data.textos[lang].skills_categories.etl }}">
       <li>
-        <a href="{{ site.sections.siss.url }}" aria-label="{{ site.data.textos[lang].etl_siss_package }}">
+        <a href="{{ site.sections.siss.url }}/{{ page.lang }}/" aria-label="{{ site.data.textos[lang].etl_siss_package }}">
             <img src="{{'assets/icons/microsoft-sql-server-logo.png' | relative_url }}" alt="SSIS icon" width="24" height="19">
             {{ site.data.textos[lang].etl_siss_package }}
         </a>
@@ -63,7 +63,7 @@
     </button>
     <ul class="sub-list" hidden aria-label="{{ site.data.textos[lang].skills_aria.projects_prefix }} {{ site.data.textos[lang].skills_categories.data_analysis }}">
       <li>
-        <a href="{{ site.sections.adventureworks.url }}" aria-label="{{ site.data.textos[lang].adventureworks_analysis }}">🧠 {{ site.data.textos[lang].adventureworks_analysis }}</a>
+        <a href="{{ site.sections.adventureworks.url }}/{{ page.lang }}/" aria-label="{{ site.data.textos[lang].adventureworks_analysis }}">🧠 {{ site.data.textos[lang].adventureworks_analysis }}</a>
       </li>
       <li>
         <a href="{{ site.sections.contoso.url }}/{{ page.lang }}/" aria-label="{{ site.data.textos[lang].contoso_sales }}">
@@ -160,7 +160,7 @@
         </a>
       </li>
       <li>
-        <a href="{{ site.sections.adventureworks.url }}" aria-label="{{ site.data.textos[lang].adventureworks_analysis }}">🧠 {{ site.data.textos[lang].adventureworks_analysis }}</a>
+        <a href="{{ site.sections.adventureworks.url }}/{{ page.lang }}/" aria-label="{{ site.data.textos[lang].adventureworks_analysis }}">🧠 {{ site.data.textos[lang].adventureworks_analysis }}</a>
       </li>
     </ul>
   </li>
@@ -249,19 +249,19 @@
                 </a>
                 </li>
                 <li>
-                <a href="{{ site.sections.adventureworks.url }}" aria-label="AdventureWorks2022 Data Analysis">
+                <a href="{{ site.sections.adventureworks.url }}/{{ page.lang }}/" aria-label="AdventureWorks2022 Data Analysis">
                     🧠 AdventureWorks2022 Data Analysis
                 </a>
                 </li>
             {% elsif tool == "sql" %}
                 <li>
-                <a href="{{ site.sections.siss.url }}" aria-label="{{ site.data.textos[lang].etl_siss_package }}">
+                <a href="{{ site.sections.siss.url }}/{{ page.lang }}/" aria-label="{{ site.data.textos[lang].etl_siss_package }}">
                     <img src="{{ 'assets/icons/microsoft-sql-server-logo.png' | relative_url }}" alt="SSIS icon" width="24" height="19">
                     {{ site.data.textos[lang].etl_siss_package }}
                 </a>
                 </li>
                 <li>
-                <a href="{{ site.sections.adventureworks.url }}" aria-label="AdventureWorks2022 Data Analysis">
+                <a href="{{ site.sections.adventureworks.url }}/{{ page.lang }}/" aria-label="AdventureWorks2022 Data Analysis">
                     🧠 AdventureWorks2022 Data Analysis
                 </a>
                 </li>
@@ -273,21 +273,21 @@
                 </a>
                 </li>
                 <li>
-                <a href="{{ site.sections.adventureworks.url }}" aria-label="{{ site.data.textos[lang].adventureworks_analysis }}">🧠 {{ site.data.textos[lang].adventureworks_analysis }}</a>
+                <a href="{{ site.sections.adventureworks.url }}/{{ page.lang }}/" aria-label="{{ site.data.textos[lang].adventureworks_analysis }}">🧠 {{ site.data.textos[lang].adventureworks_analysis }}</a>
                 </li>
             {% elsif tool == "python" %}
                 <li>
-                <a href="{{ site.sections.adventureworks.url }}" aria-label="{{ site.data.textos[lang].adventureworks_analysis }}">🧠 {{ site.data.textos[lang].adventureworks_analysis }}</a>
+                <a href="{{ site.sections.adventureworks.url }}/{{ page.lang }}/" aria-label="{{ site.data.textos[lang].adventureworks_analysis }}">🧠 {{ site.data.textos[lang].adventureworks_analysis }}</a>
                 </li>
                 <li>
-                <a href="{{ site.sections.siss.url }}" aria-label="{{ site.data.textos[lang].etl_siss_package }}">
+                <a href="{{ site.sections.siss.url }}/{{ page.lang }}/" aria-label="{{ site.data.textos[lang].etl_siss_package }}">
                     <img src="{{ 'assets/icons/microsoft-sql-server-logo.png' | relative_url }}" alt="SSIS icon" width="24" height="19">
                     {{ site.data.textos[lang].etl_siss_package }}
                 </a>
                 </li>
             {% elsif tool == "ssis" %}
                 <li>
-                <a href="{{ site.sections.siss.url }}" aria-label="{{ site.data.textos[lang].etl_siss_package }}">
+                <a href="{{ site.sections.siss.url }}/{{ page.lang }}/" aria-label="{{ site.data.textos[lang].etl_siss_package }}">
                     <img src="{{ 'assets/icons/microsoft-sql-server-logo.png' | relative_url}}" alt="SSIS icon" width="24" height="19">
                     {{ site.data.textos[lang].etl_siss_package }}
                 </a>
@@ -299,7 +299,7 @@
                 </a>
                 </li>
                 <li>
-                <a href="{{ site.sections.adventureworks.url }}" aria-label="{{ site.data.textos[lang].adventureworks_analysis }}">🧠 {{ site.data.textos[lang].adventureworks_analysis }}</a>
+                <a href="{{ site.sections.adventureworks.url }}/{{ page.lang }}/" aria-label="{{ site.data.textos[lang].adventureworks_analysis }}">🧠 {{ site.data.textos[lang].adventureworks_analysis }}</a>
                 </li>
             {% elsif tool == "github" %}
                 <li>
@@ -341,7 +341,7 @@
                         <svg width="12" height="12" xmlns="http://www.w3.org/2000/svg">
                             <rect width="12" height="12" fill="none"/>
                         </svg>
-                        <a id="about-me-link" href="{{ site.sections.aboutme.url }}" aria-label="{{ site.data.textos[lang].about_me_aria}}">
+                        <a id="about-me-link" href="{{ site.sections.aboutme.url }}/{{ page.lang }}/" aria-label="{{ site.data.textos[lang].about_me_aria}}">
                             {{ site.data.textos[lang].about_me }}
                         </a>
                     </button>
@@ -355,8 +355,8 @@
                     </button>
                     <ul class="sub-list" hidden aria-label="Lista de proyectos">
                         <li><a href="{{ site.sections.contoso.url }}/{{ page.lang }}/" aria-label="Projects_Contoso Sales Power BI Dashboard"><img src="{{ 'assets/icons/powerbi.png' | relative_url }}" alt="power bi icon" width="24" height="17"> Contoso Sales Power BI Dashboard</a></li>
-                        <li><a href="{{ site.sections.adventureworks.url }}" aria-label="{{ site.data.textos[lang].adventureworks_analysis }}">🧠 {{ site.data.textos[lang].adventureworks_analysis }}</a></li>
-                        <li><a href="{{ site.sections.siss.url }}" aria-label="{{ site.data.textos[lang].etl_siss_package }}"><img src="{{ 'assets/icons/microsoft-sql-server-logo.png' | relative_url }}" alt="ssis icon" width="24" height="19"> {{ site.data.textos[lang].etl_siss_package }}</a></li>
+                        <li><a href="{{ site.sections.adventureworks.url }}/{{ page.lang }}/" aria-label="{{ site.data.textos[lang].adventureworks_analysis }}">🧠 {{ site.data.textos[lang].adventureworks_analysis }}</a></li>
+                        <li><a href="{{ site.sections.siss.url }}/{{ page.lang }}/" aria-label="{{ site.data.textos[lang].etl_siss_package }}"><img src="{{ 'assets/icons/microsoft-sql-server-logo.png' | relative_url }}" alt="ssis icon" width="24" height="19"> {{ site.data.textos[lang].etl_siss_package }}</a></li>
                     </ul>
                 </li>
                 <li class="nav-item" id="nav-tree-documents" role="treeitem" aria-level="1">

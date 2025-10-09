@@ -41,16 +41,16 @@ sections:
     url: "https://aldoreyes84.github.io/contoso_pbi_dashboard"
   adventureworks:
     name: "AdventureWorks2022 Analysis"
-    url: "https://aldoreyes84.github.io/SQL_Server_AdventureWorks/"
+    url: "https://aldoreyes84.github.io/adworks_data_analysis"
   ssis:
     name: "SSIS Integration with Python Faker"
-    url: "https://aldoreyes84.github.io/ETL/"
+    url: "https://aldoreyes84.github.io/etl_ssis_integration_package"
   experience:
     name: "Working Experience"
     url: "https://aldoreyes84.github.io/working_experience"
   aboutme:
     name: "About me"
-    url: "https://aldoreyes84.github.io/About-me/"  
+    url: "https://aldoreyes84.github.io/about_me"  
   portfolio:
     name: "Portfolio"
     url: "https://aldoreyes84.github.io/AldoReyes.github.io/"

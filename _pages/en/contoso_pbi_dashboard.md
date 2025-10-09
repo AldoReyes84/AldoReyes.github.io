@@ -106,7 +106,7 @@ This section defines reusable time-based transformations using Calculation Group
 
 
 | KIP´s  that could provide us with a simple Overview of the company Sales statement. | 
-|                                                                                     |
+|-------------------------------------------------------------------------------------|
 |<img width="500" height="289" alt="image" src="https://github.com/user-attachments/assets/fc621312-15e8-489b-a94b-8334787ec451" />|
 |                                                                                                                                   | 
 | Yearly Table to have a better perspective of the metrics comparing throuh time.                                                   |

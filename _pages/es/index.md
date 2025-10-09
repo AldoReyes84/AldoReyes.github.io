@@ -6,26 +6,26 @@ title: Aldo Alan Reyes Hernandez – BI Portfolio
 ---
 ### Aldo Alan Reyes Hernandez
 
-## Analista de Inteligencia de Negoscios y Datos
+# Analista de Inteligencia de Negoscios y Datos
 
 ---------------------------------------------------------------------------------------------
-### Habilidades
+## Habilidades
 
 <div class="tooltip-container"><h5 class="tooltip-trigger"> ETL || Análisis de Datos || Modelado de Datos || Diseño de Tableros || Visualización de Datos || Perspectivas || OKR/KPI || Diseño Web </h5><span class="tooltip-text">Estas habilidades técnicas se demuestran en los proyectos de este portafolio.</span></div>
 
 ----------------------------------------------------------------------------------------------  
-### Herramientas
+## Herramientas
 
 <div class="tooltip-container"><h5 class="tooltip-trigger"> Power BI || SQL || Excel || Python || SSIS </h5><span class="tooltip-text">El uso de estas herramientas se demuestra en los proyectos de este portafolio.</span></div>
 
 -----------------------------------------------------------------------------------------------
-### [Experiencia Laboral](https://aldoreyes84.github.io/working_experience/)
+## [Experiencia Laboral](https://aldoreyes84.github.io/working_experience/)
 
 ------------------------------------------------------------------------------------------------
-### [Acerca de mi](https://aldoreyes84.github.io/About-me/)
+## [Acerca de mi](https://aldoreyes84.github.io/About-me/)
 
 --------------------------------------------------------------------------------------------------
-### Proyectos
+## Proyectos
 
 ##### 1.- <img src="{{ 'assets/icons/powerbi.png' | relative_url }}" alt="power bi icon" width="24" height="17">[ Tablero de ventas en Power BI para Contoso ](https://aldoreyes84.github.io/Contoso-Sales-Power-BI-Dashboard/)
 
@@ -34,12 +34,12 @@ title: Aldo Alan Reyes Hernandez – BI Portfolio
 ##### 3.- <img src="{{ 'assets/icons/microsoft-sql-server-logo.png' | relative_url }}" alt="ssis icon" width="24" height="19">[ Paquete de Integracion ETL SISS con archivos Python Faker ](https://aldoreyes84.github.io/ETL/)
 
 ---------------------------------------------------------------------------------------------------
-### Documentos
+## Documentos
 
 #### [Currículum PDF](./assets/files/Aldo%20Reyes%20CV.pdf)
 
 ---------------------------------------------------------------------------------------------------- 
-### Contacto
+## Contacto
  
 ##### [No. Celular: +52 (55) 6931 8062](tel:+525569318062)
   

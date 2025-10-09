@@ -6,26 +6,26 @@ title: Aldo Alan Reyes Hernandez – BI Portfolio
 ---
 ### Aldo Alan Reyes Hernandez
 
-## Business Intelligence & Data Analyst
+# Business Intelligence & Data Analyst
 
 ---------------------------------------------------------------------------------------------
-### Skills 
+## Skills 
 
 <div class="tooltip-container"><h5 class="tooltip-trigger"> ETL || Data Analysis || Data Modeling || Dashboard Design || Data Visualization || Insights || OKR/KPI </h5><span class="tooltip-text">Skills are showcased in this portfolio's projects.</span></div>
 
 ----------------------------------------------------------------------------------------------  
-### Tools
+## Tools
 
 <div class="tooltip-container"><h5 class="tooltip-trigger"> Power BI || SQL || Excel || Python || SSIS </h5><span class="tooltip-text">Tools are showcased in this portfolio's projects.</span></div>
 
 -----------------------------------------------------------------------------------------------
-### [Work Experience](https://aldoreyes84.github.io/working_experience/)
+## [Work Experience](https://aldoreyes84.github.io/working_experience/)
 
 ------------------------------------------------------------------------------------------------
-### [About me](https://aldoreyes84.github.io/About-me/)
+## [About me](https://aldoreyes84.github.io/About-me/)
 
 --------------------------------------------------------------------------------------------------
-### Projects
+## Projects
 
 ##### 1.- <img src="{{ 'assets/icons/powerbi.png' | relative_url }}" alt="power bi icon" width="24" height="17">[ Contoso Sales Power BI Dashboard](https://aldoreyes84.github.io/Contoso-Sales-Power-BI-Dashboard/)
 
@@ -34,12 +34,12 @@ title: Aldo Alan Reyes Hernandez – BI Portfolio
 ##### 3.- <img src="{{ 'assets/icons/microsoft-sql-server-logo.png' | relative_url}}" alt="ssis icon" width="24" height="19">[ ETL SSIS Integration Package with Python Faker Files](https://aldoreyes84.github.io/ETL/)
 
 ---------------------------------------------------------------------------------------------------
-### Documents
+## Documents
 
 #### [Curriculum PDF](./assets/files/Aldo%20Reyes%20CV.pdf)
 
 ---------------------------------------------------------------------------------------------------- 
-### Contact
+## Contact
  
 ##### [Cel Phone: +52 (55) 6931 8062](tel:+525569318062)
   
